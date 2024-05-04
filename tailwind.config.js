@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'hero-slide': "url(./homepag/slider/slider-2.jpg)"
+      }
+    },
   },
   plugins: [],
 }
