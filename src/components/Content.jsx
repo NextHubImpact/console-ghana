@@ -5,6 +5,28 @@ import homeSide from '../assets/main/home-side.jpg'
 import campusImg from '../assets/homepage/slider/slider-3.jpg'
 
 const Content = () => {
+
+    const highlightCard = [
+        {
+            title: 'WHERE GREAT IDEAS TAKE FLIGHT',
+            article: 'DTI offers a variety of programmes designed to meet the needs of various industries. Engineering, manufacturing, construction, and information technology are among the technical and vocational training we provide.',
+            link: 'More details',
+            icon: <IoArrowForward className='text-red-700'/>
+        },
+        {
+            title: 'WHERE GREAT IDEAS TAKE FLIGHT',
+            article: 'DTI offers a variety of programmes designed to meet the needs of various industries. Engineering, manufacturing, construction, and information technology are among the technical and vocational training we provide.',
+            link: 'More details',
+            icon: <IoArrowForward className='text-red-700'/>
+        },
+        {
+            title: 'WHERE GREAT IDEAS TAKE FLIGHT',
+            article: 'DTI offers a variety of programmes designed to meet the needs of various industries. Engineering, manufacturing, construction, and information technology are among the technical and vocational training we provide.',
+            link: 'More details',
+            icon: <IoArrowForward className='text-red-700'/>
+        }
+    ]
+
   return (
     <main className=' mx-8'>
       <section className="w-full justify-between gap-4 flex items-center mt-14 flex-wrap">
@@ -44,7 +66,25 @@ const Content = () => {
       </section>
 
       <section>
-
+      <div className="mt-14">
+               {
+                highlightCard.map((val, index) => {
+                    const  {title, article, link, icon} = val;
+                    return (
+                        <div className=" flex flex-col items-center gap-6 bg-[#f1f1f1] p-8 rounded shadow-md mb-4 border-4  border-yellow-500">
+                            <h2 className='font-semibold '>{title}</h2>
+                            <article className='leading-loose text-center'>
+                                {article}
+                            </article>
+                            <div className="flex items-center gap-4 mt-4 font-semibold">
+                                {link}
+                                {icon}
+                            </div>
+                        </div>
+                    )
+                })
+               }
+           </div>
       </section>
 
     </main>
