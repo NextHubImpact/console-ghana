@@ -5,20 +5,34 @@
 /* sidebar  */
 
 .nav-menu{
-    background-color: #fff;
-    width: 200px;
-    height: 100vh;
+    background-color: #f1f1f1;
+    width: 280px;
+    /* height: 100vh; */
     justify-content: center;
     position: fixed;
     top: 0;
     left: 0;
-    transition: 850ms;
+    bottom: 0;
+    transition: 250ms;
     z-index: 999;
 }
 
-.nav-menu.active {
+.nav-menu-active {
     left: 0;
     transition: 350ms;
+    background-color: #555;
+    width: 280px;
+    /* height: 100vh; */
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    /* transition-property: opacity; */
+    transition-duration: 250ms;
+    z-index: 999;
+    
+    
 }
 
 /* slideshow */

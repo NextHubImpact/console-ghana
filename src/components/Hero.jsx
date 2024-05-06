@@ -7,7 +7,7 @@ import slide3 from '../assets/homepage/slider/slider-3.jpg'
 
 const Hero = ({}) => {
     const [index, setIndex] = useState(0);
-    const delay = 2500;
+    const delay = 5500;
 
     const sliderImages = [
         slide1,

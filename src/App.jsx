@@ -3,6 +3,7 @@ import './App.css'
 import { BrowserRouter } from 'react-router-dom'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
+import Content from './components/Content'
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
               <Route path="/allusers" element={<Allusers/>} />
             </Routes> */}
           <Hero/>
+          <Content/>
       </BrowserRouter>
     </>
   )

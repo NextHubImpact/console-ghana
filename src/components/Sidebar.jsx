@@ -56,10 +56,11 @@ const Sidebar = ({}) => {
 
   return (
     <aside className='navbar'>
-       <nav className={sidebar ? 'hidden ' : 'nav-menu'}>
+       <nav className='nav-menu' >
+ 
        <div className="flex justify-between p-1 items-center mb-2">
                 <img className='w-[40%]' src={darkLogo} alt="logo" />
-                <IoCloseCircle className='text-2xl' onClick={showSidebar} />
+                {/* <IoCloseCircle className='text-2xl' onClick={showSidebar} /> */}
             </div>
 
          <ul className=''>     
