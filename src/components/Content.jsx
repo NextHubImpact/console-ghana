@@ -1,12 +1,13 @@
 import React from 'react'
 import { IoArrowForward } from 'react-icons/io5'
-import { MdArrowForward } from 'react-icons/md'
+
 import homeSide from '../assets/main/home-side.jpg'
+import campusImg from '../assets/homepage/slider/slider-3.jpg'
 
 const Content = () => {
   return (
-    <main className=' mx-10'>
-      <div className="w-full justify-between gap-4 flex items-center mt-14 flex-wrap">
+    <main className=' mx-8'>
+      <section className="w-full justify-between gap-4 flex items-center mt-14 flex-wrap">
        
         <div className=" w- flex flex-col gap-8 ">
             <div className="">
@@ -25,10 +26,27 @@ const Content = () => {
             </div>
         </div>
 
-        <div className="  ">
+        <div className="">
              <img className='' src={homeSide} alt="" /> 
         </div>
-      </div>
+      </section>
+
+      <section>
+          <div className="flex flex-wrap justify-center mt-14 mb-5">
+          <div className="">
+            <img src={campusImg} alt="" />
+          </div>
+          <div className="w-full bg-yellow-500 px-8 h-60 flex flex-col gap-4  justify-center">
+            <h2 className='uppercase font-bold text-[20px] text-red-700'>tour our campus</h2>
+            <IoArrowForward className='text-red-700'/>
+          </div>
+          </div>
+      </section>
+
+      <section>
+
+      </section>
+
     </main>
   )
 }
