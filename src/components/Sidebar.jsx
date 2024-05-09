@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
 import {MdOutlineKeyboardArrowDown} from 'react-icons/md'
 import { IoCloseCircle } from 'react-icons/io5'
-import darkLogo from '../assets/logo/logo-black.png'
+import lightLogo from '../assets/logo/logo-black.png'
 
 const Sidebar = ({}) => {
     const [sidebar,  setSidebar] = useState(false)
@@ -55,18 +55,18 @@ const Sidebar = ({}) => {
 
 
   return (
-    <aside className='navbar'>
-       <nav className='nav-menu' >
+    <aside id='sidebar'>
+       <nav className='nav-menu  ' >
  
-       <div className="flex justify-between p-1 items-center mb-2">
-                <img className='w-[40%]' src={darkLogo} alt="logo" />
+       <div className="flex justify-between  p-2 items-center  ">
+                <img className='w-[40%]' src={lightLogo} alt="logo" />
                 {/* <IoCloseCircle className='text-2xl' onClick={showSidebar} /> */}
             </div>
 
-         <ul className=''>     
+         <ul className=' flex-1'>     
             {SidebarData.map((item, index) => {
-                return ( <li key={index} className='flex flex-row'>
-                      <Link to={item.path} className='bg- w-full flex items-center justify-between p-2'>
+                return ( <li key={index} className='flex flex-row px-4'>
+                      <Link to={item.path} className='bg- w-full flex items-center justify-between p-2 border-b border-black'>
                          <span >{item.title}</span>
                          <span className='text-white'>{item.icon}</span>
                     </Link>

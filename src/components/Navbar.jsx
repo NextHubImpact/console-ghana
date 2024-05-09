@@ -34,7 +34,7 @@ const Navbar = ({}) => {
     <div className={colorChange ? 'bg-black flex justify-between p-2 items-center top-0 fixed w-full ' : 'bg-inherit flex justify-between p-2 items-center top-0 fixed w-full '}>
 
         <div className="">
-        <img className='w-[20%]' src={lightLogo} alt="" />
+        <img className='w-[20%] ' src={lightLogo} alt="" />
         </div>
   
         {

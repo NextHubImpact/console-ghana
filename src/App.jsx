@@ -2,8 +2,10 @@ import './App.css'
 // import { useState } from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import Hero from './components/Hero'
-import Navbar from './components/Navbar'
+// import Navbar from './components/Navbar'
 import Content from './components/Content'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -26,6 +28,7 @@ function App() {
             </Routes> */}
           <Hero/>
           <Content/>
+          <Footer/>
       </BrowserRouter>
     </>
   )
