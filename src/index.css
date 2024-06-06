@@ -15,7 +15,7 @@ html {
 
 /* sidebar  */
 #sidebar {
-  box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.896);
+  /* box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.896); */
 }
 
 .nav-menu{
@@ -34,19 +34,7 @@ html {
 }
 
 .nav-menu-active {
-    left: 0;
-    transition: 350ms;
-    background-color: #555;
-    width: 280px;
-    /* height: 100vh; */
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 999;
-    
-    
+  width: 270px;  
 }
 
 /* slideshow */
@@ -75,7 +63,6 @@ html {
     /* background-size: "contain"; */
     /* height: 70vh; */
     /* font-size: 50px; */
- 
     /* background-repeat: no-repeat; */
   }
   
