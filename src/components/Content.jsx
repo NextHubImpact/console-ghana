@@ -1,5 +1,6 @@
 import React, {useState, useEffect, useRef} from "react";
 import { IoArrowForward } from "react-icons/io5";
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 import homeSide from "../assets/main/home-side.jpg";
 import campusImg from "../assets/homepage/slider/slider-3.jpg";
@@ -122,7 +123,7 @@ const Content = () => {
       </section>
 
        {/* campus tour */}
-      <section className="">
+      <section className="kkk">
       <div className="my-14 mx-8">
       <div className="  flex flex-col justify-between  mb-5 lg:flex-row items-center lg:py-14 bg-yellow-500">
           <div className="w-full lg:pl-4">
@@ -141,11 +142,11 @@ const Content = () => {
        {/* cards */}
       <section className="">
        <div className="mx-8">
-       <div className="mt-14 mb-[6rem]  lg:flex justify-between gap-2 ">
+       <Swiper className="mt-14 mb-[6rem]  lg:flex justify-between gap-2 ">
           {highlightCard.map((val, index) => {
             const { title, article, link, icon } = val;
             return (
-              <div key={index} className=" flex flex-col  items-center gap-2 bg-[#f1f1f1] p-8 rounded-[1rem] shadow-sm mb-4 border-4  border-yellow-500 lg:w-[32%] ">
+              <swiper-slide key={index} className=" flex flex-col  items-center gap-2 bg-[#f1f1f1] p-8 rounded-[1rem] shadow-sm mb-4 border-4  border-yellow-500 lg:w-[32%] ">
                 <h2 className="font-semibold text-nowrap">{title}</h2>
                 <article className="leading-loose text-center">
                   {article}
@@ -154,10 +155,10 @@ const Content = () => {
                   {link}
                   {icon}
                 </div>
-              </div>
+              </swiper-slide>
             );
           })}
-        </div>
+        </Swiper>
        </div>
       </section>
       

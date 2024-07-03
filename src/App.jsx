@@ -1,11 +1,19 @@
 import './App.css'
 // import { useState } from 'react'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter , Routes, Route} from 'react-router-dom'
 import Hero from './components/Hero'
 // import Navbar from './components/Navbar'
 import Content from './components/Content'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+
+// pages
+import Home from './pages/Home.jsx'
+import About from './pages/About.jsx'
+import Admission from './pages/Admission.jsx'
+// import Home from './pages/Home'
+// import Home from './pages/Home'
+// import Home from './pages/Home'
 
 
 function App() {
@@ -14,21 +22,27 @@ function App() {
   return (
     <>
       <BrowserRouter>
+      <div className="flex flex-col">
         <div className="absolute z-10 left-0 right-0 top-0">
         <Navbar  />
         </div>
-          {/* <Routes>
+          <div className="">
+          <Routes>
               <Route path="/" element={<Home/>} exact />
-              <Route path="/alldonations" element={<OrderHistory/>} />
-              <Route path="/campaigns" element={<Campaigns/>} />
-              <Route path="/events" element={<Events/>} />
-              <Route path="/blog" element={<Blog/>} />
-              <Route path="/volunteers" element={<Volunteers/>} />
-              <Route path="/allusers" element={<Allusers/>} />
-            </Routes> */}
+              <Route path="/about" element={<About/>} />
+              <Route path="/admission" element={<Admission/>} />
+              {/* <Route path="/academics" element={<Academics/>} />
+              <Route path="/campuslife" element={<CampusLife/>} />
+              <Route path="/donate" element={<Donate/>} />
+              <Route path="/contact" element={<Contact/>} />
+              <Route path="/applyhere" element={<ApplyHere/>} />  */}
+            </Routes>
+          </div>
           <Hero/>
           <Content/>
           <Footer/>
+          </div>
+
       </BrowserRouter>
     </>
   )
