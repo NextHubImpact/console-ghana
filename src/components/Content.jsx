@@ -13,6 +13,7 @@ import asco from '../assets/partners/asco.jpg'
 import knust from '../assets/partners/knust.png'
 import techlabs from '../assets/partners/techlabs.jpg'
 import asase from '../assets/partners/asase.jpg'
+import { MdAccountCircle, MdTimer } from "react-icons/md";
 
 const Content = () => {
   const [index, setIndex] = useState(0);
@@ -122,7 +123,7 @@ const Content = () => {
       </section>
 
        {/* campus tour */}
-      <section className="">
+      {/* <section className="">
       <div className="my-14 mx-8">
       <div className="  flex flex-col justify-between  mb-5 lg:flex-row items-center lg:py-14 bg-yellow-500">
           <div className="w-full lg:pl-4">
@@ -136,21 +137,21 @@ const Content = () => {
           </div>
         </div>
       </div>
-      </section>
+      </section> */}
 
        {/* cards */}
       <section className="">
-       <div className="mx-8">
-       <div className="mt-14 mb-[6rem]  lg:flex justify-between gap-2 ">
+       <div className="mx-8 ">
+       <div className="mt-14 mb-[6rem] lg:flex  xl:flex justify-between gap-8 ">
           {highlightCard.map((val, index) => {
             const { title, article, link, icon } = val;
             return (
-              <div key={index} className=" flex flex-col  items-center gap-2 bg-[#f1f1f1] p-8 rounded-[1rem] shadow-sm mb-4 border-4  border-yellow-500 lg:w-[32%] ">
+              <div key={index} className=" flex flex-col  items-center gap-2 bg-[#f1f1f1] p-8 rounded-[1rem] shadow-sm mb-4 border-4  border-yellow-500 lg:w-[30%] xl:w-[28%] p-8">
                 <h2 className="font-semibold text-nowrap">{title}</h2>
                 <article className="leading-loose text-center">
                   {article}
                 </article>
-                <div className="flex items-center gap-4 mt-2 font-semibold">
+                <div className="bg-yellow-500 p-2 rounded flex items-center gap-4 mt-2 font-semibold">
                   {link}
                   {icon}
                 </div>
@@ -162,7 +163,7 @@ const Content = () => {
       </section>
       
       {/* programmes */}
-      <section className="">
+      {/* <section className="">
        <div className="mx-8">
        <div className="mt-14  flex flex-col gap-8  justify-between ">
           <div className="flex  flex-col gap-8  ">
@@ -225,24 +226,59 @@ const Content = () => {
             </div>
           </div>
        </div>
-      </section>
+      </section> */}
       
       {/* projects */}
       <section className="bg-[#ffc12d]">
          <div className="my-12 mx-8">
-         <div className="flex flex-col gap-[6rem] justify-between">
+         <div className="flex flex-col items-center ">
             <div className=" pt-12 lg:">
-                <h2 className=" mb-6 uppercase font-bold text-[24px] text-red-700 lg:text-[48px]">
-                  community innovation programme</h2>
-                 <div className="flex gap-4 items-center">
+                <h2 className=" mb-6 text-center font-bold text-[24px] text-red-700 lg:text-[48px]">
+                  Blog</h2>
+                 {/* <div className="flex gap-4 items-center">
                  <p className="font-bold">See all projects</p>
                  <IoArrowForward className="hover:ml-4"/>
                  </div>
-                <hr className="text-4xl w-[20%] rounded mt-4 h-1 bg-red-700"/>
+                <hr className="text-4xl w-[20%] rounded mt-4 h-1 bg-red-700"/> */}
             </div>
+             
+             <div className=" mb-6 flex justify-center gap-[6rem]">
+             <div className="w-[40%]">
+              <div className="">
+                  <img src={progImg1} alt="" />
+              </div>
+              <div className="">
+                <div className="flex gap-4 py-2">
+                <span className="flex items-center gap-2"><MdAccountCircle /> consolegh</span>
+                <span className="flex items-center gap-2">
+                  <MdTimer/> June 26, 2024
+                </span>
+                </div>
+                <div className="">
+                  <h1>DTI Offers a Variety of Programmes Designed to meet the needs of various industries</h1>
+                </div>
+              </div>
+             </div>
+             <div className="w-[40%]">
+              <div className="">
+                  <img src={progImg1} alt="" />
+              </div>
+              <div className="">
+                <div className="flex gap-4 py-2">
+                <span className="flex items-center gap-2"><MdAccountCircle /> consolegh</span>
+                <span className="flex items-center gap-2">
+                  <MdTimer/> June 26, 2024
+                </span>
+                </div>
+                <div className="">
+                  <h1>DTI offers a variety of programmes designed to meet the needs of various industries</h1>
+                </div>
+              </div>
+             </div>
 
-
-            <div className="">
+             </div>
+             
+            {/* <div className="">
             <div className="slideshow  ">
               <div
                 className="slideshowSlider "
@@ -286,7 +322,7 @@ const Content = () => {
                 ))}
               </div>
             </div>
-            </div>
+            </div> */}
          </div>
          </div>
       </section>
@@ -328,7 +364,7 @@ const Content = () => {
          </div>
       </section>
 
-      <section className="bg-[#ffc12d] ">
+      {/* <section className="bg-[#ffc12d] ">
            <div className="flex justify-center items-center  h-80  mx-8">
            <div className=" flex flex-col items-center gap-8 ">
                   <h2 className="text-[28px] text-center text-[#c4002c] font-bold">ACQUIRE SKILLS FOR A CHANGING WORLD</h2>
@@ -336,7 +372,7 @@ const Content = () => {
                   <button className="bg-[#c4002c] font-semibold text-white rounded-md py-4 px-8 ">Apply Now</button>
               </div>
            </div>
-      </section>
+      </section> */}
     </main>
   );
 };

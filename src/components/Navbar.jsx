@@ -33,39 +33,24 @@ const Navbar = ({}) => {
       {
           title: 'About',
           path: '/about',
-          icon: <MdOutlineKeyboardArrowDown className='bg-black text-2xl lg:bg-transparent'/>
       },
       {
-          title: 'Admission',
-          path: '/admission',
-          icon: <MdOutlineKeyboardArrowDown className='bg-black text-2xl lg:bg-transparent'/>
+          title: 'Our Services',
+          path: '/ourservices',
       },
       {
-          title: 'Academics',
-          path: '/academics',
-          icon: <MdOutlineKeyboardArrowDown className='bg-black text-2xl lg:bg-transparent'/>
+          title: 'Projects',
+          path: '/projects',
       },
       {
-          title: 'Campus Life',
-          path: '/campuslife',
-          icon: <MdOutlineKeyboardArrowDown className='bg-black text-2xl lg:bg-transparent'/>
-      },
-      {
-          title: 'Donate',
-          path: '/donate',
-      },
-      {
-          title: 'News',
-          path: '/news'
+          title: 'Blog',
+          path: '/Blog'
       },
       {
           title: 'Contact',
           path: '/contact'
       },
-      {
-          title: 'Apply Here',
-          path: '/applyhere'
-      }
+
   ]
 
 
@@ -84,8 +69,8 @@ const Navbar = ({}) => {
   return (
     <div className={colorChange ? 'bg-black flex justify-between p-2 items-center top-0 fixed w-full ' : 'bg-inherit flex justify-between p-2 items-center top-0 fixed w-full '}>
 
-        <div className="flex ">
-        <img className='w-[20%] lg:w-[60%] xl:w-[50%]' src={lightLogo} alt="" />
+        <div className="">
+        <img className='w-[20%] lg:w-[20%] xl:w-[50%]' src={lightLogo} alt="" />
         </div>
   
         {
@@ -94,14 +79,13 @@ const Navbar = ({}) => {
         } 
 
         
-      <nav className='hidden lg:block flex-1 ' >
+      <nav className='hidden lg:block  ' >
 
         <ul className='lg: flex text-nowrap gap-2 py-2 items-center xl:p-4 '>     
             {SidebarData.map((item, index) => {
                 return ( <li key={index} className='text-white px-2 xl:text-[20px] '>
                       <Link to={item.path} className=' w-full flex items-center justify-between  border-b border-black lg: border-none'>
                         <span >{item.title}</span>
-                        <span className='text-white'>{item.icon}</span>
                     </Link>
                 </li>)
             })}

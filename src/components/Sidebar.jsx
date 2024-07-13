@@ -17,22 +17,18 @@ const Sidebar = ({}) => {
       {
           title: 'About',
           path: '/about',
-          icon: <MdOutlineKeyboardArrowDown className='bg-black text-2xl'/>
       },
       {
-          title: 'Admission',
+          title: 'Our Services',
           path: '/admission',
-          icon: <MdOutlineKeyboardArrowDown className='bg-black text-2xl'/>
       },
       {
           title: 'Academics',
           path: '/academics',
-          icon: <MdOutlineKeyboardArrowDown className='bg-black text-2xl'/>
       },
       {
           title: 'Campus Life',
           path: '/campuslife',
-          icon: <MdOutlineKeyboardArrowDown className='bg-black text-2xl'/>
       },
       {
           title: 'Donate',
@@ -68,7 +64,6 @@ const Sidebar = ({}) => {
                 return ( <li key={index} className='flex flex-row px-4'>
                       <Link to={item.path} className='bg- w-full flex items-center justify-between p-2 border-b border-black'>
                          <span >{item.title}</span>
-                         <span className='text-white'>{item.icon}</span>
                     </Link>
                  </li>)
             })}
