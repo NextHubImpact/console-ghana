@@ -148,7 +148,7 @@ const Content = () => {
             return (
               <div key={index} className=" flex flex-col  items-center gap-2 bg-[#f1f1f1] p-8 rounded-[1rem] shadow-sm mb-4 border-4  border-yellow-500 lg:w-[30%] xl:w-[28%] p-8">
                 <h2 className="font-semibold text-nowrap">{title}</h2>
-                <article className="leading-loose text-center">
+                <article className=" text-center">
                   {article}
                 </article>
                 <div className="bg-yellow-500 p-2 rounded flex items-center gap-4 mt-2 font-semibold">
