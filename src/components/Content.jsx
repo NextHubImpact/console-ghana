@@ -16,15 +16,15 @@ import asase from '../assets/partners/asase.jpg'
 import { MdAccountCircle, MdTimer } from "react-icons/md";
 
 const Content = () => {
-  const [index, setIndex] = useState(0);
-  const timeoutRef = useRef(null)
-  const delay = 2500;
+  // const [index, setIndex] = useState(0);
+  // const timeoutRef = useRef(null)
+  // const delay = 2500;
 
-  function resetTimeout() {
-    if (timeoutRef.current) {
-      clearTimeout(timeoutRef.current);
-    }
-  }
+  // function resetTimeout() {
+  //   if (timeoutRef.current) {
+  //     clearTimeout(timeoutRef.current);
+  //   }
+  // }
 
 
   const highlightCard = [
@@ -34,6 +34,7 @@ const Content = () => {
         "DTI offers a variety of programmes designed to meet the needs of various industries. Engineering, manufacturing, construction, and information technology are among the technical and vocational training we provide.",
       link: "More details",
       icon: <IoArrowForward className="text-red-700" />,
+      img: progImg1,
     },
     {
       title: "WHERE GREAT IDEAS TAKE FLIGHT",
@@ -41,6 +42,7 @@ const Content = () => {
         "DTI offers a variety of programmes designed to meet the needs of various industries. Engineering, manufacturing, construction, and information technology are among the technical and vocational training we provide.",
       link: "More details",
       icon: <IoArrowForward className="text-red-700" />,
+      img: progImg2,
     },
     {
       title: "WHERE GREAT IDEAS TAKE FLIGHT",
@@ -48,49 +50,97 @@ const Content = () => {
         "DTI offers a variety of programmes designed to meet the needs of various industries. Engineering, manufacturing, construction, and information technology are among the technical and vocational training we provide.",
       link: "More details",
       icon: <IoArrowForward className="text-red-700" />,
+      img: progImg3
     },
   ];
 
-  const programmesData = [
+  const blogData = [
     {
-      title: "Precision Welding & Fabrication",
-      article:
-        "Our Precision Fabrication programme haas been designed to meet the needs of the welding and fabrication industry by providing world-class training in line with global standards.",
-      bgImg: progImg1,
+      img: progImg1,
+      author: "consolegh_",
+      title: "DTI Offers a Variety of Programmes Designed to meet the needs of various industries",
+      date: "May 26, 2024",
+      icons: {
+        authorIcon: <MdAccountCircle /> ,
+        dateIcon: <MdTimer/> 
+      },
     },
     {
-      title: "Precision Welding & Fabrication",
-      article:
-        "Our Precision Fabrication programme haas been designed to meet the needs of the welding and fabrication industry by providing world-class training in line with global standards.",
-      bgImg: progImg2,
+      img: progImg2,
+      author: "consolegh_",
+      title: "DTI Offers a Variety of Programmes Designed to meet the needs of various industries",
+      date: "May 26, 2024",
+      icons: {
+        authorIcon: <MdAccountCircle /> ,
+        dateIcon: <MdTimer/> 
+      },
     },
     {
-      title: "Precision Welding & Fabrication",
-      article:
-        "Our Precision Fabrication programme haas been designed to meet the needs of the welding and fabrication industry by providing world-class training in line with global standards.",
-      bgImg: progImg3,
+      img: progImg3,
+      author: "consolegh_",
+      title: "DTI Offers a Variety of Programmes Designed to meet the needs of various industries",
+      date: "May 26, 2024",
+      icons: {
+        authorIcon: <MdAccountCircle /> ,
+        dateIcon: <MdTimer/> 
+      },
     },
   ];
 
-  useEffect(() => {
-    resetTimeout();
-    timeoutRef.current = setTimeout(
-      () =>
-        setIndex((prevIndex) =>
-          prevIndex === programmesData.length - 1 ? 0 : prevIndex + 1
-        ),
-      delay
-    );
-    return () => {
-        resetTimeout();
-    };
-  }, [index]);
+  // useEffect(() => {
+  //   resetTimeout();
+  //   timeoutRef.current = setTimeout(
+  //     () =>
+  //       setIndex((prevIndex) =>
+  //         prevIndex === programmesData.length - 1 ? 0 : prevIndex + 1
+  //       ),
+  //     delay
+  //   );
+  //   return () => {
+  //       resetTimeout();
+  //   };
+  // }, [index]);
 
   return (
     <main className=" ">
-      <section className=" ">
-      <div className="mx-8 my-14 flex flex-col justify-between lg:flex-row items-center justify-between gap-2">
-      <div className="lg:w-[45%] justify-between gap-4 flex flex-col items-center mt-14 lg:flex-row ">
+
+   <section className="">
+       <div className="mx-8  my-14">
+          <h1 className="text-5xl text-center ">Our Services</h1>
+       <div className="mt-14 mb-[6rem] lg:flex  xl:flex justify-between gap-8 ">
+          {highlightCard.map((val, index) => {
+            const { title, article, link, icon, img } = val;
+            return (
+              <div key={index} className=" flex flex-col  items-center gap-2 bg-[#f1f1f1]  border-2   lg:w-[30%] xl:w-[30%] p-">
+                <img src={img} alt="" />
+                 <div className=" flex flex-col items-center gap-2 px-4 ">
+                 <h2 className=" text-wrap text-center text-2xl font-semibold">{title}</h2>
+                <article className="leading text-center">
+                  {article}
+                </article>
+                <div className="bg-yellow-500 py-3 px-4 rounded-[1.8rem] flex items-center gap-4 m-4 ">
+                  {link}
+                  {icon}
+                </div>
+                 </div>
+                
+              </div>
+            );
+          })}
+        </div>
+       </div>
+      </section>
+
+
+      <section className=" my-[5rem] ">
+      <div className="mx-8 flex flex-col  items-center lg:flex-row  gap-4 bg-[whitesmoke] ">
+
+      <figure className="lg: flex justify-end w-[50%] p-  ">
+          <img className="lg: w-[100%]   rounded-"  src={progImg1} alt="" />
+        </figure>
+
+      <div className="lg:w-[50%] p-4  gap-4 flex flex-col items-center  lg:flex-row ">
+        {/* left article --who we are-- */}
        <div className=" w-full flex justify-between flex-col gap-8 ">
           <div className="">
             <h1 className="uppercase font-bold text-red-700 text-3xl ">
@@ -110,34 +160,16 @@ const Content = () => {
           </article>
 
           <div className="flex items-center gap-4 font-semibold ">
-            <h2 className="text-[20px] mb-4">About us </h2>
+            <h2 className="text-[20px] ">About us </h2>
             <IoArrowForward className="text-red-700" />
           </div>
         </div>
        </div>
-
-        <div className="lg:w-[45%] ">
-          <img className="lg: object-contain" src={homeSide} alt="" />
-        </div>
+           
+           {/* right img */}
+      
       </div>
       </section>
-
-       {/* campus tour */}
-      {/* <section className="">
-      <div className="my-14 mx-8">
-      <div className="  flex flex-col justify-between  mb-5 lg:flex-row items-center lg:py-14 bg-yellow-500">
-          <div className="w-full lg:pl-4">
-            <img className=" h-[50vh] object-cover md: w-full lg:h-full" src={campusImg} alt="" />
-          </div>
-          <div className="w-full bg-yellow-500 px-8 h-60  flex flex-col gap-4  justify-center ">
-            <h2 className="uppercase font-bold text-[20px] text-red-700">
-              tour our campus
-            </h2>
-            <IoArrowForward className="text-red-700" />
-          </div>
-        </div>
-      </div>
-      </section> */}
 
        {/* cards */}
       <section className="">
@@ -146,7 +178,7 @@ const Content = () => {
           {highlightCard.map((val, index) => {
             const { title, article, link, icon } = val;
             return (
-              <div key={index} className=" flex flex-col  items-center gap-2 bg-[#f1f1f1] p-8 rounded-[1rem] shadow-sm mb-4 border-4  border-yellow-500 lg:w-[30%] xl:w-[28%] p-8">
+              <div key={index} className=" flex flex-col  items-center gap-2 bg-[#f1f1f1] p-8 rounded-[1rem] shadow-sm mb-4 border-4  border-yellow-500 lg:w-[30%] h-[60%] xl:w-[28%] p-8">
                 <h2 className="font-semibold text-nowrap">{title}</h2>
                 <article className=" text-center">
                   {article}
@@ -161,168 +193,42 @@ const Content = () => {
         </div>
        </div>
       </section>
-      
-      {/* programmes */}
-      {/* <section className="">
-       <div className="mx-8">
-       <div className="mt-14  flex flex-col gap-8  justify-between ">
-          <div className="flex  flex-col gap-8  ">
-            <div className="uppercase font-bold flex  flex-col gap-4">
-              <h2 className="text-5xl">
-                dti <br /> programmes
-              </h2>
-              <IoArrowForward className="text-red-700 " />
-            </div>
-            <div className="mb-12">
-              <article className="leading-6 text-[20px]">
-                Our approach to teaching and learning is underpinned by our
-                unique programmes for TVET training.
-              </article>
-            </div>
-          </div>
-
-            <div className="slideshow bg-[#fefefe]  ">
-              <div
-                className="slideshowSlider bg-green-400  "
-                style={{ transform: `translate3d(${-index * 100}%, 0, 0) ` }}
-              >
-                {programmesData.map((data, index) => (
-                  <div className="slide "  key={index}>
-                     <div
-                      style={{
-                        backgroundImage: `url(${data.bgImg})`,
-                         backgroundSize: "cover",
-                        backgroundRepeat: "no-repeat",
-                        backgroundPosition: 'center',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        // gap: '4rem',
-                        padding: '5px',
-                    }}
-                    className="h-[55vh]  "
-                     >
-                       <div className="  text-[#fff] p-4 bg-inherit  ">
-                       <h2 className="text-[18px] text-wrap">{data.title}</h2>
-                         <p className="text-[14px] text-wrap leading-8  ">{data.article}</p>
-                       </div>
-                     </div>
-                  </div>
-                ))}
-              </div>
-
-              <div className="slideshowDots my-4">
-                {programmesData.map((_, idx) => (
-                  <div
-                  className={`slideshowDot${index === idx ? " active" : ""}`}
-                  key={idx}
-                  onClick={() => {
-                    setIndex(idx);
-                  }}
-                  ></div>
-                ))}
-              </div>
-            </div>
-          </div>
-       </div>
-      </section> */}
+    
       
       {/* projects */}
-      <section className="bg-[#ffc12d]">
+      <section className="bg-[#111]">
          <div className="my-12 mx-8">
-         <div className="flex flex-col items-center ">
-            <div className=" pt-12 lg:">
-                <h2 className=" mb-6 text-center font-bold text-[24px] text-red-700 lg:text-[48px]">
-                  Blog</h2>
-                 {/* <div className="flex gap-4 items-center">
-                 <p className="font-bold">See all projects</p>
-                 <IoArrowForward className="hover:ml-4"/>
+         <div className="flex flex-col justify-center items-center ">
+            <iv className=" pt-12 lg:">
+                <h2 className=" mb-14 text-center font-bold text-[24px] text-red-700 lg:text-[48px]">
+                  Blog
+                </h2>
+            </iv>
+             
+             <div className=" flex items-center justify-center">
+          
+             <div className=" flex items-center text-white justify-center mb-14 gap-4">
+          {blogData.map((val, index) => {
+            const {img, title, author, date , icons } = val;
+            return (
+              <div key={index} className="w-[25%]  flex flex-col justify-center items-center">
+                <img src={img} className="w-[%]" alt="" />                 
+                 <div className="my-8">
+                 <div className="flex justify-start items-center gap-4 py-2">
+                <span className="flex items-center gap-2">{icons.authorIcon} {author}</span>
+                 <span className="flex items-center gap-2">{icons.dateIcon} {date}</span>              
+                </div>
+                <div className="my-">
+                <h2 className="  text-wrap">{title}</h2>
+                </div>
                  </div>
-                <hr className="text-4xl w-[20%] rounded mt-4 h-1 bg-red-700"/> */}
-            </div>
-             
-             <div className=" mb-6 flex justify-center gap-[6rem]">
-             <div className="w-[40%]">
-              <div className="">
-                  <img src={progImg1} alt="" />
               </div>
-              <div className="">
-                <div className="flex gap-4 py-2">
-                <span className="flex items-center gap-2"><MdAccountCircle /> consolegh</span>
-                <span className="flex items-center gap-2">
-                  <MdTimer/> June 26, 2024
-                </span>
-                </div>
-                <div className="">
-                  <h1>DTI Offers a Variety of Programmes Designed to meet the needs of various industries</h1>
-                </div>
-              </div>
-             </div>
-             <div className="w-[40%]">
-              <div className="">
-                  <img src={progImg1} alt="" />
-              </div>
-              <div className="">
-                <div className="flex gap-4 py-2">
-                <span className="flex items-center gap-2"><MdAccountCircle /> consolegh</span>
-                <span className="flex items-center gap-2">
-                  <MdTimer/> June 26, 2024
-                </span>
-                </div>
-                <div className="">
-                  <h1>DTI offers a variety of programmes designed to meet the needs of various industries</h1>
-                </div>
-              </div>
-             </div>
+            );
+          })}
+        </div>
 
-             </div>
-             
-            {/* <div className="">
-            <div className="slideshow  ">
-              <div
-                className="slideshowSlider "
-                style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
-              >
-                {programmesData.map((data, index) => (
-                  <div className='slide '  key={index}>
-                     <div
-                      style={{
-                        backgroundImage: `url(${data.bgImg})`,
-                         backgroundSize: "cover",
-                        backgroundRepeat: "no-repeat",
-                        backgroundPosition: 'center',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        // gap: '4rem',
-                        padding: '5px',
-                    }}
-                    className="h-[55vh] lg:h-[90vh]  xl:w-full"
-                     >
-                       <div className="  text-[#fff] p-4 bg-inherit  ">
-                       <h2 className="text-[18px] text-wrap">{data.title}</h2>
-                         <p className="text-[14px] text-wrap leading-8  ">{data.article}</p>
-                       </div>
-                     </div>
-                  </div>
-                ))}
-              </div>
-
-              <div className="slideshowDots mb-14 ">
-                {programmesData.map((_, idx) => (
-                  <div
-                  className={`slideshowDot${index === idx ? " active" : ""}`}
-                  key={idx}
-                  onClick={() => {
-                    setIndex(idx);
-                  }}
-                  ></div>
-                ))}
-              </div>
-            </div>
-            </div> */}
+           </div>
+            
          </div>
          </div>
       </section>

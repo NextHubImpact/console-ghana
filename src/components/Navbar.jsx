@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import MediaQuery from 'react-responsive'
 import lightLogo from '../assets/logo/logo-white.png'
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 import { IoMenu , IoClose} from "react-icons/io5";
 import { IoSearch } from 'react-icons/io5';
@@ -27,14 +27,17 @@ const Navbar = ({}) => {
 
     const SidebarData = [
       {
+         id: '1',
           title: 'Home',
           path: '/',
       },
       {
+        id: '2',
           title: 'About',
           path: '/about',
       },
       {
+        id: '3',
           title: 'Our Services',
           path: '/ourservices',
       },
@@ -57,7 +60,7 @@ const Navbar = ({}) => {
     // nav bg color change //
 
     const changeNavbarColor = () => {
-      if (window.scrollY >= 100) {
+      if (window.scrollY >= 10) {
         setColorchange(true);
       } else {
         setColorchange(false)
@@ -70,7 +73,7 @@ const Navbar = ({}) => {
     <div className={colorChange ? 'bg-black flex justify-between p-2 items-center top-0 fixed w-full ' : 'bg-inherit flex justify-between p-2 items-center top-0 fixed w-full '}>
 
         <div className="">
-        <img className='w-[20%] lg:w-[20%] xl:w-[50%]' src={lightLogo} alt="" />
+        <img className='w-[20%] lg:w-[20%] xl:w-[25%]' src={lightLogo} alt="" />
         </div>
   
         {
@@ -83,11 +86,9 @@ const Navbar = ({}) => {
 
         <ul className='lg: flex text-nowrap gap-2 py-2 items-center xl:p-4 '>     
             {SidebarData.map((item, index) => {
-                return ( <li key={index} className='text-white px-2 xl:text-[20px] '>
-                      <Link to={item.path} className=' w-full flex items-center justify-between  border-b border-black lg: border-none'>
-                        <span >{item.title}</span>
-                    </Link>
-                </li>)
+                return ( <NavLink to={item.path} key={index} className='text-white px-2 xl:text-[20px] '>
+                        <span >{item.title}</span>                  
+                    </NavLink>)
             })}
         </ul>
       </nav>

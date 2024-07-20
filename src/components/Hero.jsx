@@ -1,8 +1,11 @@
 import React, {useState, useEffect, useRef} from 'react'
 import Navbar from './Navbar'
+import { NavLink } from 'react-router-dom'
+
 import slide1 from '../assets/homepage/slider/slider-1.jpg'
 import slide2 from '../assets/homepage/slider/slider-2.jpg'
 import slide3 from '../assets/homepage/slider/slider-3.jpg'
+import { IoArrowForward } from 'react-icons/io5'
 
 
 const Hero = ({}) => {
@@ -11,9 +14,33 @@ const Hero = ({}) => {
     const delay = 5500;
 
     const sliderImages = [
-        slide1,
-        slide2,
-        slide3
+       
+       
+        {
+          img: slide1,
+          title: "WHERE GREAT IDEAS TAKE FLIGHT",
+          article:
+            "DTI offers a variety of programmes designed to meet the needs of various industries. ",
+          link: "More details",
+          icon: <IoArrowForward className="text-red-700" />,
+        },
+        {
+          img: slide2,
+          title: "INNOVATION AND CREATIVITY",
+          article:
+            "DTI offers a variety of programmes designed to meet the needs of various industries. ",
+          link: "More details",
+          icon: <IoArrowForward className="text-red-700" />,
+        },
+        {
+          img: slide3,
+          title: "INTERNATIONAL STANDARD PROGRAMMES",
+          article:
+            "DTI offers a variety of programmes designed to meet the needs of various industries. ",
+          link: "More details",
+          icon: <IoArrowForward className="text-red-700" />,
+        },
+
     ]
 
     function resetTimeout() {
@@ -43,7 +70,32 @@ const Hero = ({}) => {
              >
             {sliderImages.map((images, index) => (
               <div className="slide " key={index}>
-                <img src={images} className='slide-img h-[70vh] object-cover lg:h-full ' alt="" />
+                <img  className=' slide-img h-[70vh] object-cover lg:h-full ' alt="" />
+                <div
+                  style={{
+                    backgroundImage: `url(${images.img})`,
+                    backgroundSize: "cover",
+                    height: "90vh",
+                    width: "100vw",
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: 'center',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center',
+                    alignItems: 'center',   
+                }}
+                 className=' w-[60%]  text-white'
+                >
+                  <div className="flex flex-col gap-4 items-center">
+                    <h1 className='font-bold text-[3rem]'>{images.title}</h1>
+                    <p className='text-[1.5rem]'>{images.article}</p>
+                    <NavLink to={images.link} >
+                      
+                      <p className='bg-yellow-500 p-2 rounded flex items-center gap-4 mt-2 font-semibold'>{images.link}</p>
+                    </NavLink>
+                  </div>
+                </div>
+              
               </div>
             ))}
         </div>

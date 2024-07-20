@@ -20,7 +20,7 @@ const Sidebar = ({}) => {
       },
       {
           title: 'Our Services',
-          path: '/admission',
+          path: '/ourservices',
       },
       {
           title: 'Academics',
