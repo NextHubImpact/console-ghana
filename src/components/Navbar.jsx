@@ -74,7 +74,7 @@ const Navbar = ({}) => {
     <div className={colorChange ? 'bg-black flex justify-between p- items-center top-0 fixed w-full ' : 'bg-[#262261] flex justify-between p- items-center top-0 fixed w-full '}>
 
         <div className="">
-        <img className='w-[20%] pl-4 lg:w-[10%] xl:w-[20%]' src={colorChange? lightLogo : darkLogo} alt="" />
+        <img className='w-[20%] pl-4 lg:w-[10%] xl:w-[20%]' src={colorChange? lightLogo : lightLogo} alt="" />
         </div>
   
         {
@@ -87,7 +87,7 @@ const Navbar = ({}) => {
 
         <ul className='lg: flex text-nowrap gap-2 py-2 items-center xl:p-4 '>     
             {SidebarData.map((item, index) => {
-                return ( <NavLink to={item.path} key={index} className={colorChange? 'text-white px-2 xl:text-[20px] ' : 'text-black px-2 xl:text-[20px] ' }>
+                return ( <NavLink to={item.path} key={index} className={colorChange? 'text-white px-2 xl:text-[20px] ' : 'text-white px-2 xl:text-[20px] ' }>
                         <span >{item.title}</span>                  
                     </NavLink>)
             })}
