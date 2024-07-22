@@ -75,7 +75,7 @@ const Hero = ({}) => {
                   style={{
                     backgroundImage: `url(${images.img})`,
                     backgroundSize: "cover",
-                    height: "90vh",
+                    height: "95vh",
                     width: "100vw",
                     backgroundRepeat: "no-repeat",
                     backgroundPosition: 'center',
