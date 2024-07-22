@@ -90,7 +90,7 @@ const Hero = ({}) => {
                     <h1 className=' text-2xl '>{images.title}</h1>
                     <p className='text-[3rem] font-bold text-center text-wrap'>{images.article}</p>
                     <NavLink to={images.link} >                
-                      <p className='bg-yellow-500 p-2 rounded flex items-center gap-4 mt-2 font-semibold'>{images.link}</p>
+                      <p className='bg-[#faaf40] p-4 rounded flex items-center gap-4 mt-2 font-semibold'>{images.link}</p>
                     </NavLink>
                   </div>
                 </div>

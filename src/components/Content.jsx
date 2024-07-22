@@ -115,7 +115,7 @@ const Content = () => {
   return (
     <main className=" ">
 
-
+      {/* who we are */}
     <section className=" my-[5rem] ">
       <div className="mx-8 flex flex-col  items-center lg:flex-row  gap-4 bg-[whitesmoke] ">
 
@@ -155,6 +155,7 @@ const Content = () => {
       </div>
       </section>   
 
+     {/* our services */}
    <section className="">
        <div className="mx-8  my-14">
           <h1 className="text-5xl text-center ">Our Services</h1>
@@ -162,14 +163,14 @@ const Content = () => {
           {highlightCard.map((val, index) => {
             const { title, article, link, icon, img } = val;
             return (
-              <div key={index} className=" flex flex-col  items-center gap-2 bg-[#f1f1f1]  border-2   lg:w-[30%] xl:w-[30%] p-">             
+              <div key={index} className=" flex flex-col  items-center gap-2 bg-[#262261] text-white  border-2   lg:w-[30%] xl:w-[30%] p-">             
                 <img src={img} alt="" />
                  <div className=" flex flex-col items-center gap-2 px-4 ">
                  <h2 className=" text-wrap text-center text-2xl font-semibold">{title}</h2>
                 <article className="leading text-center">
                   {article}
                 </article>
-                <div className="bg-yellow-500 py-3 px-4 rounded-[1.8rem] flex items-center gap-4 m-4 ">
+                <div className="bg-[#faaf40] py-3 px-4 rounded-[1.8rem] flex items-center gap-4 m-4 ">
                   {link}
                   {icon}
                 </div>
@@ -189,7 +190,7 @@ const Content = () => {
           {highlightCard.map((val, index) => {
             const { title, article, link, icons } = val;
             return (
-              <div key={index} className=" flex flex-col  items-center gap-2 bg-[whitesmoke] p- rounded-[1rem] shadow-sm mb-4 lg:w-[30%] h-[60%] xl:w-[28%] p-8">
+              <div key={index} className=" flex flex-col  text-white items-center gap-2 bg-[#262261] p- rounded-[1rem] shadow-sm mb-4 lg:w-[30%] h-[60%] xl:w-[28%] p-8">
                  <div className="mb-6">
                   <img src={icons.whoweareIcon} alt="" />
                  </div>
@@ -197,7 +198,7 @@ const Content = () => {
                 <article className=" text-center">
                   {article}
                 </article>
-                <div className="bg-yellow-500 p-2 rounded flex items-center gap-4 mt-2 font-semibold">
+                <div className="bg-[#faaf40] p-2 rounded flex items-center gap-4 mt-2 font-semibold">
                   {link}
                   {icons.arrowIcon}
                 </div>
