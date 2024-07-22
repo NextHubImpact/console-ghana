@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import MediaQuery from 'react-responsive'
-import lightLogo from '../assets/logo/logo-white.png'
+import lightLogo from '../assets/logo/rural-logo.png'
 import darkLogo from '../assets/logo/logo-black.png'
 import { NavLink, Link } from 'react-router-dom';
 
@@ -71,10 +71,10 @@ const Navbar = ({}) => {
     window.addEventListener('scroll', changeNavbarColor)
 
   return (
-    <div className={colorChange ? 'bg-black flex justify-between p- items-center top-0 fixed w-full ' : 'bg-[#262261] flex justify-between p- items-center top-0 fixed w-full '}>
+    <div className={colorChange ? 'bg-black flex justify-between p- items-center top-0 fixed w-full ' : 'bg-[#262261] bg-[#faaf40] flex justify-between p- items-center top-0 fixed w-full '}>
 
         <div className="">
-        <img className='w-[20%] pl-4 lg:w-[10%] xl:w-[20%]' src={colorChange? lightLogo : lightLogo} alt="" />
+        <img className='w-[10%] bg-[white]  rounded-[50%] pl- lg:w-[10%] xl:w-[10%]' src={colorChange? lightLogo : lightLogo} alt="" />
         </div>
   
         {

@@ -211,7 +211,7 @@ const Content = () => {
     
       
       {/* blog */}
-      <section className="bg-[#111]">
+      <section className="bg-[#111] bg-[#262261] bg-[#faaf40]">
          <div className="my-12 mx-8">
          <div className="flex flex-col justify-center items-center ">
             <iv className=" pt-12 lg:">
