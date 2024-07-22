@@ -115,40 +115,9 @@ const Content = () => {
   return (
     <main className=" ">
 
-   <section className="">
-       <div className="mx-8  my-14">
-          <h1 className="text-5xl text-center ">Our Services</h1>
-       <div className="mt-14 mb-[6rem] lg:flex  xl:flex justify-between gap-8 ">
-          {highlightCard.map((val, index) => {
-            const { title, article, link, icon, img } = val;
-            return (
-              <div key={index} className=" flex flex-col  items-center gap-2 bg-[#f1f1f1]  border-2   lg:w-[30%] xl:w-[30%] p-">             
-                <img src={img} alt="" />
-                 <div className=" flex flex-col items-center gap-2 px-4 ">
-                 <h2 className=" text-wrap text-center text-2xl font-semibold">{title}</h2>
-                <article className="leading text-center">
-                  {article}
-                </article>
-                <div className="bg-yellow-500 py-3 px-4 rounded-[1.8rem] flex items-center gap-4 m-4 ">
-                  {link}
-                  {icon}
-                </div>
-                 </div>
-                
-              </div>
-            );
-          })}
-        </div>
-       </div>
-      </section>
 
-
-      <section className=" my-[5rem] ">
+    <section className=" my-[5rem] ">
       <div className="mx-8 flex flex-col  items-center lg:flex-row  gap-4 bg-[whitesmoke] ">
-
-      <figure className="lg: flex justify-end w-[50%] p-  ">
-          <img className="lg: w-[100%]   rounded-"  src={progImg1} alt="" />
-        </figure>
 
       <div className="lg:w-[50%] p-4  gap-4 flex flex-col items-center  lg:flex-row ">
         {/* left article --who we are-- */}
@@ -178,8 +147,39 @@ const Content = () => {
        </div>
            
            {/* right img */}
+
+           <figure className="lg: flex justify-end w-[50%] p-  ">
+          <img className="lg: w-[100%]   rounded-"  src={progImg1} alt="" />
+        </figure>
       
       </div>
+      </section>   
+
+   <section className="">
+       <div className="mx-8  my-14">
+          <h1 className="text-5xl text-center ">Our Services</h1>
+       <div className="mt-14 mb-[6rem] lg:flex  xl:flex justify-between gap-8 ">
+          {highlightCard.map((val, index) => {
+            const { title, article, link, icon, img } = val;
+            return (
+              <div key={index} className=" flex flex-col  items-center gap-2 bg-[#f1f1f1]  border-2   lg:w-[30%] xl:w-[30%] p-">             
+                <img src={img} alt="" />
+                 <div className=" flex flex-col items-center gap-2 px-4 ">
+                 <h2 className=" text-wrap text-center text-2xl font-semibold">{title}</h2>
+                <article className="leading text-center">
+                  {article}
+                </article>
+                <div className="bg-yellow-500 py-3 px-4 rounded-[1.8rem] flex items-center gap-4 m-4 ">
+                  {link}
+                  {icon}
+                </div>
+                 </div>
+                
+              </div>
+            );
+          })}
+        </div>
+       </div>
       </section>
 
        {/* cards */}
