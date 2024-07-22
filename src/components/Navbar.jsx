@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import MediaQuery from 'react-responsive'
 import lightLogo from '../assets/logo/logo-white.png'
+import darkLogo from '../assets/logo/logo-black.png'
 import { NavLink, Link } from 'react-router-dom';
 
 import { IoMenu , IoClose} from "react-icons/io5";
@@ -70,10 +71,10 @@ const Navbar = ({}) => {
     window.addEventListener('scroll', changeNavbarColor)
 
   return (
-    <div className={colorChange ? 'bg-black flex justify-between p-2 items-center top-0 fixed w-full ' : 'bg-inherit flex justify-between p-2 items-center top-0 fixed w-full '}>
+    <div className={colorChange ? 'bg-black flex justify-between p- items-center top-0 fixed w-full ' : 'bg-[gray] flex justify-between p- items-center top-0 fixed w-full '}>
 
         <div className="">
-        <img className='w-[20%] lg:w-[20%] xl:w-[25%]' src={lightLogo} alt="" />
+        <img className='w-[20%] pl-4 lg:w-[10%] xl:w-[20%]' src={colorChange? lightLogo : darkLogo} alt="" />
         </div>
   
         {
@@ -86,7 +87,7 @@ const Navbar = ({}) => {
 
         <ul className='lg: flex text-nowrap gap-2 py-2 items-center xl:p-4 '>     
             {SidebarData.map((item, index) => {
-                return ( <NavLink to={item.path} key={index} className='text-white px-2 xl:text-[20px] '>
+                return ( <NavLink to={item.path} key={index} className={colorChange? 'text-white px-2 xl:text-[20px] ' : 'text-black px-2 xl:text-[20px] ' }>
                         <span >{item.title}</span>                  
                     </NavLink>)
             })}

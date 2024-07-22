@@ -7,6 +7,8 @@ import progImg1 from "../assets/main/aca-des.jpg";
 import progImg2 from "../assets/main/aca-en.jpg";
 import progImg3 from "../assets/main/aca-weld.jpg";
 
+import whoweare from "../assets/img-icons/whoweare.webp"
+
 import htu from "../assets/partners/tech.png"
 import accra from '../assets/partners/Accra.png'
 import asco from '../assets/partners/asco.jpg'
@@ -33,7 +35,10 @@ const Content = () => {
       article:
         "DTI offers a variety of programmes designed to meet the needs of various industries. Engineering, manufacturing, construction, and information technology are among the technical and vocational training we provide.",
       link: "More details",
-      icon: <IoArrowForward className="text-red-700" />,
+      icons: {
+       arrowIcon: <IoArrowForward className="text-red-700" />,
+       whoweareIcon: whoweare,
+      }, 
       img: progImg1,
     },
     {
@@ -41,7 +46,10 @@ const Content = () => {
       article:
         "DTI offers a variety of programmes designed to meet the needs of various industries. Engineering, manufacturing, construction, and information technology are among the technical and vocational training we provide.",
       link: "More details",
-      icon: <IoArrowForward className="text-red-700" />,
+      icons: {
+        arrowIcon: <IoArrowForward className="text-red-700" />,
+        whoweareIcon: whoweare,
+       }, 
       img: progImg2,
     },
     {
@@ -49,7 +57,10 @@ const Content = () => {
       article:
         "DTI offers a variety of programmes designed to meet the needs of various industries. Engineering, manufacturing, construction, and information technology are among the technical and vocational training we provide.",
       link: "More details",
-      icon: <IoArrowForward className="text-red-700" />,
+      icons: {
+        arrowIcon: <IoArrowForward className="text-red-700" />,
+        whoweareIcon: whoweare,
+       }, 
       img: progImg3
     },
   ];
@@ -111,7 +122,7 @@ const Content = () => {
           {highlightCard.map((val, index) => {
             const { title, article, link, icon, img } = val;
             return (
-              <div key={index} className=" flex flex-col  items-center gap-2 bg-[#f1f1f1]  border-2   lg:w-[30%] xl:w-[30%] p-">
+              <div key={index} className=" flex flex-col  items-center gap-2 bg-[#f1f1f1]  border-2   lg:w-[30%] xl:w-[30%] p-">             
                 <img src={img} alt="" />
                  <div className=" flex flex-col items-center gap-2 px-4 ">
                  <h2 className=" text-wrap text-center text-2xl font-semibold">{title}</h2>
@@ -176,16 +187,19 @@ const Content = () => {
        <div className="mx-8 ">
        <div className="mt-14 mb-[6rem] lg:flex  xl:flex justify-between gap-8 ">
           {highlightCard.map((val, index) => {
-            const { title, article, link, icon } = val;
+            const { title, article, link, icons } = val;
             return (
-              <div key={index} className=" flex flex-col  items-center gap-2 bg-[#f1f1f1] p-8 rounded-[1rem] shadow-sm mb-4 border-4  border-yellow-500 lg:w-[30%] h-[60%] xl:w-[28%] p-8">
+              <div key={index} className=" flex flex-col  items-center gap-2 bg-[whitesmoke] p- rounded-[1rem] shadow-sm mb-4 lg:w-[30%] h-[60%] xl:w-[28%] p-8">
+                 <div className="mb-6">
+                  <img src={icons.whoweareIcon} alt="" />
+                 </div>
                 <h2 className="font-semibold text-nowrap">{title}</h2>
                 <article className=" text-center">
                   {article}
                 </article>
                 <div className="bg-yellow-500 p-2 rounded flex items-center gap-4 mt-2 font-semibold">
                   {link}
-                  {icon}
+                  {icons.arrowIcon}
                 </div>
               </div>
             );
@@ -195,7 +209,7 @@ const Content = () => {
       </section>
     
       
-      {/* projects */}
+      {/* blog */}
       <section className="bg-[#111]">
          <div className="my-12 mx-8">
          <div className="flex flex-col justify-center items-center ">

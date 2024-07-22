@@ -11,7 +11,7 @@ import Footer from './components/Footer'
 import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import Admission from './pages/Admission.jsx'
-// import Home from './pages/Home'
+import Blog from './pages/Blog.jsx'
 // import Home from './pages/Home'
 // import Home from './pages/Home'
 
@@ -32,11 +32,11 @@ function App() {
              <Route path="/" element={<Home/>} exact />
               <Route path="/about" element={<About/>} />
               <Route path="/admission" element={<Admission/>} />
-              {/* <Route path="/academics" element={<Academics/>} />
-              <Route path="/campuslife" element={<CampusLife/>} />
+              <Route path="/blog" element={<Blog/>} />
+              {/* <Route path="/campuslife" element={<CampusLife/>} />
               <Route path="/donate" element={<Donate/>} />
               <Route path="/contact" element={<Contact/>} />
-              <Route path="/applyhere" element={<ApplyHere/>} />  */}
+              <Route path="/applyhere" element={<ApplyHere/>} />   */}
 
           </Routes>
           </div>

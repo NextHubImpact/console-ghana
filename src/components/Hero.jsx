@@ -20,7 +20,7 @@ const Hero = ({}) => {
           img: slide1,
           title: "WHERE GREAT IDEAS TAKE FLIGHT",
           article:
-            "DTI offers a variety of programmes designed to meet the needs of various industries. ",
+            "open data enthusiasts & innovators. ",
           link: "More details",
           icon: <IoArrowForward className="text-red-700" />,
         },
@@ -28,7 +28,7 @@ const Hero = ({}) => {
           img: slide2,
           title: "INNOVATION AND CREATIVITY",
           article:
-            "DTI offers a variety of programmes designed to meet the needs of various industries. ",
+            "welcome to console ghana. ",
           link: "More details",
           icon: <IoArrowForward className="text-red-700" />,
         },
@@ -36,7 +36,7 @@ const Hero = ({}) => {
           img: slide3,
           title: "INTERNATIONAL STANDARD PROGRAMMES",
           article:
-            "DTI offers a variety of programmes designed to meet the needs of various industries. ",
+            "DTI offers a variety of programmes designed. ",
           link: "More details",
           icon: <IoArrowForward className="text-red-700" />,
         },
@@ -84,13 +84,12 @@ const Hero = ({}) => {
                     justifyContent: 'center',
                     alignItems: 'center',   
                 }}
-                 className=' w-[60%]  text-white'
+                 className='uppercase text-white'
                 >
-                  <div className="flex flex-col gap-4 items-center">
-                    <h1 className='font-bold text-[3rem]'>{images.title}</h1>
-                    <p className='text-[1.5rem]'>{images.article}</p>
-                    <NavLink to={images.link} >
-                      
+                  <div className="w-[42%] flex flex-col gap-4 items-center">
+                    <h1 className=' text-2xl '>{images.title}</h1>
+                    <p className='text-[3rem] font-bold text-center text-wrap'>{images.article}</p>
+                    <NavLink to={images.link} >                
                       <p className='bg-yellow-500 p-2 rounded flex items-center gap-4 mt-2 font-semibold'>{images.link}</p>
                     </NavLink>
                   </div>
