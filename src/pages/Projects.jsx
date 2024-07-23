@@ -108,10 +108,10 @@ const Projects = () => {
           {highlightCard.map((val, index) => {
             const { title, article, link, icon, img } = val;
             return (
-              <div key={index} className=" flex flex-col  mb-4 flex-wrap items-center justify-center gap-2 bg-[whitesmoke] text-  border-2   lg:w-[30%] xl:w-[35%] ">             
+              <div key={index} className=" flex flex-col  mb-4 flex-wrap items-center justify-center gap-2 bg-[whitesmoke] text-  border-2   lg:w-[30%] xl:w-[30%] ">             
                 <img src={img} alt="" />
-                 <div className=" flex flex-col items-center gap-2 p-6">
-                 <h2 className=" text-wrap text-center text-2xl font-semibold">{title}</h2>
+                 <div className=" flex flex-col items-center gap-2 p-2">
+                 <h2 className=" text-wrap text-center font-semibold">{title}</h2>
                 <article className="leading text-center">
                   {article}
                 </article>
