@@ -66,7 +66,7 @@ const Navbar = ({}) => {
     window.addEventListener('scroll', changeNavbarColor)
 
   return (
-    <div className={colorChange ? 'bg-black flex justify-between p- items-center top-0 fixed w-full ' : 'bg-[#262261] bg-[#faaf40] flex justify-between p- items-center top-0 fixed w-full '}>
+    <div className={colorChange ? 'bg-black flex justify-between p-2 items-center top-0 fixed w-full ' : 'bg-[#262261]  flex justify-between p-2 items-center top-0  w-full '}>
 
         <div className=" pl-4">
         <img className='w-[10%] bg-[white]  rounded-[50%] pl- lg:w-[10%] xl:w-[10%]' src={colorChange? lightLogo : lightLogo} alt="" />

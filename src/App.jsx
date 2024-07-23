@@ -10,7 +10,7 @@ import Footer from './components/Footer'
 // pages
 import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
-import Admission from './pages/Admission.jsx'
+import Projects from './pages/Projects.jsx'
 import Blog from './pages/Blog.jsx'
 import Contact from './pages/Contact.jsx'
 // import Home from './pages/Home'
@@ -23,7 +23,7 @@ function App() {
     <>
       <BrowserRouter>
       <div className="">
-        <div className="absolute z-10 left-0 right-0 top-0">
+        <div className=" left-0 right-0 top-0">
         <Navbar  />
         </div>
           <div className="">
@@ -31,7 +31,7 @@ function App() {
 
              <Route path="/" element={<Home/>} exact />
               <Route path="/about" element={<About/>} />
-              <Route path="/admission" element={<Admission/>} />
+              <Route path="/projects" element={<Projects/>} />
               <Route path="/blog" element={<Blog/>} />
               <Route path="/contact" element={<Contact/>} />
               {/* <Route path="/campuslife" element={<CampusLife/>} />

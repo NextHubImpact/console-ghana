@@ -63,7 +63,7 @@ const Hero = ({}) => {
     }, [index]);
 
   return (
-    <div className='slideshow'>
+    <div className='slideshow mt'>
     
         <div className="slideshowSlider"
              style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
@@ -75,14 +75,15 @@ const Hero = ({}) => {
                   style={{
                     backgroundImage: `url(${images.img})`,
                     backgroundSize: "cover",
-                    height: "95vh",
+                    height: "86vh",
                     width: "100vw",
                     backgroundRepeat: "no-repeat",
                     backgroundPosition: 'center',
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'center',
-                    alignItems: 'center',   
+                    alignItems: 'center', 
+                    marginTop: "rem", 
                 }}
                  className='uppercase text-white'
                 >

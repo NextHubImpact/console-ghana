@@ -117,42 +117,49 @@ const Content = () => {
 
       {/* who we are */}
     <section className=" my-[5rem] ">
-      <div className="mx-8 flex flex-col  items-center lg:flex-row  gap-4 bg-[whitesmoke] ">
-
-      <div className="lg:w-[50%] p-4  gap-4 flex flex-col items-center  lg:flex-row ">
-        {/* left article --who we are-- */}
-       <div className=" w-full flex justify-between flex-col gap-8 ">
-          <div className="">
-            <h1 className="uppercase font-bold text-red-700 text-3xl ">
-              who we are
-            </h1>
-            <hr className="w-[20%] rounded mt-6 h-1 bg-red-700" />
-          </div>
-          <article className="leading-8 text-[20px]">
-            Our mission is to become the leading industrial job training and
-            prototype center in West Africa to transform the livelihoods of
-            young people in TVET. DTI firmly believes that education is the
-            cornerstone of creating opportunities for individuals and
-            communities. Our commitment to providing exceptional technical and
-            vocational training is geared towards equipping our students with
-            the necessary skills and knowledge to thrive in today's fast-paced
-            and highly competitive job market.
-          </article>
-
-          <div className="flex items-center gap-4 font-semibold ">
-            <h2 className="text-[20px] ">About us </h2>
-            <IoArrowForward className="text-red-700" />
-          </div>
-        </div>
-       </div>
-           
-           {/* right img */}
-
-           <figure className="lg: flex justify-end w-[50%] p-  ">
-          <img className="lg: w-[100%]   rounded-"  src={progImg1} alt="" />
-        </figure>
       
+      <div className="mx-8 flex flex-col items-center gap-8">
+      <div className="text-5xl mb-6">
+        <h1>About Us</h1>
       </div>
+      <div className=" flex flex-col  items-center lg:flex-row  gap-4 bg-[whitesmoke] ">
+
+<div className="lg:w-[50%] p-4  gap-4 flex flex-col items-center  lg:flex-row ">
+  {/* left article --who we are-- */}
+ <div className=" w-full flex justify-between flex-col gap-8 ">
+    <div className="">
+      <h1 className="uppercase font-bold text-red-700 text-3xl ">
+        who we are
+      </h1>
+      <hr className="w-[20%] rounded mt-6 h-1 bg-red-700" />
+    </div>
+    <article className="leading-8 text-[20px]">
+      Our mission is to become the leading industrial job training and
+      prototype center in West Africa to transform the livelihoods of
+      young people in TVET. DTI firmly believes that education is the
+      cornerstone of creating opportunities for individuals and
+      communities. Our commitment to providing exceptional technical and
+      vocational training is geared towards equipping our students with
+      the necessary skills and knowledge to thrive in today's fast-paced
+      and highly competitive job market.
+    </article>
+
+    <div className="flex items-center gap-4 font-semibold ">
+      <h2 className="text-[20px] ">About us </h2>
+      <IoArrowForward className="text-red-700" />
+    </div>
+  </div>
+ </div>
+     
+     {/* right img */}
+
+     <figure className="lg: flex justify-end w-[50%] p-  ">
+    <img className="lg: w-[100%]   rounded-"  src={progImg1} alt="" />
+  </figure>
+
+</div>
+      </div>
+      
       </section>   
 
      {/* our services */}
