@@ -12,6 +12,7 @@ const Blog = () => {
           img: progImg1,
           author: "consolegh_",
           title: "DTI Offers a Variety of Programmes Designed to meet the needs of various industries",
+          detail: 'Mobile Web Ghana and the American Corner, Agbogba, were thrilled to support the #LiteracyFair organi...',
           date: "May 26, 2024",
           icons: {
             authorIcon: <MdAccountCircle /> ,
@@ -22,6 +23,7 @@ const Blog = () => {
           img: progImg2,
           author: "consolegh_",
           title: "DTI Offers a Variety of Programmes Designed to meet the needs of various industries",
+          detail: 'Mobile Web Ghana and the American Corner, Agbogba, were thrilled to support the #LiteracyFair organi...',
           date: "May 26, 2024",
           icons: {
             authorIcon: <MdAccountCircle /> ,
@@ -32,6 +34,7 @@ const Blog = () => {
           img: progImg3,
           author: "consolegh_",
           title: "DTI Offers a Variety of Programmes Designed to meet the needs of various industries",
+          detail: 'Mobile Web Ghana and the American Corner, Agbogba, were thrilled to support the #LiteracyFair organi...',
           date: "May 26, 2024",
           icons: {
             authorIcon: <MdAccountCircle /> ,
@@ -40,7 +43,7 @@ const Blog = () => {
         },
       ];
   return (
-    <section className="bg-[#111]">
+    <section className="bg-[]">
     <div className="my-12 mx-8">
     <div className="flex flex-col justify-center items-center ">
        <iv className=" pt-12 lg:">
@@ -49,22 +52,27 @@ const Blog = () => {
            </h2>
        </iv>
         
-        <div className=" flex items-center justify-center">
+        <div className=" flex items-cente justify-cente">
      
-        <div className=" flex items-center text-white justify-center mb-14 gap-4">
+        <div className=" flex flex-col items-center text-w justify-center mb-14 gap-8">
      {blogData.map((val, index) => {
-       const {img, title, author, date , icons } = val;
+       const {img, title, author, detail, date , icons } = val;
        return (
-         <div key={index} className="w-[25%]  flex flex-col justify-center items-center">
-           <img src={img} className="w-[%]" alt="" />                 
-            <div className="my-8">
-            <div className="flex justify-start items-center gap-4 py-2">
+         <div key={index} className="w-[85%] flex items-cente">
+            <div className=" w-[35%]">
+            <img src={img} className="" alt="" />   
+              </div>              
+            <div className="my- flex flex-col justify- border border-[gray]  px-8 py-4  gap-6">
+            <div className="flex  text-[16px] text-[gray] justify-start items-center gap-2 py-">
            <span className="flex items-center gap-2">{icons.authorIcon} {author}</span>
             <span className="flex items-center gap-2">{icons.dateIcon} {date}</span>              
            </div>
-           <div className="my-">
-           <h2 className="  text-wrap">{title}</h2>
+           <div className="">
+           <h2 className="mb-4 font-bold uppercase  text-wrap">{title}</h2>
+           <p className='mb-6 text-[gray]'>{detail}</p>
+           <button className='uppercase bg-[#faaf40] px-3 py-2 text-black rounded'>read more</button>
            </div>
+           
             </div>
          </div>
        );
