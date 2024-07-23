@@ -172,8 +172,8 @@ const Content = () => {
             return (
               <div key={index} className=" flex flex-col  items-center gap-2 bg-[#262261] text-white  border-2   lg:w-[30%] xl:w-[30%] p-">             
                 <img src={img} alt="" />
-                 <div className=" flex flex-col items-center gap-2 px-4 ">
-                 <h2 className=" text-wrap text-center text-2xl font-semibold">{title}</h2>
+                 <div className=" flex flex-col items-center gap- px-4 ">
+                 <h2 className=" text-wrap text-center text- font-semibold">{title}</h2>
                 <article className="leading text-center">
                   {article}
                 </article>
