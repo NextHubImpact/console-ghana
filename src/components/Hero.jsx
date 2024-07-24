@@ -14,29 +14,12 @@ const Hero = ({}) => {
     const delay = 5500;
 
     const sliderImages = [
-       
-       
+            
         {
           img: slide1,
           title: "WHERE GREAT IDEAS TAKE FLIGHT",
           article:
             "open data enthusiasts & innovators. ",
-          link: "More details",
-          icon: <IoArrowForward className="text-red-700" />,
-        },
-        {
-          img: slide2,
-          title: "INNOVATION AND CREATIVITY",
-          article:
-            "welcome to console ghana. ",
-          link: "More details",
-          icon: <IoArrowForward className="text-red-700" />,
-        },
-        {
-          img: slide3,
-          title: "INTERNATIONAL STANDARD PROGRAMMES",
-          article:
-            "DTI offers a variety of programmes designed. ",
           link: "More details",
           icon: <IoArrowForward className="text-red-700" />,
         },
@@ -100,7 +83,7 @@ const Hero = ({}) => {
             ))}
         </div>
 
-        <div className="slideshowDots text-center">
+        {/* <div className="slideshowDots text-center">
             {sliderImages.map((_, idx) => (
                 <div 
                 className={`slideshowDot${index === idx ? " active" : ""}`}
@@ -110,7 +93,7 @@ const Hero = ({}) => {
                 }}
                 ></div>
             ))}
-        </div>
+        </div> */}
 
   
     </div>
