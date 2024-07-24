@@ -120,7 +120,7 @@ const Content = () => {
       
       <div className="mx-8 flex flex-col items-center gap-8">
       <div className="text-5xl mb-6">
-        <h1>About Us</h1>
+        {/* <h1>About Us</h1> */}
       </div>
       <div className=" flex flex-col  items-center lg:flex-row  gap-4 bg-[whitesmoke] ">
 
@@ -218,8 +218,8 @@ const Content = () => {
     
       
       {/* blog */}
-      <section className="bg-[#111] bg-[#262261] bg-[#faaf40]">
-         <div className="my-12 mx-8">
+      <section className="">
+         <div className="my-12 mx-8 bg-[#111]">
          <div className="flex flex-col justify-center items-center ">
             <iv className=" pt-12 lg:">
                 <h2 className=" mb-14 text-center font-bold text-[24px] text-red-700 lg:text-[48px]">

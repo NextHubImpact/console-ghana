@@ -17,9 +17,9 @@ const Hero = ({}) => {
             
         {
           img: slide1,
-          title: "WHERE GREAT IDEAS TAKE FLIGHT",
+          title: "welcome to rural code camp",
           article:
-            "open data enthusiasts & innovators. ",
+            "conntecting the unconnected. ",
           link: "More details",
           icon: <IoArrowForward className="text-red-700" />,
         },
@@ -65,14 +65,14 @@ const Hero = ({}) => {
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'center',
-                    alignItems: 'center', 
+                    alignItems: 'start', 
                     marginTop: "4rem", 
                 }}
                  className='uppercase text-white'
                 >
-                  <div className="w-[42%] flex flex-col gap-4 items-center">
+                  <div className="w-[42%] flex  justify-end flex-col gap-4 items-center">
                     <h1 className=' text-2xl '>{images.title}</h1>
-                    <p className='text-[3rem] font-bold text-center text-wrap'>{images.article}</p>
+                    <p className='text-[4xl] font-bold text-center text-wrap'>{images.article}</p>
                     <NavLink to={images.link} >                
                       <p className='bg-[#faaf40] p-4 rounded flex items-center gap-4 mt-2 font-semibold'>{images.link}</p>
                     </NavLink>
