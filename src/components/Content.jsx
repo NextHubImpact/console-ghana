@@ -162,10 +162,10 @@ const Content = () => {
       
       </section>   
 
-     {/* our services */}
+     {/* our activities*/}
    <section className="">
        <div className="mx-8  my-14">
-          <h1 className="text-5xl text-center ">Our Services</h1>
+          <h1 className="text-5xl text-center ">Our Actitvites</h1>
        <div className="mt-14 mb-[6rem] lg:flex  xl:flex justify-between gap-8">
           {highlightCard.map((val, index) => {
             const { title, article, link, icon, img } = val;
@@ -197,7 +197,7 @@ const Content = () => {
           {highlightCard.map((val, index) => {
             const { title, article, link, icons } = val;
             return (
-              <div key={index} className=" flex flex-col  text-white items-center gap-2 bg-[#262261] p- rounded-[1rem] shadow-sm mb-4 lg:w-[30%] h-[60%] xl:w-[28%] p-8">
+              <div key={index} className=" flex flex-col  text-white items-center gap-2 bg-[#262261] p-  shadow-sm mb-4 lg:w-[30%] h-[60%] xl:w-[28%] p-8">
                  <div className="mb-6">
                   <img src={icons.whoweareIcon} alt="" />
                  </div>
@@ -222,7 +222,7 @@ const Content = () => {
          <div className="my-12 mx-8 bg-[#111]">
          <div className="flex flex-col justify-center items-center ">
             <iv className=" pt-12 lg:">
-                <h2 className=" mb-14 text-center font-bold text-[24px] text-red-700 lg:text-[48px]">
+                <h2 className=" mb-14 text-center font-bold text-[24px] text-[#EE4036] lg:text-[48px]">
                   Blog
                 </h2>
             </iv>
