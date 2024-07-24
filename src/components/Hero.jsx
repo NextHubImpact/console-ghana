@@ -83,7 +83,7 @@ const Hero = ({}) => {
                     flexDirection: 'column',
                     justifyContent: 'center',
                     alignItems: 'center', 
-                    marginTop: "rem", 
+                    marginTop: "4rem", 
                 }}
                  className='uppercase text-white'
                 >

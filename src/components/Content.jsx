@@ -166,11 +166,11 @@ const Content = () => {
    <section className="">
        <div className="mx-8  my-14">
           <h1 className="text-5xl text-center ">Our Services</h1>
-       <div className="mt-14 mb-[6rem] lg:flex  xl:flex justify-between gap-8 ">
+       <div className="mt-14 mb-[6rem] lg:flex  xl:flex justify-between gap-8">
           {highlightCard.map((val, index) => {
             const { title, article, link, icon, img } = val;
             return (
-              <div key={index} className=" flex flex-col  items-center gap-2 bg-[#262261] text-white  border-2   lg:w-[30%] xl:w-[30%] p-">             
+              <div key={index} className=" flex flex-col  items-center gap-2 bg-[#262261] text-white  bord  shadow-md hover:scale-105  lg:w-[30%] xl:w-[30%] p-">             
                 <img src={img} alt="" />
                  <div className=" flex flex-col items-center gap- px-4 ">
                  <h2 className=" text-wrap text-center text- font-semibold">{title}</h2>

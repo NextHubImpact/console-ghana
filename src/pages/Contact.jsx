@@ -44,8 +44,7 @@ const Contact = () => {
 
       <div className='flex flex-col gap-12'>
        <div className="text-center">
-       <h1>MAPS!</h1>
-       <p className='text-2xl'>Please see map below</p>
+     
        </div>
        <div className="flex items-center justify-center ">
        <iframe src="https://maps.google.com/maps?q=Nagino%20Dates%20Products&amp;t=&amp;z=5&amp;ie=UTF8&amp;iwloc=&amp;output=embed" 

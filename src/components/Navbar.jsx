@@ -66,7 +66,7 @@ const Navbar = ({}) => {
     window.addEventListener('scroll', changeNavbarColor)
 
   return (
-    <div className={colorChange ? 'bg-black flex justify-between p-2 items-center top-0 fixed w-full ' : 'bg-[#262261]  flex justify-between p-2 items-center top-0  w-full '}>
+    <div className={colorChange ? 'bg-black flex justify-between p-2 items-center top-0 fixed z-10  w-full ' : 'bg-[#262261]  flex justify-between p-2 items-center fixed z-10 top-0  w-full '}>
 
         <div className=" pl-4">
         <img className='w-[10%] bg-[white]  rounded-[50%] pl- lg:w-[10%] xl:w-[10%]' src={colorChange? lightLogo : lightLogo} alt="" />
@@ -82,9 +82,9 @@ const Navbar = ({}) => {
 
         <ul className='lg: flex text-nowrap gap-2 py-2 items-center xl:p-4 '>     
             {SidebarData.map((item, index) => {
-                return ( <NavLink to={item.path} key={index} className={colorChange? 'text-white px-2 xl:text-[20px] ' : 'text-white px-2 xl:text-[20px] ' }>
+                return ( <Link to={item.path} key={index} className={colorChange? 'text-white px-2 xl:text-[20px] ' : 'text-white px-2 xl:text-[20px] ' }>
                         <span >{item.title}</span>                  
-                    </NavLink>)
+                    </Link>)
             })}
         </ul>
       </nav>
