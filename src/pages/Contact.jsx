@@ -71,13 +71,13 @@ const Contact = () => {
      
        </div>
        <div className="flex items-center justify-center ">
-       {/* <iframe src="https://maps.google.com/maps?q=Nagino%20Dates%20Products&amp;t=&amp;z=5&amp;ie=UTF8&amp;iwloc=&amp;output=embed" 
+       <iframe src="https://maps.google.com/maps?q=Nagino%20Dates%20Products&amp;t=&amp;z=5&amp;ie=UTF8&amp;iwloc=&amp;output=embed" 
    
      style={{ border: 0 }}
      loading="lazy"
      allowfullscreen
      className='w-full h-[450px]'
-      ></iframe> */}
+      ></iframe>
        </div>
     </div>
 
