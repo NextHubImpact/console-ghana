@@ -29,7 +29,7 @@ const Contact = () => {
                 <h2>contact us</h2>
                 <h1 className='text-[28px] font-semibold'>get in touch</h1>
             </div>
-            <div className="flex flex-col gap-8 justify-center items-center w-[%] my-[4rem]">
+            <div className="flex  gap-8 justify-center items-center w-[%] my-[4rem]">
             <div className="flex p-2 gap-8 flex-w items- justify-center w-[%]">
                 {contactData.map((val, index) => {
                     const {icon, title, info} = val;
@@ -47,7 +47,7 @@ const Contact = () => {
                 })}
             </div>
             {/* send message */}
-             <div className=" justify-center p-4  flex flex-col bg-[white] w-[40%]">
+             <div className=" justify-center p-4  flex flex-col bg-[white] w-[60%]">
                 <div className="flex flex-col items-center gap-4 justify-center w-full">
                 <div className='flex flex-col gap-4 items-cente justify-cente w-full'>           
                 <div className="flex gap-8">

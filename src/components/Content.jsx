@@ -161,6 +161,7 @@ const Content = () => {
     <main className=" ">
       {/* stats */}
       <section className="m-8">
+        <h1 className="text-center text-2xl uppercase m-12 font-semibold">we are connecting</h1>
         <div className="flex items-center  gap-4 justify-center">
               {
                 stats.map((val, index) => {
@@ -276,17 +277,13 @@ const Content = () => {
               return (
                 <div
                   key={index}
-                  className=" flex flex-col  items-center gap-2 bg-[whitesmoke] p-  shadow-md rounded-md hover:scale-105   duration-700   xl:w-[%] p-6"
+                  className=" flex flex-col  items-center gap-4 bg-[whitesmoke] p-  shadow-md rounded-md hover:scale-105   duration-700   xl:w-[%] p-6"
                 >
                   <div className="mb-">
                     <img src={icons.whoweareIcon} alt="" />
                   </div>
                   <h2 className="font-semibold text-nowrap">{title}</h2>
                   <article className=" text-[14px] text-[gray] text-center">{article}</article>
-                  <div className="bg-[#faaf40] p-2 rounded flex items-center gap-4 mt-2 font-semibold">
-                    {link}
-                    {icons.arrowIcon}
-                  </div>
                 </div>
               );
             })}
