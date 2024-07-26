@@ -2,6 +2,8 @@ import React from 'react'
 import phone from '../assets/img-icons/phone.webp'
 import email from '../assets/img-icons/email.webp'
 import location from '../assets/img-icons/map.webp'
+import hour from '../assets/img-icons/mission-icon.webp'
+import { MdTimer } from 'react-icons/md'
 
 const Contact = () => {
 
@@ -21,6 +23,12 @@ const Contact = () => {
             title: 'location',
             info: `254 Dar es Salaam street, Agbogba, North Legon, Accra` ,
         },
+        {
+            icon: hour,
+            title: 'open-hours',
+            info: `Monday - Friday` ,
+            time: '9:00AM - 05:00PM'
+        },
      ]
   return (
     <div>
@@ -29,10 +37,10 @@ const Contact = () => {
                 <h2>contact us</h2>
                 <h1 className='text-[28px] font-semibold'>get in touch</h1>
             </div>
-            <div className="flex  gap-8 justify-center items-center w-[%] my-[4rem]">
-            <div className="flex p-2 gap-8 flex-w items- justify-center w-[%]">
+            <div className="flex gap- justify-center ites-center w-[%] my-[4rem]">
+            <div className="flex gap-8 flex-wrap items- justify-center w-[50%]">
                 {contactData.map((val, index) => {
-                    const {icon, title, info} = val;
+                    const {icon, title, info, time} = val;
                     return (                     
                         <div key={index} className='w-[40%] bg-[white] p-4  flex flex-col rounded shadow-md  text-center gap-4 items-center ' >
                               <div className="w-[%]">
@@ -41,13 +49,14 @@ const Contact = () => {
                               <div className="flex flex-col gap- items-center ">
                               <h1 className=' text-[14px] font-bold uppercase'>{title}</h1>
                               <p className='text-[14px] text-wrap text-[#faaf40]'>{info}</p>
+                              <p>{time}</p>
                               </div>
                         </div>
                     )
                 })}
             </div>
             {/* send message */}
-             <div className=" justify-center p-4  flex flex-col bg-[white] w-[60%]">
+             <div className=" justify-center items-center p-4 border flex flex-col bg-[white] w-[50%]">
                 <div className="flex flex-col items-center gap-4 justify-center w-full">
                 <div className='flex flex-col gap-4 items-cente justify-cente w-full'>           
                 <div className="flex gap-8">

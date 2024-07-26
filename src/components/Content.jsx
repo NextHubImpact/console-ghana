@@ -127,19 +127,19 @@ const Content = () => {
 
   const stats = [
     {
-      number : 263,
+      number : '261',
       icon: <MdAccountCircle/>,
       title: 'Districts'
     },
     {
-      number : '300,000',
+      number : '16',
       icon: <MdAccountCircle/>,
-      title: 'Districts'
+      title: 'Regional'
     },
     {
-      number : '10,000',
+      number : 'Over 6000',
       icon: <MdAccountCircle/>,
-      title: 'Districts'
+      title: 'Communities'
     },
   ]
 
