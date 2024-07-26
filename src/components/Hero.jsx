@@ -72,7 +72,7 @@ const Hero = ({}) => {
                 >
                   <div className="w-[40%] flex ml-12  flex-col gap-4 itms-center">
                     <h1 className=' text-6xl text-[#faaf40] text-cente text-wrap font-bold '>{images.title}</h1>
-                    <p className='text-2xl text-wrap'>{images.article}</p>
+                    <p className='text- text-wrap'>{images.article}</p>
                     <NavLink to={images.link} >                
                       <p className='bg-[#faaf40] w-[33%] py-4 px-8 rounded flex itms-center gap-4 mt-2 font-semibold'>{images.link}</p>
                     </NavLink>
