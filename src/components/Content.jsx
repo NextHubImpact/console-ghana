@@ -17,6 +17,7 @@ import techlabs from "../assets/partners/techlabs.jpg";
 import asase from "../assets/partners/asase.jpg";
 import { MdAccountCircle, MdTimer } from "react-icons/md";
 
+
 const Content = () => {
   // const [index, setIndex] = useState(0);
   // const timeoutRef = useRef(null)
@@ -63,6 +64,30 @@ const Content = () => {
       img: progImg3,
     },
   ];
+  const values = [
+    {
+      title: "WHERE GREAT IDEAS TAKE FLIGHT",
+      article:
+        "DTI offers a variety of programmes designed to meet the needs of various industries. ",
+      link: "More details",
+      icons: {
+        arrowIcon: <IoArrowForward className="text-red-700" />,
+        whoweareIcon: whoweare,
+      },
+      img: progImg1,
+    },
+    {
+      title: "WHERE GREAT IDEAS TAKE FLIGHT",
+      article:
+        "DTI offers a variety of programmes designed to meet the needs of various industries.",
+      link: "More details",
+      icons: {
+        arrowIcon: <IoArrowForward className="text-red-700" />,
+        whoweareIcon: whoweare,
+      },
+      img: progImg2,
+    },
+  ];
 
   const blogData = [
     {
@@ -100,6 +125,24 @@ const Content = () => {
     },
   ];
 
+  const stats = [
+    {
+      number : 263,
+      icon: <MdAccountCircle/>,
+      title: 'Districts'
+    },
+    {
+      number : '300,000',
+      icon: <MdAccountCircle/>,
+      title: 'Districts'
+    },
+    {
+      number : '10,000',
+      icon: <MdAccountCircle/>,
+      title: 'Districts'
+    },
+  ]
+
   // useEffect(() => {
   //   resetTimeout();
   //   timeoutRef.current = setTimeout(
@@ -116,6 +159,54 @@ const Content = () => {
 
   return (
     <main className=" ">
+      {/* stats */}
+      <section className="m-8">
+        <div className="flex items-center  gap-4 justify-center">
+              {
+                stats.map((val, index) => {
+                  const { number , icon , title} = val ;
+                  return (
+                    <div className="flex items-center p-6 rounded w-[30%] shadow-md bg-[white]  gap-4" key={index}>
+                      <span className="text-[50px] ">{icon}</span>
+                      <div className="flex flex-col">
+                        <p className="text-[35px] font-semibold text-[#faaf40]">{number}</p>
+                        <p className="text-[gray]">{title}</p>
+                      </div>
+                    </div>
+                  )
+                })
+              }
+        </div>
+      </section>
+
+      {/* what we offer */}
+      <section className="mt-[8rem]">
+        <div className="mx-8 ">
+          <h1 className="text-center uppercase text-[24px] font-bold">what we offer</h1>
+          <div className="mt-14 mb-[6rem] lg:flex  xl:flex justify-center gap-8 ">
+            {highlightCard.map((val, index) => {
+              const { title, article, link, icons } = val;
+              return (
+                <div
+                  key={index}
+                  className=" flex flex-col  items-center gap-2 bg-[white] p-  shadow-md rounded-md mb-4 hover:scale-105   duration-700  lg:w-[30%] h-[60%] xl:w-[28%] p-6"
+                >
+                  <div className="mb-6">
+                    <img src={icons.whoweareIcon} alt="" />
+                  </div>
+                  <h2 className="font-semibold text-nowrap">{title}</h2>
+                  <article className=" text-[14px] text-[gray] text-center">{article}</article>
+                  <div className="bg-[#faaf40] p-2 rounded flex items-center gap-4 mt-2 font-semibold">
+                    {link}
+                    {icons.arrowIcon}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
       {/* who we are */}
       <section className=" my-[5rem] ">
         <div className="mx-8 flex flex-col items-center gap-8">
@@ -158,6 +249,53 @@ const Content = () => {
         </div>
       </section>
 
+      {/* our values */}
+      <section className="my-[5rem] mx- bg-white">
+        <div className="">
+          <div className="flex  justify-between mx-8 h-[60vh] items-center">
+            <div className="flex  flex-col gap-6  w-[30%] ">
+              <div className="uppercase font-semibold flex mb-3  flex-col gap-3">
+                <h2 className="text-[30px]">our values</h2>
+                <hr className="text-4xl w-[20%] rounded mt-4 h-1 bg-red-700" />
+              </div>
+              <div className="mb-">
+                <article className="leading-6 text-[18px]">
+                  The DTI Edge helps our learners to build the skills and
+                  character necessary for an effective mindset shift for a
+                  continent limited by negative mindset.
+                </article>
+              </div>
+    
+            </div>
+             
+             
+           <div className="w-[60%]">
+           <div className="flex justify-between items-center gap-4 ">
+            {values.map((val, index) => {
+              const { title, article, link, icons } = val;
+              return (
+                <div
+                  key={index}
+                  className=" flex flex-col  items-center gap-2 bg-[whitesmoke] p-  shadow-md rounded-md hover:scale-105   duration-700   xl:w-[%] p-6"
+                >
+                  <div className="mb-">
+                    <img src={icons.whoweareIcon} alt="" />
+                  </div>
+                  <h2 className="font-semibold text-nowrap">{title}</h2>
+                  <article className=" text-[14px] text-[gray] text-center">{article}</article>
+                  <div className="bg-[#faaf40] p-2 rounded flex items-center gap-4 mt-2 font-semibold">
+                    {link}
+                    {icons.arrowIcon}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+            </div>         
+          </div>
+        </div>
+      </section>
+
       {/* cards */}
       <section className="">
         <div className="mx-8 ">
@@ -195,7 +333,7 @@ const Content = () => {
               return (
                 <div
                   key={index}
-                  className=" flex flex-col  items-center gap-2 bg-[#262261] text-white  bord  shadow-md hover:scale-105  lg:w-[30%] xl:w-[30%] p-"
+                  className=" flex flex-col  items-center gap-2 bg-[#262261] text-white   shadow-md hover:scale-105   duration-700  lg:w-[30%] xl:w-[30%] p-"
                 >
                   <img src={img} alt="" />
                   <div className=" flex flex-col items-center gap- px-4 ">

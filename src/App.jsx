@@ -22,9 +22,9 @@ function App() {
   return (
     <>
       <BrowserRouter>
-      <div className="">
-        <div className=" left-0 right-0 top-0">
-        <Navbar  />
+      <div className="bg-[whitesmoke]">
+        <div className="fixed top-0 z-10 w-full ">
+        <Navbar   />
         </div>
           <div className="">
           <Routes>

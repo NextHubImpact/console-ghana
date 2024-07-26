@@ -17,9 +17,9 @@ const Hero = ({}) => {
             
         {
           img: slide1,
-          title: "welcome to rural code camp",
+          title: "Conntecting the Unconnected.",
           article:
-            "conntecting the unconnected. ",
+            "Welcome to Rural Code Camp! Our mission is to bridge the digital divide by empowering students in rural Ghana with essential digital skills. Join us in our journey to create a digitally inclusive society where every child has access to technology and coding education. ",
           link: "More details",
           icon: <IoArrowForward className="text-red-700" />,
         },
@@ -68,13 +68,13 @@ const Hero = ({}) => {
                     alignItems: 'start', 
                     marginTop: "4rem", 
                 }}
-                 className='uppercase text-white'
+                 className=' text-white'
                 >
-                  <div className="w-[42%] flex  justify-end flex-col gap-4 items-center">
-                    <h1 className=' text-2xl '>{images.title}</h1>
-                    <p className='text-[4xl] font-bold text-center text-wrap'>{images.article}</p>
+                  <div className="w-[40%] flex ml-12  flex-col gap-4 itms-center">
+                    <h1 className=' text-6xl text-[#faaf40] text-cente text-wrap font-bold '>{images.title}</h1>
+                    <p className='text-2xl text-wrap'>{images.article}</p>
                     <NavLink to={images.link} >                
-                      <p className='bg-[#faaf40] p-4 rounded flex items-center gap-4 mt-2 font-semibold'>{images.link}</p>
+                      <p className='bg-[#faaf40] w-[33%] py-4 px-8 rounded flex itms-center gap-4 mt-2 font-semibold'>{images.link}</p>
                     </NavLink>
                   </div>
                 </div>
