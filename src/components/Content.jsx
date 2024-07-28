@@ -221,7 +221,7 @@ const Content = () => {
                   </h1>
                   <hr className="w-[20%] rounded mt-6 h-1 bg-red-700" />
                 </div>
-                <article className="leading-8 text-[16px]">
+                <article className=" mr-14 text-[16px]">
                   Our mission is to become the leading industrial job training
                   and prototype center in West Africa to transform the
                   livelihoods of young people in TVET. DTI firmly believes that

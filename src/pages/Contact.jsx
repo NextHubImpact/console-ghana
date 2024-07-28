@@ -32,13 +32,13 @@ const Contact = () => {
      ]
   return (
     <div>
-         <section className='my-[5rem] mx-[2rem] py-10'>
+         <section className='my-[5rem] mx-[5rem] py-10'>
             <div className="text-center uppercase">
                 <h2>contact us</h2>
                 <h1 className='text-[28px] font-semibold'>get in touch</h1>
             </div>
             <div className="flex gap- justify-center ites-center w-[%] my-[4rem]">
-            <div className="flex gap-8 flex-wrap items- justify-center w-[50%]">
+            <div className="flex gap-8 flex-wrap items- justify-centr w-[50%]">
                 {contactData.map((val, index) => {
                     const {icon, title, info, time} = val;
                     return (                     

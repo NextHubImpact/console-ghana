@@ -22,7 +22,7 @@ const Footer = () => {
             </article>
         </div>
 
-      <div className=" flex flex-col gap-[1.5rem] lg:flex-row">
+      <div className=" flex flex-col gap-[1.5rem] p-4 lg:flex-row">
          <div className="">
             <h2 className=' font-semibold' >Contact</h2>
 
