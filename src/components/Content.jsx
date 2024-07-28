@@ -209,11 +209,11 @@ const Content = () => {
       </section>
 
       {/* who we are */}
-      <section className=" my-[5rem] ">
+      {/* <section className=" my-[5rem] ">
         <div className="bord flex bor items-center justify-center ">
           <div className=" flex flex-col mx- border items-center justify-center lg:flex-row  gap-2 bg-[whitesmoke] ">
             <div className="lg:w-[48%] p-  gap-4 flex  justify-center flex-col items-center  lg:flex-row ">
-              {/* left article --who we are-- */}
+              
               <div className=" w-full flex justify-between flex-col gap-8 ">
                 <div className="">
                   <h1 className="uppercase font-bold text-red-700 text-3xl ">
@@ -240,14 +240,12 @@ const Content = () => {
               </div>
             </div>
 
-            {/* right img */}
-
             <figure className="lg: flex justify-end w-[40%] p-  ">
               <img className="lg: w-[100%]   rounded-" src={progImg1} alt="" />
             </figure>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* our values */}
       <section className="my-[5rem] mx- bg-white">
