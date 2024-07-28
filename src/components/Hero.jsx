@@ -57,7 +57,7 @@ const Hero = ({}) => {
                   style={{
                     backgroundImage: `url(${images.img})`,
                     backgroundSize: "cover",
-                    height: "86vh",
+                    height: "100vh",
                     width: "100vw",
                     backgroundRepeat: "no-repeat",
                     backgroundPosition: 'center',
@@ -65,7 +65,7 @@ const Hero = ({}) => {
                     flexDirection: 'column',
                     justifyContent: 'center',
                     alignItems: 'start', 
-                    marginTop: "4rem", 
+                    marginTop: "rem", 
                 }}
                  className=' text-white'
                 >
