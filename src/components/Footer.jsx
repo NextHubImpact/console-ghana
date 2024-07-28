@@ -89,7 +89,7 @@ const Footer = () => {
             </div>
 
             <div className="">
-              <h1 className='text-[gray]'>subscribe to our new letter:</h1>
+              <h1 className='text-[gray]'>subscribe to our newsletter:</h1>
               <form action="">
                 <input type="email" className='p-2' placeholder='Email Address' /> 
                 <Link to=''>

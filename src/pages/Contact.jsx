@@ -63,11 +63,12 @@ const Contact = () => {
           </div>
           {/* send message */}
           <div className=" justify-center items-center p-4 border flex flex-col bg-[white] w-[50%]">
-            <div className="flex flex-col items-center gap-4 justify-center w-full">
+            
               <form
                 action="https://formbase.dev/s/dBB2b3ZULGWVSV8"
                 method="POST"
                 encType="multipart/form-data"
+                className="flex flex-col items-center gap-4 justify-center w-full"
               >
                 <div className="flex flex-col gap-4 items-cente justify-cente w-full">
                   <div className="flex gap-8">
@@ -109,7 +110,7 @@ const Contact = () => {
                   Send Message
                 </button>
               </form>
-            </div>
+
           </div>
         </div>
 
