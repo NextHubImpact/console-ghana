@@ -8,6 +8,7 @@ import { IoMenu, IoClose } from "react-icons/io5";
 import { IoSearch } from "react-icons/io5";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import Sidebar from "./Sidebar";
+import Home from "../pages/Home";
 
 const Navbar = ({}) => {
   const [sidebar, setSidebar] = useState(false);
@@ -73,11 +74,13 @@ const Navbar = ({}) => {
     <nav className={colorChange ? "bg-black  w-full " : "bg-[#262261]  "}>
       <div className="flex mx-12 justify-between p-4  items-center sticky top-0 z-10">
         <div className=" pl-4">
+          <Link to='/'>
           <img
             className="w-[10%] bg-[white]  rounded-[50%] pl- lg:w-[10%] xl:w-[10%]"
             src={colorChange ? lightLogo : lightLogo}
             alt=""
           />
+          </Link>        
         </div>
 
         {sidebar ? <Sidebar /> : ""}
