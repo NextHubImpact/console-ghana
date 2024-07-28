@@ -66,9 +66,9 @@ const Content = () => {
   ];
   const values = [
     {
-      title: "WHERE GREAT IDEAS TAKE FLIGHT",
+      title: "Our Mission",
       article:
-        "DTI offers a variety of programmes designed to meet the needs of various industries. ",
+        " To empower students in rural Ghana with essential digital skills, fostering a love for technology and preparing them for the future. ",
       link: "More details",
       icons: {
         arrowIcon: <IoArrowForward className="text-red-700" />,
@@ -77,9 +77,9 @@ const Content = () => {
       img: progImg1,
     },
     {
-      title: "WHERE GREAT IDEAS TAKE FLIGHT",
+      title: "Our Vission",
       article:
-        "DTI offers a variety of programmes designed to meet the needs of various industries.",
+        " A digitally inclusive society where every child has access to technology and coding education, regardless of their location or background.",
       link: "More details",
       icons: {
         arrowIcon: <IoArrowForward className="text-red-700" />,
@@ -182,7 +182,7 @@ const Content = () => {
 
       {/* what we offer */}
       <section className="mt-[8rem]">
-        <div className="mx-8 ">
+        <div className="mx- ">
           <h1 className="text-center uppercase text-[24px] font-bold">what we offer</h1>
           <div className="mt-14 mb-[6rem] lg:flex  xl:flex justify-center gap-8 ">
             {highlightCard.map((val, index) => {
@@ -210,10 +210,9 @@ const Content = () => {
 
       {/* who we are */}
       <section className=" my-[5rem] ">
-        <div className="mx-8 flex flex-col items-center gap-8">
-          <div className="text-5xl mb-6">{/* <h1>About Us</h1> */}</div>
-          <div className=" flex flex-col  items-center lg:flex-row  gap-4 bg-[whitesmoke] ">
-            <div className="lg:w-[50%] p-4  gap-4 flex flex-col items-center  lg:flex-row ">
+        <div className="bord flex bor items-center justify-center ">
+          <div className=" flex flex-col mx- border items-center justify-center lg:flex-row  gap-2 bg-[whitesmoke] ">
+            <div className="lg:w-[48%] p-  gap-4 flex  justify-center flex-col items-center  lg:flex-row ">
               {/* left article --who we are-- */}
               <div className=" w-full flex justify-between flex-col gap-8 ">
                 <div className="">
@@ -222,7 +221,7 @@ const Content = () => {
                   </h1>
                   <hr className="w-[20%] rounded mt-6 h-1 bg-red-700" />
                 </div>
-                <article className="leading-8 text-[20px]">
+                <article className="leading-8 text-[16px]">
                   Our mission is to become the leading industrial job training
                   and prototype center in West Africa to transform the
                   livelihoods of young people in TVET. DTI firmly believes that
@@ -243,7 +242,7 @@ const Content = () => {
 
             {/* right img */}
 
-            <figure className="lg: flex justify-end w-[50%] p-  ">
+            <figure className="lg: flex justify-end w-[40%] p-  ">
               <img className="lg: w-[100%]   rounded-" src={progImg1} alt="" />
             </figure>
           </div>
@@ -252,8 +251,8 @@ const Content = () => {
 
       {/* our values */}
       <section className="my-[5rem] mx- bg-white">
-        <div className="">
-          <div className="flex  justify-between mx-8 h-[60vh] items-center">
+        <div className="mx-12">
+          <div className="flex  justify-between mx-10 h-[60vh] items-center">
             <div className="flex  flex-col gap-6  w-[30%] ">
               <div className="uppercase font-semibold flex mb-3  flex-col gap-3">
                 <h2 className="text-[30px]">our values</h2>
@@ -295,14 +294,14 @@ const Content = () => {
 
       {/* cards */}
       <section className="">
-        <div className="mx-8 ">
-          <div className="mt-14 mb-[6rem] lg:flex  xl:flex justify-between gap-8 ">
+        <div className="mx- ">
+          <div className="mt-14 mb-[6rem] lg:flex  xl:flex justify-center gap-8 ">
             {highlightCard.map((val, index) => {
               const { title, article, link, icons } = val;
               return (
                 <div
                   key={index}
-                  className=" flex flex-col  text-white items-center gap-2 bg-[#262261] p-  shadow-sm mb-4 lg:w-[30%] h-[60%] xl:w-[28%] p-8"
+                  className=" flex flex-col  text-white items-center justify-center gap-2 bg-[#262261] p-  shadow-sm mb-4 lg:w-[30%] h-[60%] xl:w-[28%] p-8"
                 >
                   <div className="mb-6">
                     <img src={icons.whoweareIcon} alt="" />
@@ -322,9 +321,9 @@ const Content = () => {
 
       {/* our activities*/}
       <section className="">
-        <div className="mx-8  my-14">
+        <div className="mx-10  my-14">
           <h1 className="text-5xl text-center ">Our Actitvites</h1>
-          <div className="mt-14 mb-[6rem] lg:flex  xl:flex justify-between gap-8">
+          <div className="mt-14 mb-[6rem] lg:flex  xl:flex justify-center gap-6">
             {highlightCard.map((val, index) => {
               const { title, article, link, icon, img } = val;
               return (
@@ -352,34 +351,34 @@ const Content = () => {
 
       {/* blog */}
       <section className="">
-        <div className="my-12 mx-8 bg-[#111]">
-          <div className="flex flex-col justify-center items-center ">
+        <div className="my-12 mx bg-[#111]">
+          <div className="flex flex-col justify-center gap- items-center ">
             <iv className=" pt-12 lg:">
               <h2 className=" mb-14 text-center font-bold text-[24px] text-[#EE4036] lg:text-[48px]">
                 Blog
               </h2>
             </iv>
 
-            <div className=" flex items-center justify-center">
-              <div className=" flex items-center text-white justify-center mb-14 gap-4">
+            <div className=" flex items-center  justify-center">
+              <div className=" flex items-center text-white justify-center mb-14 gap-8 ">
                 {blogData.map((val, index) => {
                   const { img, title, author, date, icons } = val;
                   return (
                     <div
                       key={index}
-                      className="w-[25%]  flex flex-col justify-center items-center"
+                      className="w-[28%]  flex flex-col justify-center items-center "
                     >
                       <img src={img} className="w-[%]" alt="" />
-                      <div className="my-8">
-                        <div className="flex justify-start items-center gap-4 py-2">
-                          <span className="flex items-center gap-2">
+                      <div className="my-8 ">
+                        <div className="flex justify-start items-center text-[#faaf40] gap-4 py-2">
+                          <span className="flex items-center gap-2 ">
                             {icons.authorIcon} {author}
                           </span>
-                          <span className="flex items-center gap-2">
+                          <span className="flex items-center gap-2 ">
                             {icons.dateIcon} {date}
                           </span>
                         </div>
-                        <div className="my-">
+                        <div className="text-[gray]">
                           <h2 className="  text-wrap">{title}</h2>
                         </div>
                       </div>
@@ -395,14 +394,14 @@ const Content = () => {
       {/* partners */}
       <section className="">
         <div className="mx-8">
-          <div className="mt-14 lg:flex items-center my-14">
-            <div className="flex  flex-col gap-6  lg:w-[50%] ">
+          <div className="mt-14 lg:flex items-center  gap-6 justify-center my-14">
+            <div className="flex  flex-col gap-6  lg:w-[40%] ">
               <div className="uppercase font-semibold flex mb-3  flex-col gap-3">
                 <h2 className="text-[30px]">INDUSTRY PARTNERS</h2>
                 <hr className="text-4xl w-[20%] rounded mt-4 h-1 bg-red-700" />
               </div>
               <div className="mb-">
-                <article className="leading-6 text-[18px]">
+                <article className="leading- text-[16px]">
                   The DTI Edge helps our learners to build the skills and
                   character necessary for an effective mindset shift for a
                   continent limited by negative mindset. Our learners continue
@@ -415,14 +414,14 @@ const Content = () => {
               </div>
             </div>
 
-            <div className="lg:flex-1">
-              <div className="flex flex-wrap items-center justify-around my-[4rem] gap-8">
-                <img className="w-[30%] lg:w-[20%]" src={htu} alt="" />
-                <img className="w-[30%] lg:w-[20%]" src={asase} alt="" />
-                <img className="w-[30%] lg:w-[20%]" src={techlabs} alt="" />
-                <img className="w-[30%] lg:w-[20%]" src={asco} alt="" />
-                <img className="w-[30%] lg:w-[20%]" src={knust} alt="" />
-                <img className="w-[30%] lg:w-[20%]" src={accra} alt="" />
+            <div className="lg:w-[52%]">
+              <div className="flex flex-wrap items-center justify-around my-[4rem] gap-4">
+                <img className="w-[30%] lg:w-[25%] border-2 border-[#faaf40] rounded-md" src={htu} alt="" />
+                <img className="w-[30%] lg:w-[30%] border-2 border-[#faaf40] rounded-md" src={asase} alt="" />
+                <img className="w-[30%] lg:w-[25%] border-2 border-[#faaf40] rounded-md" src={techlabs} alt="" />
+                <img className="w-[30%] lg:w-[25%] border-2 border-[#faaf40] rounded-md" src={asco} alt="" />
+                <img className="w-[30%] lg:w-[30%] border-2 border-[#faaf40] rounded-md" src={knust} alt="" />
+                <img className="w-[30%] lg:w-[25%] border-2 border-[#faaf40] rounded-md" src={accra} alt="" />
               </div>
             </div>
           </div>

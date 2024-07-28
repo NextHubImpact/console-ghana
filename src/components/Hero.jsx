@@ -46,7 +46,7 @@ const Hero = ({}) => {
     }, [index]);
 
   return (
-    <div className='slideshow mt'>
+    <div className='slideshow '>
     
         <div className="slideshowSlider"
              style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
@@ -70,11 +70,11 @@ const Hero = ({}) => {
                 }}
                  className=' text-white'
                 >
-                  <div className="w-[40%] flex ml-12  flex-col gap-4 itms-center">
+                  <div className="w-[40%] flex ml-20   flex-col gap-4 itms-center">
                     <h1 className=' text-6xl text-[#faaf40] text-cente text-wrap font-bold '>{images.title}</h1>
                     <p className='text- text-wrap'>{images.article}</p>
                     <NavLink to={images.link} >                
-                      <p className='bg-[#faaf40] w-[33%] py-4 px-8 rounded flex itms-center gap-4 mt-2 font-semibold'>{images.link}</p>
+                      <p className='bg-[#faaf40] w-[28%] py-4 px-8 rounded flex itms-center gap-4 mt-2 font-semibold'>{images.link}</p>
                     </NavLink>
                   </div>
                 </div>
