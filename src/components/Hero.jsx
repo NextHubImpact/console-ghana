@@ -18,8 +18,7 @@ const Hero = ({}) => {
         {
           img: slide1,
           title: "Conntecting the Unconnected.",
-          article:
-            "Welcome to Rural Code Camp! Our mission is to bridge the digital divide by empowering students in rural Ghana with essential digital skills. Join us in our journey to create a digitally inclusive society where every child has access to technology and coding education. ",
+          article: 'Welcome to Rural Code Camp, a Not for Profit Organisation based in Ghana , empowering kids and youth in Rural communities with Digital literacy. Join us in our journey to create a digitally inclusive society where every child has access to technology and coding education.',
           link: "More details",
           icon: <IoArrowForward className="text-red-700" />,
         },

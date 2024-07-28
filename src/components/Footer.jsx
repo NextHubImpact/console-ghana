@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
-import { FaLinkedin, FaInstagram, FaFacebook } from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaFacebook, FaTwitter } from "react-icons/fa";
+import {Link, NavLink} from 'react-router-dom'
 import lightLogo from '../assets/logo/rural-logo.png'
+import { FaX } from 'react-icons/fa6';
 
 
 const Footer = () => {
@@ -16,7 +18,9 @@ const Footer = () => {
       <div className=" flex flex-col gap-[2rem] pt-[4rem] px-8 pb-[rem] lg:px-4">
       <div className="flex flex-col  gap-8 lg:flex-row  justify-between ">
         <div className="lg:w-[40%]">
-            <img className='w-[20%] rounded-[50%] bg-[white] border' src={lightLogo} alt="" />
+           <NavLink to='/'>
+           <img className='w-[20%] rounded-[50%] bg-[white] border' src={lightLogo} alt="logo" />
+           </NavLink>
             <article className='leading-6 mt-10'>
             DTI’s mission is to become the leading industrial job training and prototype center in West Africa to transform the livelihoods of young people in TVET.
             </article>
@@ -36,7 +40,14 @@ const Footer = () => {
             </ul>
 
             <div className="flex gap-4 py-2 text-[24px]">
+                <Link to='https://x.com/ruralcodecampgh'>         
+                <FaTwitter/>
+                </Link>
+
+                <Link to='https://www.facebook.com/profile.php?id=61562999973794'>
                 <FaFacebook />
+                </Link>
+
                 <FaInstagram/>
                 <FaLinkedin />
             </div>
