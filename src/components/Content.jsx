@@ -348,7 +348,7 @@ const Content = () => {
       </section>
 
       {/* blog */}
-      <section className="">
+      {/* <section className="">
         <div className="my-12 mx bg-[#111]">
           <div className="flex flex-col justify-center gap- items-center ">
             <iv className=" pt-12 lg:">
@@ -387,7 +387,7 @@ const Content = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* partners */}
       <section className="">
