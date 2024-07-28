@@ -71,7 +71,7 @@ const Navbar = ({}) => {
   window.addEventListener("scroll", changeNavbarColor);
 
   return (
-    <nav className={colorChange ? "bg-[#ffffff]  w-full " : "bg-[#262261]  "}>
+    <nav className={colorChange ? "bg-[#ffffff] shadow-xl  w-full " : "bg-[#262261]  "}>
       <div className="flex mx-12 justify-between p-4  items-center sticky top-0 z-10">
         <div className=" pl-4">
           <Link to='/'>
