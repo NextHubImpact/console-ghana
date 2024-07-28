@@ -29,11 +29,10 @@ const Content = () => {
   //   }
   // }
 
-  const highlightCard = [
+  const offer = [
     {
-      title: "WHERE GREAT IDEAS TAKE FLIGHT",
-      article:
-        "DTI offers a variety of programmes designed to meet the needs of various industries. Engineering, manufacturing, construction, and information technology are among the technical and vocational training we provide.",
+      title: "Foundations of Digital Literacy",
+      article:" This module is designed to equip students with the essential skills and knowledge needed to navigate the digital world confidently and safely. We focus in building students strong skills in basic computer operations, understanding the internet, and recognizing the importance of online safety.",
       link: "More details",
       icons: {
         arrowIcon: <IoArrowForward className="text-red-700" />,
@@ -42,9 +41,9 @@ const Content = () => {
       img: progImg1,
     },
     {
-      title: "WHERE GREAT IDEAS TAKE FLIGHT",
+      title: "Digital Communication and Content Creation",
       article:
-        "DTI offers a variety of programmes designed to meet the needs of various industries. Engineering, manufacturing, construction, and information technology are among the technical and vocational training we provide.",
+        "The Digital Communication and Content Creation module empowers students with the skills necessary to communicate effectively and create meaningful digital content. This module covers essential tools for digital communication, including email and social media, and teaches students how to create and manage various types of digital documents and presentations. ",
       link: "More details",
       icons: {
         arrowIcon: <IoArrowForward className="text-red-700" />,
@@ -53,9 +52,9 @@ const Content = () => {
       img: progImg2,
     },
     {
-      title: "WHERE GREAT IDEAS TAKE FLIGHT",
+      title: "Advanced Digital Skills and Career Preparation",
       article:
-        "DTI offers a variety of programmes designed to meet the needs of various industries. Engineering, manufacturing, construction, and information technology are among the technical and vocational training we provide.",
+        "The Advanced Digital Skills and Career Preparation module is designed to take students' digital literacy to the next level, preparing them for future educational and career opportunities. This module introduces students to coding and programming, offering both visual and text-based programming lessons.",
       link: "More details",
       icons: {
         arrowIcon: <IoArrowForward className="text-red-700" />,
@@ -185,7 +184,7 @@ const Content = () => {
         <div className="mx- ">
           <h1 className="text-center uppercase text-[24px] font-bold">what we offer</h1>
           <div className="mt-14 mb-[6rem] lg:flex  xl:flex justify-center gap-8 ">
-            {highlightCard.map((val, index) => {
+            {offer.map((val, index) => {
               const { title, article, link, icons } = val;
               return (
                 <div
@@ -210,9 +209,9 @@ const Content = () => {
 
       {/* who we are */}
       <section className=" my-[5rem] ">
-        <div className="bord flex bor items-center justify-center ">
-          <div className=" flex flex-col mx- border items-center justify-center lg:flex-row  gap-2 bg-[whitesmoke] ">
-            <div className="lg:w-[48%] p-  gap-4 flex  justify-center flex-col items-center  lg:flex-row ">
+        <div className="flex items-center justify-center ">
+          <div className=" flex flex-col items-center justify-center lg:flex-row  gap-2 bg-[whitesmoke] ">
+            <div className="lg:w-[48%]  gap-4 flex  justify-center flex-col items-center  lg:flex-row ">
               
               <div className=" w-full flex justify-between flex-col gap-8 ">
                 <div className="">
@@ -294,7 +293,7 @@ const Content = () => {
       <section className="">
         <div className="mx- ">
           <div className="mt-14 mb-[6rem] lg:flex  xl:flex justify-center gap-8 ">
-            {highlightCard.map((val, index) => {
+            {offer.map((val, index) => {
               const { title, article, link, icons } = val;
               return (
                 <div
@@ -322,7 +321,7 @@ const Content = () => {
         <div className="mx-10  my-14">
           <h1 className="text-5xl text-center ">Our Actitvites</h1>
           <div className="mt-14 mb-[6rem] lg:flex  xl:flex justify-center gap-6">
-            {highlightCard.map((val, index) => {
+            {offer.map((val, index) => {
               const { title, article, link, icon, img } = val;
               return (
                 <div
