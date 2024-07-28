@@ -15,7 +15,7 @@ const Footer = () => {
 
   return (
     <div className='bg-black text-white '>
-      <div className=" flex flex-col gap-[2rem] pt-[4rem] px-8 pb-[rem] lg:px-4">
+      <div className="mx-8 flex flex-col gap-[2rem] pt-[4rem] px-8 pb-[rem] lg:px-4">
       <div className="flex flex-col  gap-8 lg:flex-row  justify-between ">
         <div className="lg:w-[40%]">
            <NavLink to='/'>
