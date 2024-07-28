@@ -87,7 +87,8 @@ const Contact = () => {
                   <div className="">
                     <input
                       className="border p-2  w-[100%]"
-                      type="text"
+                      type="name"
+                      name="subject"
                       placeholder="Subject"
                     />
                   </div>
