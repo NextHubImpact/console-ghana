@@ -16,8 +16,8 @@ const Footer = () => {
   return (
     <div className='bg-black text-white '>
       <div className="mx-8 flex flex-col gap-[2rem] pt-[4rem] px-8 pb-[rem] lg:px-4">
-      <div className="flex flex-col  gap-8 lg:flex-row  justify-between ">
-        <div className="lg:w-[40%]">
+      <div className="flex flex-col  gap- lg:flex-row  justify-betwe ">
+        <div className="lg:w-[30%]">
            <NavLink to='/'>
            <img className='w-[20%] rounded-[50%] bg-[white] border' src={lightLogo} alt="logo" />
            </NavLink>
@@ -26,30 +26,73 @@ const Footer = () => {
             </article>
         </div>
 
-      <div className=" flex flex-col gap-[1.5rem] p-4 lg:flex-row">
-         <div className="">
-            <h2 className=' font-semibold' >Contact</h2>
+      <div className=" flex flex-col items-ce gap-[1.5rem] p-4 lg:flex-row text-[18px]  justify-between flex-1">
+        <div className="">
+        <h2 className=' font-semibold mb-2' >Quick Links</h2>
+        <div className="flex flex-col gap-4 py-  text-[px]">
+                <Link className='flex items-center gap-2' to='/'>         
+                  <p>Home</p>
+                </Link>
 
-            <ul>
-                <li><a href="#">Mempeasem, East Legon – Accra</a></li>
-                <li><a href="#">behind Ghana Meteorological Agency</a></li>
-                <li><a href="#">GA-484-6124</a></li>
-                <li><a href="#">Our Curriculum</a></li>
-                <li><a href="#">info@dtiafrica.edu.gh</a></li>
-                <li><a href="#">+233 (0) 541 693534</a></li>
-            </ul>
+                <Link className='flex items-center gap-2' to='/aboutus'>      
+                <p>About Us</p>
+                </Link>
+               
+                <Link className='flex items-center gap-2' to='/programs'> 
+                <p>Programs</p>
+                </Link>
+              
+                <Link className='flex items-center gap-2' to='/getinvolve'>
+                <p>Get Involve</p>
+                </Link>
 
-            <div className="flex gap-4 py-2 text-[24px]">
-                <Link to='https://x.com/ruralcodecampgh'>         
+                <Link className='flex items-center gap-2' to='/blog'>
+                <p>Blog</p>
+                </Link>
+            </div>
+        </div>
+
+        <div className="">
+          <h1 className='font-semibold mb-2'>Follow Us</h1>
+           
+          <div className="flex flex-col gap-4 py-  text-[px]">
+                <Link className='flex items-center gap-2' to='https://x.com/ruralcodecampgh'>         
                 <FaTwitter/>
+                <p>Twitter</p>
                 </Link>
 
-                <Link to='https://www.facebook.com/profile.php?id=61562999973794'>
+                <Link className='flex items-center gap-2' to='https://www.facebook.com/profile.php?id=61562999973794'>
                 <FaFacebook />
+                <p>Facebook</p>
+                </Link>
+               
+                <Link className='flex items-center gap-2' to=''>
+                <FaInstagram/>
+                <p>Instagram</p>
                 </Link>
 
-                <FaInstagram/>
-                <FaLinkedin />
+               
+                <Link className='flex items-center gap-2' to=''>
+                 <FaLinkedin/>
+                <p>LinkedIn</p>
+                </Link>
+            </div>
+        </div>
+
+         <div className="flex flex-col gap-4">
+            <h2 className=' font-semibold' >Contact Us</h2>
+
+            <div>
+                <p>Email: info@ruralcodecamp.org</p>
+                <p>Phone: +233 551143989</p>
+                <p>Address: CC-980-73, Accra- Ghana</p>
+            </div>
+
+            <div className="">
+              <form action="">
+                <input type="email" className='p-2' placeholder='Email Address' /> 
+                <button type="submit" className="bg-[#faaf40] p-2">Submit</button>
+              </form>
             </div>
          </div>
       </div>
