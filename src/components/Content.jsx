@@ -250,16 +250,15 @@ const Content = () => {
       <section className="my-[5rem] mx- bg-white">
         <div className="mx-12">
           <div className="flex  justify-between mx-10 h-[60vh] items-center">
-            <div className="flex  flex-col gap-6  w-[30%] ">
+            <div className="flex  flex-col gap-2  w-[30%] ">
               <div className="uppercase font-semibold flex mb-3  flex-col gap-3">
                 <h2 className="text-[30px]">our values</h2>
                 <hr className="text-4xl w-[20%] rounded mt-4 h-1 bg-red-700" />
               </div>
               <div className="mb-">
-                <article className="leading-6 text-[18px]">
-                  The DTI Edge helps our learners to build the skills and
-                  character necessary for an effective mindset shift for a
-                  continent limited by negative mindset.
+                <article className="leading- text-[14px]">
+                We believe every child and youth, regardless of their background, deserves access to quality digital education.
+                 Our programs are designed to be inclusive and accessible to all students in rural communities to aid their participation in the Digital world.
                 </article>
               </div>
     

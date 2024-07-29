@@ -6,12 +6,15 @@ import slide1 from '../assets/homepage/slider/slider-1.jpg'
 import slide2 from '../assets/homepage/slider/slider-2.jpg'
 import slide3 from '../assets/homepage/slider/slider-3.jpg'
 import { IoArrowForward } from 'react-icons/io5'
+import { ReactTyped } from 'react-typed'
 
-
-const Hero = ({}) => {
+const Hero = () => {
     const [index, setIndex] = useState(0);
-    const timeoutRef = useRef(null);
-    const delay = 5500;
+    // const timeoutRef = useRef(null);
+    // const delay = 5500;
+
+    // const [currentText, setCurrentText] = useState('');
+    // const [currentIndex, setCurrentIndex] = useState(0);
 
     const sliderImages = [
             
@@ -25,24 +28,35 @@ const Hero = ({}) => {
 
     ]
 
-    function resetTimeout() {
-      if (timeoutRef.current) {
-        clearTimeout(timeoutRef.current);
-      }
-    }
+    // function resetTimeout() {
+    //   if (timeoutRef.current) {
+    //     clearTimeout(timeoutRef.current);
+    //   }
+    // }
 
-    useEffect(() => {
-      resetTimeout()
-      timeoutRef.current = setTimeout(() => 
-       setIndex((prevIndex) => 
-         prevIndex === sliderImages.length - 1 ? 0 : prevIndex + 1
-     ),
-     delay,
-    );
-      return () => {
-        resetTimeout()
-      };
-    }, [index]);
+    // useEffect(() => {
+    //   if (currentIndex < text.length) {
+    //     const timeout = setTimeout(() => {
+    //       setCurrentText(prevText => prevText + text[currentIndex]);
+    //       setCurrentIndex(prevIndex => prevIndex + 1);
+    //     }, delay);
+    
+    //     return () => clearTimeout(timeout);
+    //   }
+    // }, [currentIndex, delay, text]);
+
+    // useEffect(() => {
+    //   resetTimeout()
+    //   timeoutRef.current = setTimeout(() => 
+    //    setIndex((prevIndex) => 
+    //      prevIndex === sliderImages.length - 1 ? 0 : prevIndex + 1
+    //  ),
+    //  delay,
+    // );
+    //   return () => {
+    //     resetTimeout()
+    //   };
+    // }, [index]);
 
   return (
     <div className='slideshow '>
@@ -70,7 +84,18 @@ const Hero = ({}) => {
                  className=' text-white'
                 >
                   <div className="w-[40%] flex ml-20   flex-col gap-4 itms-center">
-                    <h1 className=' text-6xl text-[#faaf40] text-cente text-wrap font-bold '>{images.title}</h1>
+                    <h1 className=' text-6xl text-[#faaf40] text-cente text-wrap font-bold '>
+                    <ReactTyped 
+                    strings={[images.title]}
+                    typeSpeed={200}
+                    loop = {false}
+                    backSpeed={20}
+                    cursorChar="|"
+                    showCursor={true}
+          
+                     />
+                    </h1>
+                  
                     <p className='text- text-wrap'>{images.article}</p>
                     <NavLink to={images.link} >                
                       <p className='bg-[#faaf40] w-[28%] py-4 px-8 rounded flex itms-center gap-4 mt-2 font-semibold'>{images.link}</p>
