@@ -15,6 +15,8 @@ import asco from "../assets/partners/asco.jpg";
 import knust from "../assets/partners/knust.png";
 import techlabs from "../assets/partners/techlabs.jpg";
 import asase from "../assets/partners/asase.jpg";
+import digitalSch from '../assets/partners/digital.jpeg'
+import raspberry from '../assets/partners/raspberry.jpeg'
 import { MdAccountCircle, MdTimer } from "react-icons/md";
 
 
@@ -183,19 +185,19 @@ const Content = () => {
       <section className="mt-[8rem]">
         <div className="mx- ">
           <h1 className="text-center uppercase text-[24px] font-bold">what we offer</h1>
-          <div className="mt-14 mb-[6rem] lg:flex  xl:flex justify-center gap-8 ">
+          <div className="mt-14 mb-[6rem] lg:flex  xl:flex  border justify-center items-center gap-8 ">
             {offer.map((val, index) => {
               const { title, article, link, icons } = val;
               return (
                 <div
                   key={index}
-                  className=" flex flex-col  items-center gap-2 bg-[white] p-  shadow-md rounded-md mb-4 hover:scale-105   duration-700  lg:w-[30%] h-[60%] xl:w-[28%] p-6"
+                  className=" flex flex-col justify-  items-center gap-2 bg-[white] h-[50vh]  shadow-md rounded-md mb-4 hover:scale-105   duration-700  lg:w-[30%]  xl:w-[28%] h-[50%] p-4"
                 >
                   <div className="mb-6">
                     <img src={icons.whoweareIcon} alt="" />
                   </div>
                   <h2 className="font-semibold text-nowrap">{title}</h2>
-                  <article className=" text-[14px] text-[gray] text-center">{article}</article>
+                  <article className=" text-[16px] text-[gray] text-center">{article}</article>
                   <div className="bg-[#faaf40] p-2 rounded flex items-center gap-4 mt-2 font-semibold">
                     {link}
                     {icons.arrowIcon}
@@ -412,12 +414,8 @@ const Content = () => {
 
             <div className="lg:w-[52%]">
               <div className="flex flex-wrap items-center justify-around my-[4rem] gap-4">
-                <img className="w-[30%] lg:w-[25%] border-2 border-[#faaf40] rounded-md" src={htu} alt="" />
-                <img className="w-[30%] lg:w-[30%] border-2 border-[#faaf40] rounded-md" src={asase} alt="" />
-                <img className="w-[30%] lg:w-[25%] border-2 border-[#faaf40] rounded-md" src={techlabs} alt="" />
-                <img className="w-[30%] lg:w-[25%] border-2 border-[#faaf40] rounded-md" src={asco} alt="" />
-                <img className="w-[30%] lg:w-[30%] border-2 border-[#faaf40] rounded-md" src={knust} alt="" />
-                <img className="w-[30%] lg:w-[25%] border-2 border-[#faaf40] rounded-md" src={accra} alt="" />
+                <img className="w-[30%] lg:w-[40%] border-2  rounded-md" src={digitalSch} alt="" />
+                <img className="w-[30%] lg:w-[40%] border-2  rounded-md" src={raspberry} alt="" />
               </div>
             </div>
           </div>
