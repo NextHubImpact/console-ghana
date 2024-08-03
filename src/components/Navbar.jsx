@@ -86,7 +86,7 @@ const Navbar = ({}) => {
 
         {sidebar ? <Sidebar /> : ""}
 
-        <nav className="hidden border lg:block w-[50%] ">
+        <nav className="hidden  lg:block w-[50%] ">
           <ul className="lg: flex text-nowrap gap-2 py-2  justify-between items-center xl:p-4 ">
             {SidebarData.map((item, index) => {
               return (
