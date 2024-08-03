@@ -9,15 +9,10 @@ import progImg3 from "../assets/main/aca-weld.jpg";
 
 import whoweare from "../assets/img-icons/whoweare.webp";
 
-import htu from "../assets/partners/tech.png";
-import accra from "../assets/partners/Accra.png";
-import asco from "../assets/partners/asco.jpg";
-import knust from "../assets/partners/knust.png";
-import techlabs from "../assets/partners/techlabs.jpg";
-import asase from "../assets/partners/asase.jpg";
-import digitalSch from '../assets/partners/digital.jpeg'
-import raspberry from '../assets/partners/raspberry.jpeg'
+
+
 import { MdAccountCircle, MdTimer } from "react-icons/md";
+import Partners from "./Partners";
 
 
 const Content = () => {
@@ -65,6 +60,7 @@ const Content = () => {
       img: progImg3,
     },
   ];
+
   const values = [
     {
       title: "Our Mission",
@@ -185,7 +181,7 @@ const Content = () => {
       <section className="mt-[8rem]">
         <div className="mx- ">
           <h1 className="text-center uppercase text-[24px] font-bold">what we offer</h1>
-          <div className="mt-14 mb-[6rem] lg:flex  xl:flex  border justify-center items-center gap-8 ">
+          <div className="mt-14 mb-[6rem] lg:flex  xl:flex justify-center items-center gap-8 ">
             {offer.map((val, index) => {
               const { title, article, link, icons } = val;
               return (
@@ -223,15 +219,7 @@ const Content = () => {
                   <hr className="w-[20%] rounded mt-6 h-1 bg-red-700" />
                 </div>
                 <article className=" mr-14 text-[16px]">
-                  Our mission is to become the leading industrial job training
-                  and prototype center in West Africa to transform the
-                  livelihoods of young people in TVET. DTI firmly believes that
-                  education is the cornerstone of creating opportunities for
-                  individuals and communities. Our commitment to providing
-                  exceptional technical and vocational training is geared
-                  towards equipping our students with the necessary skills and
-                  knowledge to thrive in today's fast-paced and highly
-                  competitive job market.
+                Rural Code Camp is a NON PROFIT ORGANISATION dedicated in bridging the digital divide by empowering students in remote villages across Ghana with essential coding and computer skills. We are on a mission to connect the unconnected.
                 </article>
 
                 <div className="flex items-center gap-4 font-semibold ">
@@ -251,7 +239,7 @@ const Content = () => {
       {/* our values */}
       <section className="my-[5rem] mx- bg-white">
         <div className="mx-12">
-          <div className="flex  justify-between mx-10 h-[60vh] items-center">
+          <div className="flex justify-between mx-10 h-[60vh] items-center">
             <div className="flex  flex-col gap-2  w-[30%] ">
               <div className="uppercase font-semibold flex mb-3  flex-col gap-3">
                 <h2 className="text-[30px]">our values</h2>
@@ -347,90 +335,9 @@ const Content = () => {
         </div>
       </section>
 
-      {/* blog */}
-      {/* <section className="">
-        <div className="my-12 mx bg-[#111]">
-          <div className="flex flex-col justify-center gap- items-center ">
-            <iv className=" pt-12 lg:">
-              <h2 className=" mb-14 text-center font-bold text-[24px] text-[#EE4036] lg:text-[48px]">
-                Blog
-              </h2>
-            </iv>
-
-            <div className=" flex items-center  justify-center">
-              <div className=" flex items-center text-white justify-center mb-14 gap-8 ">
-                {blogData.map((val, index) => {
-                  const { img, title, author, date, icons } = val;
-                  return (
-                    <div
-                      key={index}
-                      className="w-[28%]  flex flex-col justify-center items-center "
-                    >
-                      <img src={img} className="w-[%]" alt="" />
-                      <div className="my-8 ">
-                        <div className="flex justify-start items-center text-[#faaf40] gap-4 py-2">
-                          <span className="flex items-center gap-2 ">
-                            {icons.authorIcon} {author}
-                          </span>
-                          <span className="flex items-center gap-2 ">
-                            {icons.dateIcon} {date}
-                          </span>
-                        </div>
-                        <div className="text-[gray]">
-                          <h2 className="  text-wrap">{title}</h2>
-                        </div>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
       {/* partners */}
-      <section className="">
-        <div className="mx-8">
-          <div className="mt-14 lg:flex items-center  gap-6 justify-center my-14">
-            <div className="flex  flex-col gap-6  lg:w-[40%] ">
-              <div className="uppercase font-semibold flex mb-3  flex-col gap-3">
-                <h2 className="text-[30px]">INDUSTRY PARTNERS</h2>
-                <hr className="text-4xl w-[20%] rounded mt-4 h-1 bg-red-700" />
-              </div>
-              <div className="mb-">
-                <article className="leading- text-[16px]">
-                  The DTI Edge helps our learners to build the skills and
-                  character necessary for an effective mindset shift for a
-                  continent limited by negative mindset. Our learners continue
-                  to make a difference in the world through their work.
-                </article>
-              </div>
-              <div className="flex items-center font-semibold gap-4">
-                <span>Read More </span>
-                <IoArrowForward className="text-[#c4002c]" />
-              </div>
-            </div>
+      <Partners/>
 
-            <div className="lg:w-[52%]">
-              <div className="flex flex-wrap items-center justify-around my-[4rem] gap-4">
-                <img className="w-[30%] lg:w-[40%] border-2  rounded-md" src={digitalSch} alt="" />
-                <img className="w-[30%] lg:w-[40%] border-2  rounded-md" src={raspberry} alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* <section className="bg-[#ffc12d] ">
-           <div className="flex justify-center items-center  h-80  mx-8">
-           <div className=" flex flex-col items-center gap-8 ">
-                  <h2 className="text-[28px] text-center text-[#c4002c] font-bold">ACQUIRE SKILLS FOR A CHANGING WORLD</h2>
-
-                  <button className="bg-[#c4002c] font-semibold text-white rounded-md py-4 px-8 ">Apply Now</button>
-              </div>
-           </div>
-      </section> */}
     </main>
   );
 };

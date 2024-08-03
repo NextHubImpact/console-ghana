@@ -36,14 +36,14 @@ const Contact = () => {
           <h2>contact us</h2>
           <h1 className="text-[28px] font-semibold">get in touch</h1>
         </div>
-        <div className="flex gap- justify-center ites-center w-[%] my-[4rem]">
+        <div className="flex gap- justify-center ites-center w-[%]  my-[4rem]">
           <div className="flex gap-8 flex-wrap items- justify-centr w-[50%]">
             {contactData.map((val, index) => {
               const { icon, title, info, time } = val;
               return (
                 <div
                   key={index}
-                  className="w-[40%] bg-[white] p-4  flex flex-col rounded shadow-md  text-center gap-4 items-center "
+                  className="w-[40%] bg-[white] p-4  flex flex-col rounded shadow-md  text-center gap-4 items-center duration-300  hover:scale-105 "
                 >
                   <div className="w-[%]">
                     <img src={icon} className="w-[%]" alt="" />
@@ -61,7 +61,8 @@ const Contact = () => {
               );
             })}
           </div>
-          {/* send message */}
+
+          {/* form  */}
           <div className=" justify-center items-center p-4 border flex flex-col bg-[white] w-[50%]">
             
               <form
@@ -103,7 +104,7 @@ const Contact = () => {
                   {" "}
                 </textarea>
                 <button
-                  className="bg-[#faaf40]  text-black py-3 px-8"
+                  className="bg-[#faaf40] rounded shadow-md  text-black py-3 px-8"
                   type="submit"
                   aria-required
                 >

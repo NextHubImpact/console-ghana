@@ -2,8 +2,6 @@ import React, {useState} from 'react'
 import { FaLinkedin, FaInstagram, FaFacebook, FaTwitter } from "react-icons/fa";
 import {Link, NavLink} from 'react-router-dom'
 import lightLogo from '../assets/logo/rural-logo.png'
-import { FaX } from 'react-icons/fa6';
-
 
 const Footer = () => {
 //    const [year , setYear] = useState(new Date());
@@ -14,9 +12,9 @@ const Footer = () => {
 
 
   return (
-    <div className='bg-black text-white '>
-      <div className="mx-8 flex flex-col gap-[2rem] pt-[4rem] px-8 pb-[rem] lg:px-4">
-      <div className="flex flex-col  gap- lg:flex-row  justify-betwe ">
+    <div className='bg-black text-white  '>
+      <div className="mx-10 flex flex-col items-cente justify-between gap-[rem] bg-[] h-[65vh] pt-[4rem] px-8 pb-[rem] lg:px-4">
+      <div className="flex flex-col  gap-[3rem] lg:flex-row  justify-betwe p-4">
         <div className="lg:w-[30%]">
            <NavLink to='/'>
            <img className='w-[20%] rounded-[50%] bg-[white] border' src={lightLogo} alt="logo" />
@@ -26,10 +24,10 @@ const Footer = () => {
             </article>
         </div>
 
-      <div className=" flex flex-col items-ce gap-[1.5rem] p-4 lg:flex-row text-[18px]  justify-between flex-1">
+      <div className=" flex flex-col items-cente p- lg:flex-row text-[18px]  justify-between flex-1">
         <div className="">
         <h2 className=' font-semibold mb-2' >Quick Links</h2>
-        <div className="flex flex-col gap-4 py-  text-[px]">
+        <div className="flex flex-col gap-6 py-  text-[px]">
                 <Link className='flex items-center gap-2' to='/'>         
                   <p>Home</p>
                 </Link>
@@ -83,9 +81,9 @@ const Footer = () => {
             <h2 className=' font-semibold' >Contact Us</h2>
 
             <div>
-                <p>Email: info@ruralcodecamp.org</p>
-                <p>Phone: +233 551143989</p>
-                <p>Address: CC-980-73, Accra- Ghana</p>
+                <p> Email: <span className='text-[gray] pointer'>info@ruralcodecamp.org</span> </p>                
+                <p>Phone: <span className='text-[gray] pointer'>+233 551143989</span> </p>
+                <address>Address: <span className='text-[gray] pointer'>CC-980-73, Accra- Ghana</span> </address>
             </div>
 
             <div className="">
@@ -102,7 +100,7 @@ const Footer = () => {
      </div>
       <hr/>
       {/* divider */}
-     <div className="flex justify-center mb-2">
+     <div className="flex justify-center mb-8">
      
         <div className="">
              &copy; {getYear()} DTI. ALL RIGHTS RESERVED.
