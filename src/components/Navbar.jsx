@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import MediaQuery from "react-responsive";
 import lightLogo from "../assets/logo/rural-logo.png";
+import rccLogo from '../assets/logo/rcc-logo.jpeg'
 import darkLogo from "../assets/logo/logo-black.png";
 import { NavLink, Link } from "react-router-dom";
 
@@ -76,8 +77,8 @@ const Navbar = ({}) => {
         <div className=" pl-4">
           <Link to='/'>
           <img
-            className= { colorChange? 'bg-[#faaf40] w-[10%] duration-700 rounded-[50%] pl- lg:w-[10%] xl:w-[10%]' : "w-[10%] bg-[white]  rounded-[50%] pl- lg:w-[10%] xl:w-[10%]"}
-            src={colorChange ? lightLogo : lightLogo}
+            className= { colorChange? 'bg-[#faaf40]  duration-700 rounded  w-[20%] xl:w-[%]' : "w-[20%] bg-[white]  rounded-md pl- lg:w-[%] xl:w-[%]"}
+            src={colorChange ? rccLogo : rccLogo}
             alt=""
           />
           </Link>        
