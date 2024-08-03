@@ -42,9 +42,68 @@ const Blog = () => {
           },
         },
       ];
+
+    const latestblogData = [
+        {
+          img: progImg1,
+          author: "consolegh_",
+          title: "DTI Offers a Variety of Programmes Designed ...",
+          detail: 'Mobile Web Ghana and the American Corner, Agbogba...',
+          date: "May 26, 2024",
+          icons: {
+            authorIcon: <MdAccountCircle /> ,
+            dateIcon: <MdTimer/> 
+          },
+        },
+        {
+          img: progImg2,
+          author: "consolegh_",
+          title: "DTI Offers a Variety of Programmes Designed ...",
+          detail: 'Mobile Web Ghana and the American Corner, Agbogba...',
+          date: "May 26, 2024",
+          icons: {
+            authorIcon: <MdAccountCircle /> ,
+            dateIcon: <MdTimer/> 
+          },
+        },
+        {
+          img: progImg3,
+          author: "consolegh_",
+          title: "DTI Offers a Variety of Programmes Designed ...",
+          detail: 'Mobile Web Ghana and the American Corner, Agbogba...',
+          date: "May 26, 2024",
+          icons: {
+            authorIcon: <MdAccountCircle /> ,
+            dateIcon: <MdTimer/> 
+          },
+        },
+        {
+          img: progImg2,
+          author: "consolegh_",
+          title: "DTI Offers a Variety of Programmes Designed ...",
+          detail: 'Mobile Web Ghana and the American Corner, Agbogba...',
+          date: "May 26, 2024",
+          icons: {
+            authorIcon: <MdAccountCircle /> ,
+            dateIcon: <MdTimer/> 
+          },
+        },
+        {
+          img: progImg3,
+          author: "consolegh_",
+          title: "DTI Offers a Variety of Programmes Designed ...",
+          detail: 'Mobile Web Ghana and the American Corner, Agbogba...',
+          date: "May 26, 2024",
+          icons: {
+            authorIcon: <MdAccountCircle /> ,
+            dateIcon: <MdTimer/> 
+          },
+        },
+
+      ];
   return (
     <section className="bg-[]">
-    <div className="my-12 mx-8">
+    <div className="my-12 mx-12">
     <div className="flex flex-col justify-center items-center ">
        <iv className=" pt-12 lg:">
            <h2 className=" mb-14 text-center font-bold text-[24px] text-red-700 lg:text-[48px]">
@@ -70,7 +129,7 @@ const Blog = () => {
            <div className="">
            <h2 className="mb-4 font-bold uppercase  text-wrap">{title}</h2>
            <p className='mb-6 text-[gray]'>{detail}</p>
-           <button className='uppercase bg-[#faaf40] px-3 py-2 text-black rounded'>read more</button>
+           {/* <button className='uppercase bg-[#faaf40] px-3 py-2 text-black rounded'>read more</button> */}
            </div>
            
             </div>
@@ -82,7 +141,35 @@ const Blog = () => {
       </div>
        
     </div>
+    <div className="mx-12">
+      <h1 className='text-[18px] font-semibold  border-b w-[] mb-8 pb-4 '>Latest</h1>
+    <div className=" flex  items-center text-w justify-center  mb-14 gap-4">
+     {latestblogData.map((val, index) => {
+       const {img, title, author, detail, date , icons } = val;
+       return (
+         <div key={index} className="w-[25%] border p-2 flex flex-col justify-center items-center">
+            <div className=" w-[%]">
+            <img src={img} className="" alt="" />   
+              </div>              
+            <div className="my- flex flex-col justify-between items-cente  border-[gray]  px- py-2  gap-2">
+            <div className="flex  text-[14px] text-[gray] justify-start items-center gap-2 py-">
+           <span className="flex items-center flex-wrap gap-2">{icons.authorIcon} {author}</span>
+            {/* <span className="flex items-center gap-2">{icons.dateIcon} {date}</span>               */}
+           </div>
+           <div className="">
+           <h2 className="text-[14px] mb-2 font-semibold uppercase  text-wrap">{title}</h2>
+           <p className='mb- text-[gray]'>{detail}</p>
+           {/* <button className=' bg-[#faaf40] px-3 py-2 text-black rounded'>Read more</button> */}
+           </div>
+           
+            </div>
+         </div>
+       );
+     })}
+   </div>
     </div>
+    </div>
+
  </section>
   )
 }
