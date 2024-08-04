@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
 import {MdOutlineKeyboardArrowDown} from 'react-icons/md'
 import { IoCloseCircle } from 'react-icons/io5'
-import lightLogo from '../assets/logo/logo-black.png'
+import lightLogo from '../assets/logo/rcc-logo.jpeg'
 
 const Sidebar = ({}) => {
     const [sidebar,  setSidebar] = useState(false)

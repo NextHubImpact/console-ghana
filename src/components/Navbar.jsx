@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import MediaQuery from "react-responsive";
-import lightLogo from "../assets/logo/rural-logo.png";
+
 import rccLogo from '../assets/logo/rcc-logo.jpeg'
-import darkLogo from "../assets/logo/logo-black.png";
+import rccLogo2 from '../assets/logo/rcc-logo2.png'
+
 import { NavLink, Link } from "react-router-dom";
 
 import { IoMenu, IoClose } from "react-icons/io5";
@@ -72,12 +73,12 @@ const Navbar = ({}) => {
   window.addEventListener("scroll", changeNavbarColor);
 
   return (
-    <nav className={colorChange ? "bg-[#ffffff] shadow-xl  w-full duration-700 " : "bg-[#262261] duration-700 "}>
+    <nav className={colorChange ? "bg-[#ffffff] shadow-xl  w-full duration-700 " : "bg-[#ffffff] duration-700 "}>
       <div className="flex mx-12 justify-between p-4  items-center sticky top-0 z-10">
         <div className=" pl-4">
           <Link to='/'>
           <img
-            className= { colorChange? 'bg-[#faaf40]  duration-700 rounded  w-[20%] ' : "w-[20%] bg-[white] rounded-md pl- lg:w-[%] xl:w-[%]"}
+            className= { colorChange? 'bg-[#faaf40] duration-700 rounded  w-[35%] ' : "w-[35%] rounded-md pl- lg:w-[%] xl:w-[%]"}
             src={colorChange ? rccLogo : rccLogo}
             alt=""
           />
@@ -96,7 +97,7 @@ const Navbar = ({}) => {
                   className={
                     colorChange
                       ? "text-black px-4 xl:text-[20px] font-semibold-[700] "
-                      : "text-white px-4 xl:text-[20px] font-semibold-[700] "
+                      : "text-black px-4 xl:text-[20px] font-semibold-[700] "
                   }
                 >
                   <span
