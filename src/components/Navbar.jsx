@@ -78,7 +78,7 @@ const Navbar = ({}) => {
         <div className=" pl-4">
           <Link to='/'>
           <img
-            className= { colorChange? 'bg-[#faaf40] duration-700 rounded  w-[35%] ' : "w-[35%] rounded-md pl- lg:w-[%] xl:w-[%]"}
+            className= { colorChange? 'bg-[#faaf40] duration-700 rounded  w-[28%] ' : "w-[28%] "}
             src={colorChange ? rccLogo : rccLogo}
             alt=""
           />

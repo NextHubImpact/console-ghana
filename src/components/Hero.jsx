@@ -66,7 +66,7 @@ const Hero = () => {
              >
             {sliderImages.map((images, index) => (
               <div className="slide " key={index}>
-                <img  className=' slide-img h-[70vh] object-cover lg:h-full ' alt="" />
+                <img  className='  h-[40%] object-cover lg:h-full ' alt="" />
                 <div
                   style={{
                     backgroundImage: `url(${images.img})`,
@@ -81,16 +81,16 @@ const Hero = () => {
                     alignItems: 'start', 
                     marginTop: "rem", 
                 }}
-                 className=' text-white'
+                 className=' text-center text-white'
                 >
-                  <div className="w-[40%] flex ml-20   flex-col gap-4 itms-center">
-                    <h1 className=' text-6xl text-[#faaf40] text-cente text-wrap font-bold '>
+                  <div className="w-[%] justify-center ml-0 xl:w-[40%] flex xl:ml-20 flex-col gap-4 items-center">
+                    <h1 className='text-3xl text-wrap xl:text-6xl text-[#faaf40] text-cente text-wrap font-bold '>
                     <ReactTyped 
                     strings={[images.title]}
                     typeSpeed={200}
                     loop = {false}
                     backSpeed={20}
-                    cursorChar="|"
+                    cursorChar="_"
                     showCursor={true}
           
                      />
@@ -98,7 +98,7 @@ const Hero = () => {
                   
                     <p className='text- text-wrap'>{images.article}</p>
                     <NavLink to={images.link} >                
-                      <p className='bg-[#faaf40] w-[28%] py-4 px-8 rounded flex itms-center gap-4 mt-2 font-semibold'>{images.link}</p>
+                      <p className='bg-[#faaf40] w-[%] py-4 px-8 rounded flex items-center gap-4 mt-2 font-semibold'>{images.link}</p>
                     </NavLink>
                   </div>
                 </div>

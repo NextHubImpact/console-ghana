@@ -155,16 +155,16 @@ const Content = () => {
   // }, [index]);
 
   return (
-    <main className=" ">
+    <main className="mx-2 ">
       {/* stats */}
-      <section className="m-8">
-        <h1 className="text-center text-2xl uppercase m-12 font-semibold">we are connecting</h1>
-        <div className="flex items-center  gap-4 justify-center">
+      <section className="xl:m-8">
+        <h1 className=" text-[16px] text-center xl:text-2xl uppercase m-12 font-semibold">we are connecting</h1>
+        <div className="flex flex-col  items-center  gap-4 justify-center xl:flex-row">
               {
                 stats.map((val, index) => {
                   const { number , icon , title} = val ;
                   return (
-                    <div className="flex items-center p-6 rounded w-[30%] shadow-md bg-[white]  gap-4" key={index}>
+                    <div className="flex w-[100%] gap-6 items-center p-6 rounded xl:w-[30%] shadow-md bg-[white]  gap-4" key={index}>
                       <span className="text-[50px] ">{icon}</span>
                       <div className="flex flex-col">
                         <p className="text-[35px] font-semibold text-[#faaf40]">{number}</p>
@@ -187,13 +187,13 @@ const Content = () => {
               return (
                 <div
                   key={index}
-                  className=" flex flex-col justify-  items-center gap-2 bg-[white] h-[50vh]  shadow-md rounded-md mb-4 hover:scale-105   duration-700  lg:w-[30%]  xl:w-[28%] h-[50%] p-4"
+                  className=" flex flex-col justify-  items-center gap-2 bg-[white] h-[50vh] rounded-md mb-4 hover:shadow-md   duration-700  lg:w-[30%]  xl:w-[28%] h-[50%] p-4"
                 >
                   <div className="mb-6">
                     <img src={icons.whoweareIcon} alt="" />
                   </div>
                   <h2 className="font-semibold text-nowrap">{title}</h2>
-                  <article className=" text-[16px] text-[gray] text-center">{article}</article>
+                  <article className="text-[14px] xl:text-[16px] text-[gray] text-center">{article}</article>
                   <div className="bg-[#faaf40] p-2 rounded flex items-center gap-4 mt-2 font-semibold">
                     {link}
                     {icons.arrowIcon}
@@ -206,19 +206,19 @@ const Content = () => {
       </section>
 
       {/* who we are */}
-      <section className=" my-[5rem] ">
-        <div className="flex items-center justify-center ">
-          <div className=" flex flex-col items-center justify-center lg:flex-row  gap-2 bg-[whitesmoke] ">
-            <div className="lg:w-[48%]  gap-4 flex  justify-center flex-col items-center  lg:flex-row ">
+      <section className=" mt-[5rem] ">
+        <div className="flex items-center justify-between ">
+          <div className=" flex flex-col items-center justify-center lg:flex-row   gap-2 bg-[whitesmoke] ">
+            <div className="xl:w-[48%]   gap-4 flex  justify-center flex-col items-center  xl:flex-row ">
               
-              <div className=" w-full flex justify-between flex-col gap-8 ">
+              <div className=" w-full flex items-center justify-between  flex-col gap-8 xl:items-start text-center">
                 <div className="">
-                  <h1 className="uppercase font-bold text-red-700 text-3xl ">
+                  <h1 className="text-center uppercase font-bold text-red-700 text-3xl ">
                     who we are
                   </h1>
-                  <hr className="w-[20%] rounded mt-6 h-1 bg-red-700" />
+                  <hr className="hidden xl:block w-[20%] text-center rounded mt-6 h-1 bg-red-700" />
                 </div>
-                <article className=" mr-14 text-[16px]">
+                <article className=" xl:pr-4 text-[14px] xl:text-[16px] xl:text-start ">
                 Rural Code Camp is a NON PROFIT ORGANISATION dedicated in bridging the digital divide by empowering students in remote villages across Ghana with essential coding and computer skills. We are on a mission to connect the unconnected.
                 </article>
 
@@ -229,7 +229,7 @@ const Content = () => {
               </div>
             </div>
 
-            <figure className="lg: flex justify-end w-[40%] p-  ">
+            <figure className="lg: flex justify-end xl:w-[40%] p-  ">
               <img className="lg: w-[100%]   rounded-" src={progImg1} alt="" />
             </figure>
           </div>
@@ -237,13 +237,13 @@ const Content = () => {
       </section>
 
       {/* our values */}
-      <section className="my-[5rem] mx- bg-white">
-        <div className="mx-12">
-          <div className="flex justify-between mx-10 h-[60vh] items-center">
-            <div className="flex  flex-col gap-2  w-[30%] ">
+      <section className="my-[4rem] py-8 mx- bg-white">
+        <div className="mt-4 xl:mx-10">
+          <div className="flex flex-col gap-8 xl:flex-row justify-between xl:mx-10 xl:h-[60vh] items-center">
+            <div className="flex  text-center flex-col gap-2  xl:w-[35%] xl:text-start ">
               <div className="uppercase font-semibold flex mb-3  flex-col gap-3">
                 <h2 className="text-[30px]">our values</h2>
-                <hr className="text-4xl w-[20%] rounded mt-4 h-1 bg-red-700" />
+                <hr className="text-4xl hidden w-[20%] rounded mt-4 h-1 bg-red-700 xl:block" />
               </div>
               <div className="mb-">
                 <article className="leading- text-[14px]">
@@ -255,14 +255,14 @@ const Content = () => {
             </div>
              
              
-           <div className="w-[60%]">
-           <div className="flex justify-between items-center gap-4 ">
+           <div className="xl:w-[65%]">
+           <div className="flex flex-col xl:flex-row justify-between items-center gap-4 ">
             {values.map((val, index) => {
               const { title, article, link, icons } = val;
               return (
                 <div
                   key={index}
-                  className=" flex flex-col  items-center gap-4 bg-[whitesmoke] p-  shadow-md rounded-md hover:scale-105   duration-700   xl:w-[%] p-6"
+                  className=" flex flex-col  items-center gap-4 bg-[whitesmoke] p-  shadow-m rounded-md hover:shadow-md   duration-700   xl:w-[%] p-6"
                 >
                   <div className="mb-">
                     <img src={icons.whoweareIcon} alt="" />
@@ -307,23 +307,24 @@ const Content = () => {
 
       {/* our activities*/}
       <section className="">
-        <div className="mx-10  my-14">
-          <h1 className="text-5xl text-center ">Our Actitvites</h1>
-          <div className="mt-14 mb-[6rem] lg:flex  xl:flex justify-center gap-6">
+        <div className="xl:mx-8  my-14">
+          <h1 className="text-3xl uppercase font-semibold text-center ">Our Actitvites</h1>
+          
+          <div className=" flex flex-col gap-4 mt-14 mb-[6rem] lg:flex  xl:flex-row justify-center gap-4">
             {offer.map((val, index) => {
               const { title, article, link, icon, img } = val;
               return (
                 <div
                   key={index}
-                  className=" flex flex-col  items-center gap-2 bg-[#262261] text-white   shadow-md hover:scale-105   duration-700  lg:w-[30%] xl:w-[30%] p-"
+                  className=" flex flex-col  justify-between items-center gap-4 bg-[#262261] text-white   shadow-md    duration-700  lg:w-[30%] xl:w-[30%] p-"
                 >
                   <img src={img} alt="" />
                   <div className=" flex flex-col items-center gap- px-4 ">
                     <h2 className=" text-wrap text-center text- font-semibold">
                       {title}
                     </h2>
-                    <article className="leading text-center">{article}</article>
-                    <div className="bg-[#faaf40] py-3 px-4 rounded-[1.8rem] flex items-center gap-4 m-4 ">
+                    <article className="text-[14px] text-center">{article}</article>
+                    <div className="bg-[#faaf40] py-2 px-3 rounded-md flex items-center gap-4 m-4 ">
                       {link}
                       {icon}
                     </div>
@@ -332,7 +333,8 @@ const Content = () => {
               );
             })}
           </div>
-        </div>
+          </div>
+        
       </section>
 
       {/* partners */}

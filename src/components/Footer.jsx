@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { FaLinkedin, FaInstagram, FaFacebook, FaTwitter } from "react-icons/fa";
 import {Link, NavLink} from 'react-router-dom'
-import lightLogo from '../assets/logo/rural-logo.png'
+import rccLogo from '../assets/logo/rcc-logo.jpeg'
 
 const Footer = () => {
 //    const [year , setYear] = useState(new Date());
@@ -13,21 +13,21 @@ const Footer = () => {
 
   return (
     <div className='bg-black text-white  '>
-      <div className="mx-10 flex flex-col items-cente justify-between gap-[rem] bg-[] h-[65vh] pt-[4rem] px-8 pb-[rem] lg:px-4">
-      <div className="flex flex-col  gap-[3rem] lg:flex-row  justify-betwe p-4">
+      <div className="xl:mx-10 flex flex-col items-cente justify-between gap-[rem] bg-[]  pt-[4rem] px-8 pb-[rem] lg:px-4">
+      <div className="flex flex-col  gap-[3rem] lg:flex-row  justify-betwe p-">
         <div className="lg:w-[30%]">
            <NavLink to='/'>
-           <img className='w-[20%] rounded-[50%] bg-[white] border' src={lightLogo} alt="logo" />
+           <img className='w-[80%]  bg-[white] border' src={rccLogo} alt="logo" />
            </NavLink>
             <article className='leading-6 mt-10'>
             DTI’s mission is to become the leading industrial job training and prototype center in West Africa to transform the livelihoods of young people in TVET.
             </article>
         </div>
 
-      <div className=" flex flex-col items-cente p- lg:flex-row text-[18px]  justify-between flex-1">
+       <div className=" flex flex-col gap-4 items-cente p- lg:flex-row text-[18px]  justify-between flex-1">
         <div className="">
         <h2 className=' font-semibold mb-2' >Quick Links</h2>
-        <div className="flex flex-col gap-6 py-  text-[px]">
+        <div className="flex flex-col gap-2 py-  text-[px]">
                 <Link className='flex items-center gap-2' to='/'>         
                   <p>Home</p>
                 </Link>
@@ -77,7 +77,7 @@ const Footer = () => {
             </div>
         </div>
 
-         <div className="flex flex-col gap-4">
+         <div className="flex flex-col gap-4 mb-6">
             <h2 className=' font-semibold' >Contact Us</h2>
 
             <div>
@@ -100,7 +100,7 @@ const Footer = () => {
      </div>
       <hr/>
       {/* divider */}
-     <div className="flex justify-center mb-8">
+     <div className="flex justify-center my-4">
      
         <div className="">
              &copy; {getYear()} DTI. ALL RIGHTS RESERVED.
