@@ -66,13 +66,11 @@ const Hero = () => {
              >
             {sliderImages.map((images, index) => (
               <div className="slide " key={index}>
-                <img  className='  h-[40%] object-cover lg:h-full ' alt="" />
+                <img  className='  h-[] object-cover lg: ' alt="" />
                 <div
                   style={{
                     backgroundImage: `url(${images.img})`,
                     backgroundSize: "cover",
-                    height: "100vh",
-                    width: "100vw",
                     backgroundRepeat: "no-repeat",
                     backgroundPosition: 'center',
                     display: 'flex',
@@ -81,7 +79,7 @@ const Hero = () => {
                     alignItems: 'start', 
                     marginTop: "rem", 
                 }}
-                 className=' text-center text-white'
+                 className=' h-[70vh] text-center text-white xl:h-[100vh]'
                 >
                   <div className="w-[%] justify-center ml-0 xl:w-[40%] flex xl:ml-20 flex-col gap-4 items-center">
                     <h1 className='text-3xl text-wrap xl:text-6xl text-[#faaf40] text-cente text-wrap font-bold '>
