@@ -7,7 +7,6 @@ import rccLogo2 from '../assets/logo/rcc-logo2.png'
 import { NavLink, Link } from "react-router-dom";
 
 import { IoMenu, IoClose } from "react-icons/io5";
-import { IoSearch } from "react-icons/io5";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import Sidebar from "./Sidebar";
 import Home from "../pages/Home";
@@ -19,12 +18,13 @@ const Navbar = ({}) => {
   const [media, SetMedia] = useState(false);
 
   const showSidebar = () => {
-    setSidebar(!sidebar);
+    setSidebar(!sidebar );
     setClosemenu(!closeMenu);
+    
   };
 
   const query = () => {
-    SetMedia(matchMedia(1024));
+    SetMedia( document.body.style.backgroundColorb = 'black')
   };
 
   const SidebarData = [
@@ -60,6 +60,7 @@ const Navbar = ({}) => {
     },
   ];
 
+
   // nav bg color change //
 
   const changeNavbarColor = () => {
@@ -74,7 +75,7 @@ const Navbar = ({}) => {
 
   return (
     <nav className={colorChange ? "bg-[#ffffff] shadow-xl  w-full duration-700 " : "bg-[#ffffff] duration-700 "}>
-      <div className="flex mx-12 justify-between p-4  items-center sticky top-0 z-10">
+      <div className="flex mx-4 xl:mx-12 justify-between xl:p-4  items-center sticky top-0 z-10">
         <div className=" pl-4">
           <Link to='/'>
           <img
@@ -113,11 +114,11 @@ const Navbar = ({}) => {
           </ul>
         </nav>
 
-        <div className=" flex text-white items-center gap-4 text-2xl lg:hidden">
-          <IoSearch />
+        <div className=" flex text-black items-center gap-4 text-2xl lg:hidden">
 
           {closeMenu ? (
             <IoClose onClick={showSidebar} />
+            
           ) : (
             <IoMenu onClick={showSidebar} />
           )}

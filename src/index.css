@@ -20,17 +20,17 @@ html {
 
 .nav-menu{
     background-color: #f1f1f1;
-    width: 340px;
+    /* width: 340px; */
     /* height: 100vh; */
-    display: flex ;
-    flex-direction: column;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    transition: ease 1000ms;
-    z-index: 999;
+    /* display: flex ; */
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+    /* position: fixed; */
+    /* top: 0; */
+    /* left: 1; */
+    /* bottom: 0; */
+    /* transition: ease 1000ms; */
+    /* z-index: 999; */
 }
 
 .nav-menu-active {

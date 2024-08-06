@@ -131,7 +131,7 @@ const Content = () => {
     {
       number : '16',
       icon: <MdAccountCircle/>,
-      title: 'Regional'
+      title: 'Regions'
     },
     {
       number : 'Over 6000',
@@ -279,7 +279,7 @@ const Content = () => {
       </section>
 
       {/* cards */}
-      <section className="">
+      {/* <section className="">
         <div className="mx- ">
           <div className="mt-14 mb-[6rem] lg:flex  xl:flex justify-center gap-8 ">
             {offer.map((val, index) => {
@@ -303,7 +303,7 @@ const Content = () => {
             })}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* our activities*/}
       <section className="">

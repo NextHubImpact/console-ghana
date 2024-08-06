@@ -5,65 +5,52 @@ import { IoCloseCircle } from 'react-icons/io5'
 import lightLogo from '../assets/logo/rcc-logo.jpeg'
 
 const Sidebar = ({}) => {
-    const [sidebar,  setSidebar] = useState(false)
-
-  const showSidebar = () => {setSidebar(!sidebar)};
+    const [idebar,  setIdebar] = useState(false)
 
   const SidebarData = [
-      {
-          title: 'Home',
-          path: '/',
-      },
-      {
-          title: 'About',
-          path: '/about',
-      },
-      {
-          title: 'Our Services',
-          path: '/ourservices',
-      },
-      {
-          title: 'Academics',
-          path: '/academics',
-      },
-      {
-          title: 'Campus Life',
-          path: '/campuslife',
-      },
-      {
-          title: 'Donate',
-          path: '/donate',
-      },
-      {
-          title: 'News',
-          path: '/news'
-      },
-      {
-          title: 'Contact',
-          path: '/contact'
-      },
-      {
-          title: 'Apply Here',
-          path: '/applyhere'
-      }
-  ]
+    {
+      id: "1",
+      title: "Home",
+      path: "/",
+    },
+    {
+      id: "2",
+      title: "About",
+      path: "/about",
+    },
+    {
+      id: "3",
+      title: "Projects",
+      path: "/projects",
+    },
+    {
+      id: "4",
+      title: "Blog",
+      path: "/Blog",
+    },
+    {
+      id: "5",
+      title: "Contact",
+      path: "/contact",
+    },
+    {
+      id: "6",
+      title: "Get Involve",
+      path: "/getinvolve",
+    },
+  ];
 
 
 
   return (
     <aside id='sidebar'>
-       <nav className='nav-menu  ' >
+       <nav className='absolute w-[100%] bg-white left-0 top-20 shadow  rounded-md h-[60vh] ' >
  
-       <div className="flex justify-between  p-2 items-center  ">
-                <img className='w-[40%]' src={lightLogo} alt="logo" />
-                {/* <IoCloseCircle className='text-2xl' onClick={showSidebar} /> */}
-            </div>
-
          <ul className=' flex-1'>     
             {SidebarData.map((item, index) => {
-                return ( <li key={index} className='flex flex-row px-4'>
-                      <Link to={item.path} className='bg- w-full flex items-center justify-between p-2 border-b border-black'>
-                         <span >{item.title}</span>
+                return ( <li key={index} className='flex flex-row gap- p-2'>
+                      <Link to={item.path} className='font-semibold w-full flex items-center justify-between p-2 '>
+                         <span  onClick={() => } >{item.title}</span>
                     </Link>
                  </li>)
             })}

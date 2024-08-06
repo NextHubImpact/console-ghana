@@ -66,7 +66,7 @@ const Hero = () => {
              >
             {sliderImages.map((images, index) => (
               <div className="slide " key={index}>
-                <img  className='  h-[] object-cover lg: ' alt="" />
+                <img alt="hero photo" />
                 <div
                   style={{
                     backgroundImage: `url(${images.img})`,
