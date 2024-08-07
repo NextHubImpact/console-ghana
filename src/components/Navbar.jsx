@@ -13,21 +13,18 @@ import Home from "../pages/Home";
 
 const Navbar = ({}) => {
   const [sidebar, setSidebar] = useState(false);
-  const [closeMenu, setClosemenu] = useState(false);
+  // const [closeMenu, setClosemenu] = useState(false);
   const [colorChange, setColorchange] = useState(false);
   const [media, SetMedia] = useState(false);
-  // const [hide , setHide] = useState[false];
 
+
+  
   const showSidebar = () => {
     setSidebar(!sidebar );
-    setClosemenu(!closeMenu);
-    // setHide(!hide)
-    
+    setClosemenu(!closeMenu); 
   };
 
-  const query = () => {
-    SetMedia( document.body.style.backgroundColorb = 'black')
-  };
+ 
 
   const SidebarData = [
     {
@@ -77,18 +74,18 @@ const Navbar = ({}) => {
 
   return (
     <nav className={colorChange ? "bg-[#ffffff] shadow-xl  w-full duration-700 " : "bg-[#ffffff] duration-700 "}>
-      <div className="flex mx-4 xl:mx-12 justify-between xl:p-4  items-center sticky top-0 z-10">
-        <div className=" pl-4">
+      <div className="flex mx-2 xl:mx-12 justify-between py-4 xl:p-4  items-center sticky top-0 z-10">
+        <div className="  xl:pl-4">
           <Link to='/'>
           <img
-            className= { colorChange? 'bg-[#faaf40] duration-700 rounded  w-[28%] ' : "w-[28%] "}
+            className= { colorChange? 'bg-[#faaf40] duration-700 rounded  w-[40%] ' : "w-[40%] "}
             src={colorChange ? rccLogo : rccLogo}
             alt=""
           />
           </Link>        
         </div>
 
-        {sidebar ? <Sidebar showSidebar={showSidebar} /> : ""}
+        { sidebar && <Sidebar showSidebar={showSidebar} />}
 
         <nav className="hidden  lg:block w-[50%] ">
           <ul className="lg: flex text-nowrap gap-2 py-2  justify-between items-center xl:p-4 ">
@@ -116,13 +113,15 @@ const Navbar = ({}) => {
           </ul>
         </nav>
 
-        <div className=" flex text-black items-center gap-4 text-2xl lg:hidden">
+        <div className=" flex text-3xl text-black items-center gap-4 text-2xl duration-700 lg:hidden">
 
-          {closeMenu ? (
-            <IoClose onClick={showSidebar} />
-            
+          {sidebar ? (
+            <IoClose
+             onClick={showSidebar }
+             className={sidebar ? 'text-white absolute right-1 bg-[#faaf rounded-[50%] p- text-2xl top-10' : ''} 
+             />         
           ) : (
-            <IoMenu onClick={showSidebar} />
+            <IoMenu  className="" onClick={showSidebar} />
           )}
         </div>
       </div>

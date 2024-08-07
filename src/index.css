@@ -14,9 +14,12 @@ html {
 }
 
 /* sidebar  */
-#sidebar {
-  /* box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.896); */
-}
+#sidebar{
+  box-shadow:0 0 10000px 1000px rgba(0,0,0,.70);
+  overflow: hidden;
+ }
+
+
 
 .nav-menu{
     background-color: #f1f1f1;

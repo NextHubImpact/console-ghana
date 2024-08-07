@@ -47,13 +47,13 @@ const Sidebar = ({showSidebar}) => {
 
 
   return (
-    <aside id='sidebar'>
-       <nav className='absolute w-[100%] bg-white left-0 top-20 shadow  rounded-md h-[60vh] ' >
- 
+    <aside onClick={showSidebar}  id='sidebar'>
+       <nav className='absolute w-[100%] bg-white  px-4 left-0 top-20  drop-shadow-2xl duration-700 rounded-md h-[80vh] ' >
+           
          <ul className=' flex-1'>     
             {SidebarData.map((item, index) => {
                 return ( <li key={index} className='flex flex-row gap- p-2'>
-                      <Link to={item.path} className='font-semibold w-full flex items-center justify-between p-2 '>
+                      <Link onClick={showSidebar} to={item.path} className='font-semibold w-full flex items-center justify-between p-2 '>
                          <span onClick={showSidebar} >{item.title}</span>
                     </Link>
                  </li>)

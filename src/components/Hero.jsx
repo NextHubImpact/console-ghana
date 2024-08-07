@@ -79,9 +79,9 @@ const Hero = () => {
                     alignItems: 'start', 
                     marginTop: "rem", 
                 }}
-                 className=' h-[70vh] text-center text-white xl:h-[100vh]'
+                 className=' h-[70vh] text-center text-white xl:text-start xl:h-[100vh]'
                 >
-                  <div className="w-[%] justify-center ml-0 xl:w-[40%] flex xl:ml-20 flex-col gap-4 items-center">
+                  <div className="w-[%] justify-center ml-0 xl:w-[40%] flex xl:ml-20 xl:items-start flex-col gap-4 items-center">
                     <h1 className='text-3xl text-wrap xl:text-6xl text-[#faaf40] text-cente text-wrap font-bold '>
                     <ReactTyped 
                     strings={[images.title]}
