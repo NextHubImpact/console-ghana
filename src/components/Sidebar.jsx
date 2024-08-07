@@ -4,8 +4,12 @@ import {MdOutlineKeyboardArrowDown} from 'react-icons/md'
 import { IoCloseCircle } from 'react-icons/io5'
 import lightLogo from '../assets/logo/rcc-logo.jpeg'
 
-const Sidebar = ({}) => {
-    const [idebar,  setIdebar] = useState(false)
+const Sidebar = ({showSidebar}) => {
+    const [idebar,  setIdebar] = useState(false);
+
+    // const hide = () => {
+    //     setIdebar(!idebar)
+    // }
 
   const SidebarData = [
     {
@@ -50,7 +54,7 @@ const Sidebar = ({}) => {
             {SidebarData.map((item, index) => {
                 return ( <li key={index} className='flex flex-row gap- p-2'>
                       <Link to={item.path} className='font-semibold w-full flex items-center justify-between p-2 '>
-                         <span >{item.title}</span>
+                         <span onClick={showSidebar} >{item.title}</span>
                     </Link>
                  </li>)
             })}

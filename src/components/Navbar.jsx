@@ -16,10 +16,12 @@ const Navbar = ({}) => {
   const [closeMenu, setClosemenu] = useState(false);
   const [colorChange, setColorchange] = useState(false);
   const [media, SetMedia] = useState(false);
+  // const [hide , setHide] = useState[false];
 
   const showSidebar = () => {
     setSidebar(!sidebar );
     setClosemenu(!closeMenu);
+    // setHide(!hide)
     
   };
 
@@ -86,7 +88,7 @@ const Navbar = ({}) => {
           </Link>        
         </div>
 
-        {sidebar ? <Sidebar /> : ""}
+        {sidebar ? <Sidebar showSidebar={showSidebar} /> : ""}
 
         <nav className="hidden  lg:block w-[50%] ">
           <ul className="lg: flex text-nowrap gap-2 py-2  justify-between items-center xl:p-4 ">
@@ -99,7 +101,7 @@ const Navbar = ({}) => {
                     colorChange
                       ? "text-black px-4 xl:text-[20px] font-semibold-[700] "
                       : "text-black px-4 xl:text-[20px] font-semibold-[700] "
-                  }
+                  }                
                 >
                   <span
                     className={
