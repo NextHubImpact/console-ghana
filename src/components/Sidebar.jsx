@@ -30,7 +30,7 @@ const Sidebar = ({showSidebar}) => {
     {
       id: "4",
       title: "Blog",
-      path: "/Blog",
+      path: "/blog",
     },
     {
       id: "5",
