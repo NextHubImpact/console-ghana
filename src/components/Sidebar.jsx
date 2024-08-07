@@ -5,7 +5,7 @@ import { IoCloseCircle } from 'react-icons/io5'
 import lightLogo from '../assets/logo/rcc-logo.jpeg'
 
 const Sidebar = ({showSidebar}) => {
-    const [idebar,  setIdebar] = useState(false);
+    // const [idebar,  setIdebar] = useState(false);
 
     // const hide = () => {
     //     setIdebar(!idebar)
@@ -53,7 +53,7 @@ const Sidebar = ({showSidebar}) => {
          <ul className=' flex-1'>     
             {SidebarData.map((item, index) => {
                 return ( <li key={index} className='flex flex-row gap- p-2'>
-                      <Link onClick={showSidebar} to={item.path} className='font-semibold w-full flex items-center justify-between p-2 '>
+                      <Link to={item.path} onClick={showSidebar}  className='font-semibold w-full flex items-center justify-between p-2 '>
                          <span onClick={showSidebar} >{item.title}</span>
                     </Link>
                  </li>)
