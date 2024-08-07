@@ -11,7 +11,7 @@ const Sidebar = ({showSidebar}) => {
     //     setIdebar(!idebar)
     // }
 
-  const SidebarData = [
+  const sidebarData = [
     {
       id: "1",
       title: "Home",
@@ -51,7 +51,7 @@ const Sidebar = ({showSidebar}) => {
        <nav className='absolute w-[100%] bg-white  px-4 left-0 top-20  drop-shadow-2xl duration-700 rounded-md h-[80vh] ' >
            
          <ul className=' flex-1'>     
-            {SidebarData.map((item, index) => {
+            {sidebarData.map((item, index) => {
                 return ( <li key={index} className='flex flex-row gap- p-2'>
                       <Link to={item.path} onClick={showSidebar}  className='font-semibold w-full flex items-center justify-between p-2 '>
                          <span onClick={showSidebar} >{item.title}</span>
