@@ -31,19 +31,19 @@ const Contact = () => {
   ];
   return (
     <div>
-      <section className="my-[5rem] mx-[5rem] py-10">
+      <section className="my-8 mx-2 xl:my-[5rem] xl:mx-[5rem] py-10">
         <div className="text-center uppercase">
           <h2>contact us</h2>
           <h1 className="text-[28px] font-semibold">get in touch</h1>
         </div>
-        <div className="flex gap- justify-center ites-center w-[%]  my-[4rem]">
-          <div className="flex gap-8 flex-wrap items- justify-centr w-[50%]">
+        <div className="flex gap-8 justify-center ites-center w-[%]  my-[4rem] xl:flex flex-col">
+          <div className="flex gap-2 xl:gap-8 flex-wrap items- justify-between xl:w-[50%]">
             {contactData.map((val, index) => {
               const { icon, title, info, time } = val;
               return (
                 <div
                   key={index}
-                  className="w-[40%] bg-[white] p-4  flex flex-col rounded shadow-md  text-center gap-4 items-center duration-300  hover:scale-105 "
+                  className="w-[48%] xl:w-[40%] bg-[white] p-4  flex flex-col rounded shadow-md  text-center gap-4 items-center duration-300  hover:scale-105 "
                 >
                   <div className="w-[%]">
                     <img src={icon} className="w-[%]" alt="" />
@@ -63,7 +63,7 @@ const Contact = () => {
           </div>
 
           {/* form  */}
-          <div className=" justify-center items-center p-4 border flex flex-col bg-[white] w-[50%]">
+          <div className=" justify-center items-center p-4 border flex flex-col bg-[white] xl:w-[50%]">
             
               <form
                 action="https://formbase.dev/s/dBB2b3ZULGWVSV8"
@@ -72,7 +72,7 @@ const Contact = () => {
                 className="flex flex-col items-center gap-4 justify-center w-full"
               >
                 <div className="flex flex-col gap-4 items-cente justify-cente w-full">
-                  <div className="flex gap-8">
+                  <div className="flex gap-8 xl:flex flex-col">
                     <input
                       className="border p-2  w-[100%]"
                       type="name"

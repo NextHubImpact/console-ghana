@@ -62,7 +62,7 @@ const Hero = () => {
     <div className='slideshow '>
     
         <div className="slideshowSlider"
-             style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
+             s3tyle={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
              >
             {sliderImages.map((images, index) => (
               <div className="slide " key={index}>

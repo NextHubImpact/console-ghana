@@ -38,7 +38,7 @@ const Blog = () => {
           date: "May 26, 2024",
           icons: {
             authorIcon: <MdAccountCircle /> ,
-            dateIcon: <MdTimer/> 
+              dateIcon: <MdTimer/> 
           },
         },
       ];
@@ -103,7 +103,7 @@ const Blog = () => {
       ];
   return (
     <section className="bg-[]">
-    <div className="my-12 mx-12">
+    <div className="mx-2 my-12 xl:mx-12">
     <div className="flex flex-col justify-center items-center ">
        <iv className=" pt-12 lg:">
            <h2 className=" mb-14 text-center font-bold text-[24px] text-red-700 lg:text-[48px]">
@@ -117,18 +117,18 @@ const Blog = () => {
      {blogData.map((val, index) => {
        const {img, title, author, detail, date , icons } = val;
        return (
-         <div key={index} className="w-[85%] flex items-cente">
-            <div className=" w-[35%]">
+         <div key={index} className=" flex  flex-col xl:w-[85%] xl:flex-row items-center ">
+            <div className=" xl:w-[35%]">
             <img src={img} className="" alt="" />   
               </div>              
-            <div className="my- flex flex-col justify- border border-[gray]  px-8 py-4  gap-6">
-            <div className="flex  text-[16px] text-[gray] justify-start items-center gap-2 py-">
+            <div className="my- flex flex-col justify- border border-[gray] p-2 xl:px-8 xl:py-4  gap-6">
+            <div className="flex  xl:text-[16px] text-[gray] justify-start items-center gap-2 py-">
            <span className="flex items-center gap-2">{icons.authorIcon} {author}</span>
             <span className="flex items-center gap-2">{icons.dateIcon} {date}</span>              
            </div>
            <div className="">
-           <h2 className="mb-4 font-bold uppercase  text-wrap">{title}</h2>
-           <p className='mb-6 text-[gray]'>{detail}</p>
+           <h2 className="text-[14px] xl:mb-4 font-semibold uppercase  xl:text-wrap">{title}</h2>
+           <p className='xl:mb-6 text-[gray]'>{detail}</p>
            {/* <button className='uppercase bg-[#faaf40] px-3 py-2 text-black rounded'>read more</button> */}
            </div>
            
@@ -141,13 +141,13 @@ const Blog = () => {
       </div>
        
     </div>
-    <div className="mx-12">
+    <div className="mx-2 xl:mx-12">
       <h1 className='text-[18px] font-semibold  border-b w-[] mb-8 pb-4 '>Latest</h1>
-    <div className=" flex  items-center text-w justify-center  mb-14 gap-4">
+    <div className=" flex  items-center text-w justify-center  mb-14 gap-4 flex-wrap">
      {latestblogData.map((val, index) => {
        const {img, title, author, detail, date , icons } = val;
        return (
-         <div key={index} className="w-[25%] border p-2 flex flex-col justify-center items-center">
+         <div key={index} className="xl:w-[25%] border p-2 flex flex-col justify-center items-center">
             <div className=" w-[%]">
             <img src={img} className="" alt="" />   
               </div>              

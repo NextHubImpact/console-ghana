@@ -45,9 +45,9 @@ const About = () => {
   ];
 
   return (
-    <div className="my-[6rem]">
+    <div className="mx-2">
       {/* who we are */}
-      <section className=" pt-[8rem] ">
+      {/* <section className=" pt-[8rem] ">
         <div className="flex items-center justify-center  ">
           <div className=" flex flex-col items-center justify-center lg:flex-row  gap-2 bg-[whitesmoke] ">
             <div className="lg:w-[48%]  gap-4 flex  justify-center flex-col items-center  lg:flex-row ">
@@ -77,6 +77,35 @@ const About = () => {
             </figure>
           </div>
         </div>
+      </section> */}
+        <section className=" xl:mt-[2rem] mt-[2rem] pt-[4rem] ">
+        <div className="flex items-center justify-between ">
+          <div className=" flex flex-col items-center justify-center lg:flex-row   gap-2 bg-[whitesmoke] ">
+            <div className="xl:w-[48%]   gap-4 flex  justify-center flex-col items-center  xl:flex-row ">
+              
+              <div className=" w-full flex items-center justify-between  flex-col gap-8 xl:items-start text-center">
+                <div className="">
+                  <h1 className="text-center uppercase font-bold text-red-700 text-3xl ">
+                    who we are
+                  </h1>
+                  <hr className="hidden xl:block w-[20%] text-center rounded mt-6 h-1 bg-red-700" />
+                </div>
+                <article className=" xl:pr-4 text-[14px] xl:text-[16px] xl:text-start ">
+                Rural Code Camp is a NON PROFIT ORGANISATION dedicated in bridging the digital divide by empowering students in remote villages across Ghana with essential coding and computer skills. We are on a mission to connect the unconnected.
+                </article>
+
+                <div className="flex items-center gap-4 font-semibold ">
+                  <h2 className="text-[20px] ">About us </h2>
+                  <IoArrowForward className="text-red-700" />
+                </div>
+              </div>
+            </div>
+
+            <figure className="lg: flex justify-end xl:w-[40%] p-  ">
+              <img className="lg: w-[100%]   rounded-" src={progImg1} alt="" />
+            </figure>
+          </div>
+        </div>
       </section>
 
       {/* what we offer */}
@@ -100,10 +129,10 @@ const About = () => {
                   <article className=" text-[16px] text-[gray] text-center">
                     {article}
                   </article>
-                  <div className="bg-[#faaf40] p-2 rounded flex items-center gap-4 mt-2 font-semibold">
+                  {/* <div className="bg-[#faaf40] p-2 rounded flex items-center gap-4 mt-2 font-semibold">
                     {link}
                     {icons.arrowIcon}
-                  </div>
+                  </div> */}
                 </div>
               );
             })}
@@ -113,21 +142,21 @@ const About = () => {
 
       <section>
         <div className="flex items-center justify-center  ">
-          <div className=" flex flex-col items-center w-[88%] justify-between lg:flex-row  gap- bg-[whitesmoke] ">
-          <figure className="lg: flex flex-col justify-end w-[40%] p-  ">
+          <div className=" flex flex-col items-center xl:w-[88%] justify-between lg:flex-row  gap- bg-[whitesmoke] ">
+          <figure className="w-full flex flex-col justify-end  xl:w-[40%] p-  ">
               <img className="lg: w-[100%] h-[30vh]  rounded-" src={progImg1} alt="" />
               <img className="lg: w-[100%] h-[30vh]  rounded-" src={progImg1} alt="" />
             </figure>
 
             <div className="lg:w-[55%] ml- gap-8 flex  justify-center flex-col items-center  lg:flex-row ">
-              <div className=" w-full flex justify-between flex-col gap-8 p-6">
+              <div className=" w-full flex justify-between flex-col gap-8 xl:p-6">
                 <div className="">
-                  <h1 className="uppercase font-bold text-red-700 text-3xl ">
+                  <h1 className="uppercase text-center pt-4 font-bold text-red-700 text-3xl ">
                     our story
                   </h1>
-                  <hr className="w-[20%] rounded mt-6 h-1 bg-red-700" />
+                  <hr className="hidden w-[20%] rounded mt-6 h-1 bg-red-700 xl:block" />
                 </div>
-                <article className=" mr-14 text-[16px]">
+                <article className=" xl:mr-14 xl:text-[16px]">
                   Rural Code Camp is a NON PROFIT ORGANISATION dedicated in
                   bridging the digital division by empowering students in remote
                   villages across Ghana with essential coding and computer
@@ -139,10 +168,10 @@ const About = () => {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias atque molestias quasi obcaecati eos adipisci laborum, repellat sequi distinctio modi facilis dolore voluptatibus dignissimos quis ullam est quia! Obcaecati dolores voluptas, facere laboriosam quam illo vitae voluptates dignissimos, voluptatibus esse commodi eligendi, sint odio? Asperiores animi totam fugiat praesentium distinctio repellat eaque aspernatur atque nobis, voluptatum earum odit voluptate iusto!    
                 </article>
 
-                <div className="flex items-center gap-4 font-semibold ">
+                {/* <div className="flex items-center gap-4 font-semibold ">
                   <h2 className="text-[20px] ">About us </h2>
                   <IoArrowForward className="text-red-700" />
-                </div>
+                </div> */}
               </div>
             </div>
 

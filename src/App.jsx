@@ -13,7 +13,7 @@ import About from './pages/About.jsx'
 import Projects from './pages/Projects.jsx'
 import Blog from './pages/Blog.jsx'
 import Contact from './pages/Contact.jsx'
-// import Home from './pages/Home'
+import GetInvolve from './pages/GetInvolve.jsx'
 
 
 function App() {
@@ -34,8 +34,9 @@ function App() {
               <Route path="/projects" element={<Projects/>} />
               <Route path="/blog" element={<Blog/>} />
               <Route path="/contact" element={<Contact/>} />
+              <Route path="/getinvolve" element={<GetInvolve/>} />
               {/* <Route path="/campuslife" element={<CampusLife/>} />
-              <Route path="/donate" element={<Donate/>} />
+              
            
               <Route path="/applyhere" element={<ApplyHere/>} />   */}
 
