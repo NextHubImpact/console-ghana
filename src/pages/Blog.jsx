@@ -143,15 +143,15 @@ const Blog = () => {
     </div>
     <div className="mx-2 xl:mx-12">
       <h1 className='text-[18px] font-semibold  border-b w-[] mb-8 pb-4 '>Latest</h1>
-    <div className=" flex  items-center text-w justify-center  mb-14 gap-4 flex-wrap">
+    <div className=" flex  items-center text-w justify-ceter  mb-14 gap-4 ">
      {latestblogData.map((val, index) => {
        const {img, title, author, detail, date , icons } = val;
        return (
-         <div key={index} className="xl:w-[25%] border p-2 flex flex-col justify-center items-center">
+         <div key={index} className="xl:w-[25%] order p-2 flex flex-col justify-cente items-center">
             <div className=" w-[%]">
             <img src={img} className="" alt="" />   
               </div>              
-            <div className="my- flex flex-col justify-between items-cente  border-[gray]  px- py-2  gap-2">
+            <div className="my- flex flex-col justify-between items-centr  border-[gray]  px- py-2  gap-2">
             <div className="flex  text-[14px] text-[gray] justify-start items-center gap-2 py-">
            <span className="flex items-center flex-wrap gap-2">{icons.authorIcon} {author}</span>
             {/* <span className="flex items-center gap-2">{icons.dateIcon} {date}</span>               */}
