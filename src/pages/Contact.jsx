@@ -36,7 +36,7 @@ const Contact = () => {
           <h2>contact us</h2>
           <h1 className="text-[28px] font-semibold">get in touch</h1>
         </div>
-        <div className="flex gap-8 justify-center ites-center w-[%]  my-[4rem] xl:flex flex-col">
+        <div className="flex flex-col gap-8 justify-center ites-center w-[%]  my-[4rem] xl:flex-row ">
           <div className="flex gap-2 xl:gap-8 flex-wrap items- justify-between xl:w-[50%]">
             {contactData.map((val, index) => {
               const { icon, title, info, time } = val;

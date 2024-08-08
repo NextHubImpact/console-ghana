@@ -78,27 +78,24 @@ const Navbar = ({}) => {
         <div className="  xl:pl-4">
           <Link to='/'>
           <img
-            className= { colorChange? 'bg-[#faaf40] duration-700 rounded  w-[40%] xl:W-[30%] ' : "duration-700 w-[40%] xl:w-[30%] "}
-            src={colorChange ? rccLogo : rccLogo}
+            className='bg-[#faaf40] duration-700 rounded  w-[40%] xl:W-[30%] '
+            src={rccLogo }
             alt=""
           />
           </Link>        
         </div>
 
-        { sidebar && <Sidebar showSidebar={showSidebar} />}
-
-        <nav className="hidden  lg:block w-[50%] ">
+        { sidebar ? (<Sidebar showSidebar={showSidebar} />) 
+        : 
+        (       <nav className="hidden  lg:block w-[50%] ">
           <ul className="lg: flex text-nowrap gap-2 py-2  justify-between items-center xl:p-4 ">
             {SidebarData.map((item, index) => {
               return (
                 <Link
                   to={item.path}
                   key={index}
-                  className={
-                    colorChange
-                      ? "text-black px-4 xl:text-[20px] font-semibold-[700] "
-                      : "text-black px-4 xl:text-[20px] font-semibold-[700] "
-                  }                
+                  className='text-black px-4 xl:text-[20px] font-semibold'
+                   
                 >
                   <span
                     className={
@@ -111,7 +108,9 @@ const Navbar = ({}) => {
               );
             })}
           </ul>
-        </nav>
+        </nav>)}
+
+ 
 
         <div className=" flex text-3xl text-black items-center gap-4 text-2xl duration-700 lg:hidden">
 
