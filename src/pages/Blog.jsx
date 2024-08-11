@@ -117,11 +117,11 @@ const Blog = () => {
      {blogData.map((val, index) => {
        const {img, title, author, detail, date , icons } = val;
        return (
-         <div key={index} className=" flex  flex-col xl:w-[85%] xl:flex-row items-center ">
+         <div key={index} className=" flex border  flex-col xl:w-[85%] xl:flex-row items-center ">
             <div className=" xl:w-[35%]">
             <img src={img} className="" alt="" />   
               </div>              
-            <div className="my- flex flex-col justify- border border-[gray] p-2 xl:px-8 xl:py-4  gap-6">
+            <div className="my- flex flex-col justify p-2 xl:px-8 xl:py-4  gap-6">
             <div className="flex  xl:text-[16px] text-[gray] justify-start items-center gap-2 py-">
            <span className="flex items-center gap-2">{icons.authorIcon} {author}</span>
             <span className="flex items-center gap-2">{icons.dateIcon} {date}</span>              
@@ -143,7 +143,7 @@ const Blog = () => {
     </div>
     <div className="mx-2 xl:mx-12">
       <h1 className='text-[18px] font-semibold  border-b w-[] mb-8 pb-4 '>Latest</h1>
-    <div className=" flex  items-center text-w justify-ceter  mb-14 gap-4 ">
+    <div className="flex flex-col   items-center text-w justify-ceter  mb-14 gap-4 xl:flex-row ">
      {latestblogData.map((val, index) => {
        const {img, title, author, detail, date , icons } = val;
        return (

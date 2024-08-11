@@ -87,7 +87,7 @@ const Navbar = ({}) => {
 
         { sidebar ? (<Sidebar showSidebar={showSidebar} />) 
         : 
-        (       <nav className="hidden  lg:block w-[50%] ">
+        (       <nav className="hidden d  lg:block w-[50%] ">
           <ul className="lg: flex text-nowrap gap-2 py-2  justify-between items-center xl:p-4 ">
             {SidebarData.map((item, index) => {
               return (
@@ -117,10 +117,10 @@ const Navbar = ({}) => {
           {sidebar ? (
             <IoClose
              onClick={showSidebar }
-             className={sidebar ? 'text-white absolute right-1 bg-[#faaf rounded-[50%] p- text-2xl top-10' : ''} 
+             className={sidebar ? 'text-white absolute right-1 bg-[#faaf rounded-[50%] p- text-2xl top-10 duration-700' : ''} 
              />         
           ) : (
-            <IoMenu  className="" onClick={showSidebar} />
+            <IoMenu  className="duration-700" onClick={showSidebar} />
           )}
         </div>
       </div>

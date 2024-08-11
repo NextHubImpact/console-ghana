@@ -48,7 +48,7 @@ const Sidebar = ({showSidebar}) => {
             {sidebarData.map((item, index) => {
                 return ( <li key={index} className='flex flex-row gap- p-2'>
                       <Link to={item.path} className='font-semibold w-full flex items-center justify-between p-2 '>
-                         <span onClick={showSidebar} >{item.title}</span>
+                         <span onClick={showSidebar}  className='duration-700'>{item.title}</span>
                     </Link>
                  </li>)
             })}
