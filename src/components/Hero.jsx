@@ -87,7 +87,7 @@ const Hero = () => {
                     strings={[images.title]}
                     typeSpeed={200}
                     loop = {false}
-                    backSpeed={20}
+                    backSpeed={5}
                     cursorChar="_"
                     showCursor={true}
           

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { IoArrowForward } from "react-icons/io5";
-
+import CountUp from "react-countup";
 import homeSide from "../assets/main/home-side.jpg";
 import campusImg from "../assets/homepage/slider/slider-3.jpg";
 import progImg1 from "../assets/main/aca-des.jpg";
@@ -134,7 +134,7 @@ const Content = () => {
       title: 'Regions'
     },
     {
-      number : 'Over 6000',
+      number : '6000',
       icon: <MdAccountCircle/>,
       title: 'Communities'
     },
@@ -167,7 +167,13 @@ const Content = () => {
                     <div className="flex w-[100%] gap-6 items-center p-6 rounded xl:w-[30%] shadow-md bg-[white]  gap-4" key={index}>
                       <span className="text-[50px] ">{icon}</span>
                       <div className="flex flex-col">
-                        <p className="text-[35px] font-semibold text-[#faaf40]">{number}</p>
+                        <CountUp
+                         start={10}
+                         end={number}
+                         duration={3}
+                         className="text-[35px] font-semibold text-[#faaf40]"
+                        />
+                        {/* <p >{number}</p> */}
                         <p className="text-[gray]">{title}</p>
                       </div>
                     </div>
