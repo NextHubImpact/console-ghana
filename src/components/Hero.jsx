@@ -10,12 +10,6 @@ import { ReactTyped } from 'react-typed'
 
 const Hero = () => {
     const [index, setIndex] = useState(0);
-    // const timeoutRef = useRef(null);
-    // const delay = 5500;
-
-    // const [currentText, setCurrentText] = useState('');
-    // const [currentIndex, setCurrentIndex] = useState(0);
-
     const sliderImages = [
             
         {
@@ -28,36 +22,6 @@ const Hero = () => {
 
     ]
 
-    // function resetTimeout() {
-    //   if (timeoutRef.current) {
-    //     clearTimeout(timeoutRef.current);
-    //   }
-    // }
-
-    // useEffect(() => {
-    //   if (currentIndex < text.length) {
-    //     const timeout = setTimeout(() => {
-    //       setCurrentText(prevText => prevText + text[currentIndex]);
-    //       setCurrentIndex(prevIndex => prevIndex + 1);
-    //     }, delay);
-    
-    //     return () => clearTimeout(timeout);
-    //   }
-    // }, [currentIndex, delay, text]);
-
-    // useEffect(() => {
-    //   resetTimeout()
-    //   timeoutRef.current = setTimeout(() => 
-    //    setIndex((prevIndex) => 
-    //      prevIndex === sliderImages.length - 1 ? 0 : prevIndex + 1
-    //  ),
-    //  delay,
-    // );
-    //   return () => {
-    //     resetTimeout()
-    //   };
-    // }, [index]);
-
   return (
     <div className='slideshow '>
     
@@ -68,7 +32,7 @@ const Hero = () => {
               <div className="slide " key={index}>
                 <img alt="hero photo" />
                 <div
-                  style={{
+                  style={{      
                     backgroundImage: `url(${images.img})`,
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
@@ -103,21 +67,7 @@ const Hero = () => {
               
               </div>
             ))}
-        </div>
-
-        {/* <div className="slideshowDots text-center">
-            {sliderImages.map((_, idx) => (
-                <div 
-                className={`slideshowDot${index === idx ? " active" : ""}`}
-                 key={idx}
-                 onClick={() => {
-                  setIndex(idx);
-                }}
-                ></div>
-            ))}
-        </div> */}
-
-  
+        </div>  
     </div>
   )
 }

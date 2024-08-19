@@ -1,8 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { IoArrowForward } from "react-icons/io5";
 import CountUp from "react-countup";
-import homeSide from "../assets/main/home-side.jpg";
-import campusImg from "../assets/homepage/slider/slider-3.jpg";
+
 import progImg1 from "../assets/main/aca-des.jpg";
 import progImg2 from "../assets/main/aca-en.jpg";
 import progImg3 from "../assets/main/aca-weld.jpg";
@@ -184,7 +183,7 @@ const Content = () => {
       </section>
 
       {/* what we offer */}
-      <section className="mt-[8rem]">
+      <section className="mt-[4rem]">
         <div className="mx- ">
           <h1 className="text-center uppercase text-[24px] font-bold">what we offer</h1>
           <div className="mt-14 mb-[6rem] lg:flex  xl:flex justify-center items-center gap-8 ">
@@ -283,33 +282,6 @@ const Content = () => {
           </div>
         </div>
       </section>
-
-      {/* cards */}
-      {/* <section className="">
-        <div className="mx- ">
-          <div className="mt-14 mb-[6rem] lg:flex  xl:flex justify-center gap-8 ">
-            {offer.map((val, index) => {
-              const { title, article, link, icons } = val;
-              return (
-                <div
-                  key={index}
-                  className=" flex flex-col  text-white items-center justify-center gap-2 bg-[#262261] p-  shadow-sm mb-4 lg:w-[30%] h-[60%] xl:w-[28%] p-8"
-                >
-                  <div className="mb-6">
-                    <img src={icons.whoweareIcon} alt="" />
-                  </div>
-                  <h2 className="font-semibold text-nowrap">{title}</h2>
-                  <article className=" text-center">{article}</article>
-                  <div className="bg-[#faaf40] p-2 rounded flex items-center gap-4 mt-2 font-semibold">
-                    {link}
-                    {icons.arrowIcon}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section> */}
 
       {/* our activities*/}
       <section className="">

@@ -63,7 +63,7 @@ const Navbar = ({}) => {
   // nav bg color change //
 
   const changeNavbarColor = () => {
-    if (window.scrollY >= 10) {
+    if (window.scrollY >= 1) {
       setColorchange(true);
     } else {
       setColorchange(false);
