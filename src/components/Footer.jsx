@@ -4,7 +4,6 @@ import {Link, NavLink} from 'react-router-dom'
 import rccLogo from '../assets/logo/rcc-logo.jpeg'
 
 const Footer = () => {
-//    const [year , setYear] = useState(new Date());
 
    const getYear = () => {
        return new Date().getFullYear()
@@ -12,15 +11,15 @@ const Footer = () => {
 
 
   return (
-    <div className='bg-black text-white  '>
-      <div className="xl:mx-10 flex flex-col items-cente justify-between gap-[rem] bg-[]  pt-[4rem] px-8 pb-[rem] lg:px-4">
+    <div className='bg-black text-white '>
+      <div className="xl:mx-10 flex flex-col text-cener items-center justify-between gap-[rem] bg-[]  pt-[6rem] px-8 pb-[rem] lg:px-12">
       <div className="flex flex-col  gap-[3rem] lg:flex-row  justify-betwe p-">
         <div className="lg:w-[30%]">
            <NavLink to='/'>
-           <img className='w-[80%]  bg-[white] border' src={rccLogo} alt="logo" />
+           <img className='w-[50%]' src={rccLogo} alt="logo" />
            </NavLink>
-            <article className='leading-6 mt-10'>
-            DTI’s mission is to become the leading industrial job training and prototype center in West Africa to transform the livelihoods of young people in TVET.
+            <article className='text-[14px] mt-10'>
+            Rural Code Camp is on a mission to empower the youth in Ghana’s rural communities with essential digital skills. By bringing technology education directly to schools and villages, we are ensuring that every child has the opportunity to thrive in the digital age
             </article>
         </div>
 
@@ -32,12 +31,12 @@ const Footer = () => {
                   <p>Home</p>
                 </Link>
 
-                <Link className='flex items-center gap-2' to='/aboutus'>      
-                <p>About Us</p>
+                <Link className='flex items-center gap-2' to='/about'>      
+                <p>About</p>
                 </Link>
                
-                <Link className='flex items-center gap-2' to='/programs'> 
-                <p>Programs</p>
+                <Link className='flex items-center gap-2' to='/projects'> 
+                <p>Projects</p>
                 </Link>
               
                 <Link className='flex items-center gap-2' to='/getinvolve'>
@@ -87,7 +86,7 @@ const Footer = () => {
             </div>
 
             <div className="">
-              <h1 className='text-[gray]'>subscribe to our newsletter:</h1>
+              <h1 className='text-[gray]'>Subscribe To Our Newsletter:</h1>
               <form action="">
                 <input type="email" className='p-2' placeholder='Email Address' /> 
                 <Link to=''>
@@ -100,10 +99,9 @@ const Footer = () => {
      </div>
       <hr/>
       {/* divider */}
-     <div className="flex justify-center my-4">
-     
+     <div className="flex justify-center my-8"> 
         <div className="">
-             &copy; {getYear()} DTI. ALL RIGHTS RESERVED.
+             &copy;{getYear()} - RCC. ALL RIGHTS RESERVED.
         </div>
      </div>
       </div>

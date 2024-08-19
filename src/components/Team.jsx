@@ -55,7 +55,7 @@ const Team = () => {
   return (
     <div>
       <section className="pt-[4rem]">
-        <h1 className="text-center text-3xl mb-8">Our Team</h1>
+        <h1 className="text-center font-bold text-red-700 text-3xl mb-8">Our Team</h1>
         <div className="flex flex-col gap-8 bg-[whitesmoke] items-enter justify-center xl:flex-row xl:gap-6 flex-wrap">
           {team.map((teamData, i) => {
             const { photo, name, role } = teamData;

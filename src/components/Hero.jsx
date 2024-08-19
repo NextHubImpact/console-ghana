@@ -1,10 +1,6 @@
 import React, {useState, useEffect, useRef} from 'react'
-import Navbar from './Navbar'
 import { NavLink } from 'react-router-dom'
-
 import slide1 from '../assets/homepage/slider/slider-1.jpg'
-import slide2 from '../assets/homepage/slider/slider-2.jpg'
-import slide3 from '../assets/homepage/slider/slider-3.jpg'
 import { IoArrowForward } from 'react-icons/io5'
 import { ReactTyped } from 'react-typed'
 
@@ -53,14 +49,12 @@ const Hero = () => {
                     loop = {false}
                     backSpeed={5}
                     cursorChar="_"
-                    showCursor={true}
-          
+                    showCursor={true}         
                      />
-                    </h1>
-                  
+                    </h1>             
                     <p className='text- text-wrap'>{images.article}</p>
-                    <NavLink to={images.link} >                
-                      <p className='bg-[#faaf40] w-[%] py-4 px-8 rounded flex items-center gap-4 mt-2 font-semibold'>{images.link}</p>
+                    <NavLink to='/about' >                
+                      <button className='bg-[#faaf40] w-[%] py-3 px-6 rounded flex items-center gap-4 mt-2 font-semibold'>{images.link}</button>
                     </NavLink>
                   </div>
                 </div>

@@ -145,36 +145,28 @@ const About = () => {
 
       <section className="pt-[8rem] xl:pt-[10rem]">
         <div className=" flex items-center justify-center  ">
-          <div className=" flex flex-col items-center xl:w-[88%] justify-between lg:flex-row  gap- bg-[whitesmoke] ">
-          <figure className="w-full flex flex-col justify-end  xl:w-[40%] p-  ">
+          <div className=" flex flex-col items-center xl:w-[88%] justify-between lg:flex-row  gap-4 bg-[whitesmoke] ">
+          <figure className="w-full flex flex-col justify-center  xl:w-[45%] p-  ">
               <img className="lg: w-[100%] h-[30vh]  rounded-" src={progImg1} alt="" />
               <img className="lg: w-[100%] h-[30vh]  rounded-" src={progImg1} alt="" />
             </figure>
 
             <div className="lg:w-[55%] ml- gap-8 flex  justify-center flex-col items-center  lg:flex-row ">
-              <div className=" w-full flex justify-between flex-col gap-8 xl:p-6">
+              <div className=" w-full flex justify-between flex-col gap-4 xl:p-4">
                 <div className="">
-                  <h1 className="uppercase text-center pt-4 font-bold text-red-700 text-3xl xl:text-start ">
+                  <h1 className="uppercase text-center pt- font-bold text-red-700 text-3xl xl:text-start ">
                     our story
                   </h1>
-                  <hr className="hidden w-[20%] rounded mt-6 h-1 bg-red-700 xl:block" />
+                  <hr className="hidden w-[20%] rounded mt-4 h-1 bg-red-700 xl:block" />
                 </div>
                 <article className=" xl:mr-14 xl:text-[16px]">
-                  Rural Code Camp is a NON PROFIT ORGANISATION dedicated in
-                  bridging the digital division by empowering students in remote
-                  villages across Ghana with essential coding and computer
-                  skills. We are on a mission to connect the unconnected.
-                      <br />
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos dolore, distinctio, aliquid, dolorum error beatae consectetur sed dignissimos illum voluptates doloremque repudiandae velit sunt nesciunt itaque ratione animi esse. Rerum.
-                      <br />
-                      <br />
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias atque molestias quasi obcaecati eos adipisci laborum, repellat sequi distinctio modi facilis dolore voluptatibus dignissimos quis ullam est quia! Obcaecati dolores voluptas, facere laboriosam quam illo vitae voluptates dignissimos, voluptatibus esse commodi eligendi, sint odio? Asperiores animi totam fugiat praesentium distinctio repellat eaque aspernatur atque nobis, voluptatum earum odit voluptate iusto!    
+                In many rural communities across Ghana, access to quality education, particularly in digital literacy and technology, remains a significant challenge. While the world becomes increasingly digital, countless children in these areas are left behind, with limited or no exposure to the skills they need to succeed in the modern world. This digital divide not only hinders individual growth but also restricts the potential of entire communities.
+                <br />
+                 Rural Code Camp was born out of a vision to bridge this gap. We saw the need to bring technology education directly to the doorsteps of these underserved communities. Our mission is to empower young minds in rural Ghana by providing them with the skills and knowledge to thrive in a digital future. We believe that every child, regardless of where they live, should have the opportunity to learn, innovate, and create a better future for themselves and their communities.
+                <br />
+      
+                At Rural Code Camp, we are committed to <span className="font-bold text-red-700">"Connecting the Unconnected" </span> by ensuring that every young person, no matter how remote their location, has the chance to participate in the digital world. Our story is one of hope, empowerment, and a steadfast belief that education is the key to unlocking the potential of Ghana’s rural youth.
                 </article>
-
-                {/* <div className="flex items-center gap-4 font-semibold ">
-                  <h2 className="text-[20px] ">About us </h2>
-                  <IoArrowForward className="text-red-700" />
-                </div> */}
               </div>
             </div>
 

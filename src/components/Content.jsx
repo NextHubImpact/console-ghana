@@ -8,11 +8,8 @@ import progImg3 from "../assets/main/aca-weld.jpg";
 
 import whoweare from "../assets/img-icons/whoweare.webp";
 
-
-
 import { MdAccountCircle, MdTimer } from "react-icons/md";
 import Partners from "./Partners";
-
 
 const Content = () => {
   // const [index, setIndex] = useState(0);
@@ -28,7 +25,8 @@ const Content = () => {
   const offer = [
     {
       title: "Foundations of Digital Literacy",
-      article:" This module is designed to equip students with the essential skills and knowledge needed to navigate the digital world confidently and safely. We focus in building students strong skills in basic computer operations, understanding the internet, and recognizing the importance of online safety.",
+      article:
+        " This module is designed to equip students with the essential skills and knowledge needed to navigate the digital world confidently and safely. We focus in building students strong skills in basic computer operations, understanding the internet, and recognizing the importance of online safety.",
       link: "More details",
       icons: {
         arrowIcon: <IoArrowForward className="text-red-700" />,
@@ -123,21 +121,21 @@ const Content = () => {
 
   const stats = [
     {
-      number : '261',
-      icon: <MdAccountCircle/>,
-      title: 'Districts'
+      number: "261",
+      icon: <MdAccountCircle />,
+      title: "Districts",
     },
     {
-      number : '16',
-      icon: <MdAccountCircle/>,
-      title: 'Regions'
+      number: "16",
+      icon: <MdAccountCircle />,
+      title: "Regions",
     },
     {
-      number : '6000',
-      icon: <MdAccountCircle/>,
-      title: 'Communities'
+      number: "6000",
+      icon: <MdAccountCircle />,
+      title: "Communities",
     },
-  ]
+  ];
 
   // useEffect(() => {
   //   resetTimeout();
@@ -157,35 +155,40 @@ const Content = () => {
     <main className="mx-2 ">
       {/* stats */}
       <section className="xl:m-8">
-        <h1 className=" text-[16px] text-center xl:text-2xl uppercase m-12 font-semibold">we are connecting</h1>
+        <h1 className=" text-[16px] text-center xl:text-2xl uppercase m-12 font-semibold">
+          we are connecting
+        </h1>
         <div className="flex flex-col  items-center  gap-4 justify-center xl:flex-row">
-              {
-                stats.map((val, index) => {
-                  const { number , icon , title} = val ;
-                  return (
-                    <div className="flex w-[100%] gap-6 items-center p-6 rounded xl:w-[30%] shadow-md bg-[white]  gap-4" key={index}>
-                      <span className="text-[50px] ">{icon}</span>
-                      <div className="flex flex-col">
-                        <CountUp
-                         start={10}
-                         end={number}
-                         duration={3}
-                         className="text-[35px] font-semibold text-[#faaf40]"
-                        />
-                        {/* <p >{number}</p> */}
-                        <p className="text-[gray]">{title}</p>
-                      </div>
-                    </div>
-                  )
-                })
-              }
+          {stats.map((val, index) => {
+            const { number, icon, title } = val;
+            return (
+              <div
+                className="flex w-[100%] gap-6 items-center p-6 rounded xl:w-[30%] shadow-md bg-[white]  gap-4"
+                key={index}
+              >
+                <span className="text-[50px] ">{icon}</span>
+                <div className="flex flex-col">
+                  <CountUp
+                    start={10}
+                    end={number}
+                    duration={3}
+                    className="text-[35px] font-semibold text-[#faaf40]"
+                  />
+                  {/* <p >{number}</p> */}
+                  <p className="text-[gray]">{title}</p>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </section>
 
       {/* what we offer */}
       <section className="mt-[4rem]">
         <div className="mx- ">
-          <h1 className="text-center uppercase text-[24px] font-bold">what we offer</h1>
+          <h1 className="text-center uppercase text-[24px] font-bold">
+            what we offer
+          </h1>
           <div className="mt-14 mb-[6rem] lg:flex  xl:flex justify-center items-center gap-8 ">
             {offer.map((val, index) => {
               const { title, article, link, icons } = val;
@@ -198,7 +201,9 @@ const Content = () => {
                     <img src={icons.whoweareIcon} alt="" />
                   </div>
                   <h2 className="font-semibold text-nowrap">{title}</h2>
-                  <article className="text-[14px] xl:text-[16px] text-[gray] text-center">{article}</article>
+                  <article className="text-[14px] xl:text-[16px] text-[gray] text-center">
+                    {article}
+                  </article>
                   <div className="bg-[#faaf40] p-2 rounded flex items-center gap-4 mt-2 font-semibold">
                     {link}
                     {icons.arrowIcon}
@@ -215,7 +220,6 @@ const Content = () => {
         <div className="flex items-center justify-between ">
           <div className=" flex flex-col items-center justify-center lg:flex-row   gap-2 bg-[whitesmoke] ">
             <div className="xl:w-[48%]   gap-4 flex  justify-center flex-col items-center  xl:flex-row ">
-              
               <div className=" w-full flex items-center justify-between  flex-col gap-8 xl:items-start text-center">
                 <div className="">
                   <h1 className="text-center uppercase font-bold text-red-700 text-3xl ">
@@ -224,7 +228,10 @@ const Content = () => {
                   <hr className="hidden xl:block w-[20%] text-center rounded mt-6 h-1 bg-red-700" />
                 </div>
                 <article className=" xl:pr-4 text-[14px] xl:text-[16px] xl:text-start ">
-                Rural Code Camp is a NON PROFIT ORGANISATION dedicated in bridging the digital divide by empowering students in remote villages across Ghana with essential coding and computer skills. We are on a mission to connect the unconnected.
+                  Rural Code Camp is a NON PROFIT ORGANISATION dedicated in
+                  bridging the digital divide by empowering students in remote
+                  villages across Ghana with essential coding and computer
+                  skills. We are on a mission to connect the unconnected.
                 </article>
 
                 <div className="flex items-center gap-4 font-semibold ">
@@ -252,33 +259,36 @@ const Content = () => {
               </div>
               <div className="mb-">
                 <article className="leading- text-[14px]">
-                We believe every child and youth, regardless of their background, deserves access to quality digital education.
-                 Our programs are designed to be inclusive and accessible to all students in rural communities to aid their participation in the Digital world.
+                  We believe every child and youth, regardless of their
+                  background, deserves access to quality digital education. Our
+                  programs are designed to be inclusive and accessible to all
+                  students in rural communities to aid their participation in
+                  the Digital world.
                 </article>
               </div>
-    
             </div>
-             
-             
-           <div className="xl:w-[65%]">
-           <div className="flex flex-col xl:flex-row justify-between items-center gap-4 ">
-            {values.map((val, index) => {
-              const { title, article, link, icons } = val;
-              return (
-                <div
-                  key={index}
-                  className=" flex flex-col  items-center gap-4 bg-[whitesmoke] p-  shadow-m rounded-md hover:shadow-md   duration-700   xl:w-[%] p-6"
-                >
-                  <div className="mb-">
-                    <img src={icons.whoweareIcon} alt="" />
-                  </div>
-                  <h2 className="font-semibold text-nowrap">{title}</h2>
-                  <article className=" text-[14px] text-[gray] text-center">{article}</article>
-                </div>
-              );
-            })}
-          </div>
-            </div>         
+
+            <div className="xl:w-[65%]">
+              <div className="flex flex-col xl:flex-row justify-between items-center gap-4 ">
+                {values.map((val, index) => {
+                  const { title, article, link, icons } = val;
+                  return (
+                    <div
+                      key={index}
+                      className=" flex flex-col  items-center gap-4 bg-[whitesmoke] p-  shadow-m rounded-md hover:shadow-md   duration-700   xl:w-[%] p-6"
+                    >
+                      <div className="mb-">
+                        <img src={icons.whoweareIcon} alt="" />
+                      </div>
+                      <h2 className="font-semibold text-nowrap">{title}</h2>
+                      <article className=" text-[14px] text-[gray] text-center">
+                        {article}
+                      </article>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -286,8 +296,10 @@ const Content = () => {
       {/* our activities*/}
       <section className="">
         <div className="xl:mx-8  my-14">
-          <h1 className="text-3xl uppercase font-semibold text-center ">Our Actitvites</h1>
-          
+          <h1 className="text-3xl uppercase font-semibold text-center ">
+            Our Actitvites
+          </h1>
+
           <div className=" flex flex-col gap-4 mt-14 mb-[6rem] lg:flex  xl:flex-row justify-center gap-4">
             {offer.map((val, index) => {
               const { title, article, link, icon, img } = val;
@@ -301,7 +313,9 @@ const Content = () => {
                     <h2 className=" text-wrap text-center text- font-semibold">
                       {title}
                     </h2>
-                    <article className="text-[14px] text-center">{article}</article>
+                    <article className="text-[14px] text-center">
+                      {article}
+                    </article>
                     <div className="bg-[#faaf40] py-2 px-3 rounded-md flex items-center gap-4 m-4 ">
                       {link}
                       {icon}
@@ -311,13 +325,11 @@ const Content = () => {
               );
             })}
           </div>
-          </div>
-        
+        </div>
       </section>
 
       {/* partners */}
-      <Partners/>
-
+      <Partners />
     </main>
   );
 };
