@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import { IoArrowForward } from "react-icons/io5";
 import CountUp from "react-countup";
 
@@ -233,11 +234,13 @@ const Content = () => {
                   villages across Ghana with essential coding and computer
                   skills. We are on a mission to connect the unconnected.
                 </article>
-
+   
+                <Link to='/about'>
                 <div className="flex items-center gap-4 font-semibold ">
                   <h2 className="text-[20px] ">About us </h2>
                   <IoArrowForward className="text-red-700" />
                 </div>
+                </Link>
               </div>
             </div>
 

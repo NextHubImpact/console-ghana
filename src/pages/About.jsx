@@ -5,14 +5,10 @@ import progImg1 from "../assets/main/aca-des.jpg";
 import progImg2 from "../assets/main/aca-en.jpg";
 import progImg3 from "../assets/main/aca-weld.jpg";
 
-
 import Partners from "../components/Partners";
 import Team from "../components/Team";
 
 const About = () => {
-
-
-
   const offer = [
     {
       title: "Foundations of Digital Literacy",
@@ -51,7 +47,6 @@ const About = () => {
 
   return (
     <div className="mx-2">
-
       {/* who we are */}
       {/* <section className=" pt-[8rem] ">
         <div className="flex items-center justify-center  ">
@@ -84,7 +79,7 @@ const About = () => {
           </div>
         </div>
       </section> */}
-{/*       
+      {/*       
         <section className=" xl:mt-[2rem] mt-[2rem] pt-[4rem] ">
         <div className="flex items-center justify-between ">
           <div className=" flex flex-col items-center justify-center lg:flex-row   gap-2 bg-[whitesmoke] ">
@@ -146,9 +141,17 @@ const About = () => {
       <section className="pt-[8rem] xl:pt-[10rem]">
         <div className=" flex items-center justify-center  ">
           <div className=" flex flex-col items-center xl:w-[88%] justify-between lg:flex-row  gap-4 bg-[whitesmoke] ">
-          <figure className="w-full flex flex-col justify-center  xl:w-[45%] p-  ">
-              <img className="lg: w-[100%] h-[30vh]  rounded-" src={progImg1} alt="" />
-              <img className="lg: w-[100%] h-[30vh]  rounded-" src={progImg1} alt="" />
+            <figure className="w-full flex flex-col justify-center  xl:w-[45%] p-  ">
+              <img
+                className="lg: w-[100%] h-[30vh]  rounded-"
+                src={progImg1}
+                alt=""
+              />
+              <img
+                className="lg: w-[100%] h-[30vh]  rounded-"
+                src={progImg1}
+                alt=""
+              />
             </figure>
 
             <div className="lg:w-[55%] ml- gap-8 flex  justify-center flex-col items-center  lg:flex-row ">
@@ -160,21 +163,49 @@ const About = () => {
                   <hr className="hidden w-[20%] rounded mt-4 h-1 bg-red-700 xl:block" />
                 </div>
                 <article className=" xl:mr-14 xl:text-[16px]">
-                In many rural communities across Ghana, access to quality education, particularly in digital literacy and technology, remains a significant challenge. While the world becomes increasingly digital, countless children in these areas are left behind, with limited or no exposure to the skills they need to succeed in the modern world. This digital divide not only hinders individual growth but also restricts the potential of entire communities.
-                <br />
-                 Rural Code Camp was born out of a vision to bridge this gap. We saw the need to bring technology education directly to the doorsteps of these underserved communities. Our mission is to empower young minds in rural Ghana by providing them with the skills and knowledge to thrive in a digital future. We believe that every child, regardless of where they live, should have the opportunity to learn, innovate, and create a better future for themselves and their communities.
-                <br />
-      
-                At Rural Code Camp, we are committed to <span className="font-bold text-red-700">"Connecting the Unconnected" </span> by ensuring that every young person, no matter how remote their location, has the chance to participate in the digital world. Our story is one of hope, empowerment, and a steadfast belief that education is the key to unlocking the potential of Ghana’s rural youth.
+                  <p className="">
+                    {" "}
+                    In many rural communities across Ghana, access to quality
+                    education, particularly in digital literacy and technology,
+                    remains a significant challenge. While the world becomes
+                    increasingly digital, countless children in these areas are
+                    left behind, with limited or no exposure to the skills they
+                    need to succeed in the modern world. This digital divide not
+                    only hinders individual growth but also restricts the
+                    potential of entire communities.
+                  </p>
+<br />
+                  <p>
+                    {" "}
+                    Rural Code Camp was born out of a vision to bridge this gap.
+                    We saw the need to bring technology education directly to
+                    the doorsteps of these underserved communities. Our mission
+                    is to empower young minds in rural Ghana by providing them
+                    with the skills and knowledge to thrive in a digital future.
+                    We believe that every child, regardless of where they live,
+                    should have the opportunity to learn, innovate, and create a
+                    better future for themselves and their communities.
+                  </p>
+<br />
+                  <p>
+                    At Rural Code Camp, we are committed to{" "}
+                    <span className="font-bold text-red-700">
+                      "Connecting the Unconnected"{" "}
+                    </span>{" "}
+                    by ensuring that every young person, no matter how remote
+                    their location, has the chance to participate in the digital
+                    world. Our story is one of hope, empowerment, and a
+                    steadfast belief that education is the key to unlocking the
+                    potential of Ghana’s rural youth.
+                  </p>
                 </article>
               </div>
             </div>
-
           </div>
         </div>
       </section>
 
-     <Team/>
+      <Team />
 
       {/* partners */}
       <Partners />
