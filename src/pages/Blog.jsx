@@ -2,6 +2,7 @@ import React from 'react'
 import progImg1 from "../assets/main/aca-des.jpg";
 import progImg2 from "../assets/main/aca-en.jpg";
 import progImg3 from "../assets/main/aca-weld.jpg";
+import blog from '../assets/main/blog-img.jpeg'
 
 import { MdAccountCircle, MdTimer } from "react-icons/md";
 
@@ -9,7 +10,7 @@ const Blog = () => {
 
     const blogData = [
         {
-          img: progImg1,
+          img: blog,
           author: "consolegh_",
           title: "DTI Offers a Variety of Programmes Designed to meet the needs of various industries",
           detail: 'Mobile Web Ghana and the American Corner, Agbogba, were thrilled to support the #LiteracyFair organi...',
@@ -20,7 +21,7 @@ const Blog = () => {
           },
         },
         {
-          img: progImg2,
+          img: blog,
           author: "consolegh_",
           title: "DTI Offers a Variety of Programmes Designed to meet the needs of various industries",
           detail: 'Mobile Web Ghana and the American Corner, Agbogba, were thrilled to support the #LiteracyFair organi...',
@@ -31,7 +32,7 @@ const Blog = () => {
           },
         },
         {
-          img: progImg3,
+          img: blog,
           author: "consolegh_",
           title: "DTI Offers a Variety of Programmes Designed to meet the needs of various industries",
           detail: 'Mobile Web Ghana and the American Corner, Agbogba, were thrilled to support the #LiteracyFair organi...',
@@ -45,7 +46,7 @@ const Blog = () => {
 
     const latestblogData = [
         {
-          img: progImg1,
+          img: blog,
           author: "consolegh_",
           title: "DTI Offers a Variety of Programmes Designed ...",
           detail: 'Mobile Web Ghana and the American Corner, Agbogba...',
@@ -56,7 +57,7 @@ const Blog = () => {
           },
         },
         {
-          img: progImg2,
+          img: blog,
           author: "consolegh_",
           title: "DTI Offers a Variety of Programmes Designed ...",
           detail: 'Mobile Web Ghana and the American Corner, Agbogba...',
@@ -67,7 +68,7 @@ const Blog = () => {
           },
         },
         {
-          img: progImg3,
+          img: blog,
           author: "consolegh_",
           title: "DTI Offers a Variety of Programmes Designed ...",
           detail: 'Mobile Web Ghana and the American Corner, Agbogba...',
@@ -78,7 +79,7 @@ const Blog = () => {
           },
         },
         {
-          img: progImg2,
+          img: blog,
           author: "consolegh_",
           title: "DTI Offers a Variety of Programmes Designed ...",
           detail: 'Mobile Web Ghana and the American Corner, Agbogba...',
@@ -89,7 +90,7 @@ const Blog = () => {
           },
         },
         {
-          img: progImg3,
+          img:  blog,
           author: "consolegh_",
           title: "DTI Offers a Variety of Programmes Designed ...",
           detail: 'Mobile Web Ghana and the American Corner, Agbogba...',
