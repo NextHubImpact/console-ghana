@@ -157,7 +157,7 @@ const About = () => {
             <div className="lg:w-[55%] ml- gap-8 flex  justify-center flex-col items-center  lg:flex-row ">
               <div className=" w-full flex justify-between flex-col gap-4 xl:p-4">
                 <div className="">
-                  <h1 className="uppercase text-center pt- font-bold text-red-700 text-3xl xl:text-start ">
+                  <h1 className="uppercase text-center pt- font-bold  text-3xl xl:text-start ">
                     our story
                   </h1>
                   <hr className="hidden w-[20%] rounded mt-4 h-1 bg-red-700 xl:block" />

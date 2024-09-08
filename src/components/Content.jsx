@@ -223,7 +223,7 @@ const Content = () => {
             <div className="xl:w-[48%]   gap-4 flex  justify-center flex-col items-center  xl:flex-row ">
               <div className=" w-full flex items-center justify-between  flex-col gap-8 xl:items-start text-center">
                 <div className="">
-                  <h1 className="text-center uppercase font-bold text-red-700 text-3xl ">
+                  <h1 className="text-center uppercase font-bold  text-3xl ">
                     who we are
                   </h1>
                   <hr className="hidden xl:block w-[20%] text-center rounded mt-6 h-1 bg-red-700" />

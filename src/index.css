@@ -13,62 +13,16 @@ html {
   scroll-behavior: smooth;
 }
 
+h1, h2, h3, h4 {color: #262063}
+
 /* sidebar  */
 #sidebar{
-  box-shadow:0 0 10000px 1000px rgba(0,0,0,.70);
+  box-shadow:0 0 10000px 1000px rgba(0,0,0,.9);
+  transition: .5s;
   overflow: hidden;
  }
 
 
-
-.nav-menu{
-    background-color: #f1f1f1;
-    /* width: 340px; */
-    /* height: 100vh; */
-    /* display: flex ; */
-    /* flex-direction: column; */
-    /* justify-content: space-between; */
-    /* position: fixed; */
-    /* top: 0; */
-    /* left: 1; */
-    /* bottom: 0; */
-    /* transition: ease 1000ms; */
-    /* z-index: 999; */
-}
-
-.nav-menu-active {
-  width: 270px;  
-}
-
-/* slideshow */
-
-.slideshow {
-    /* margin: 0 auto; */
-    overflow: hidden;
-    /* max-width: 100vw; */
-  }
-  
-  
-  .slideshowSlider {
-    white-space: nowrap;
-    transition: ease 1000ms;
-  }
-  
-  .slide {
-    display: inline-block;
-    /* width: 100%; */
-    /* height: 100%; */
-    
-  }
-
-
-  .slide-img  {
-    /* background-size: "contain"; */
-    /* height: 70vh; */
-    /* font-size: 50px; */
-    /* background-repeat: no-repeat; */
-  }
-  
   /* Buttons */
   .slideshowDots {
     text-align: center;

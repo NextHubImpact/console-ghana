@@ -37,7 +37,7 @@ const Navbar = ({}) => {
       title: "About",
       path: "/about",
     },
-    {
+    { 
       id: "3",
       title: "Projects",
       path: "/projects",
@@ -74,7 +74,7 @@ const Navbar = ({}) => {
 
   return (
     <nav className={colorChange ? "bg-[#ffffff] shadow-xl  w-full duration-700 " : "bg-[#ffffff] duration-700 "}>
-      <div className="flex mx-2 xl:mx-12 justify-between py-4 xl:p-4  items-center sticky top-0 z-10">
+      <div className="flex mx-2 xl:mx-12 justify-between py-4 xl:p-2  items-center sticky top-0 z-10">
         <div className="  xl:pl-4">
           <Link to='/'>
           <img
@@ -94,12 +94,12 @@ const Navbar = ({}) => {
                 <Link
                   to={item.path}
                   key={index}
-                  className='text-black px-4 xl:text-[20px] font-semibold'
+                  className=' px-4 xl:text-[20px] duration-700 text-[#262063] hover:text-[#FCAE43] font-semibold'
                    
                 >
                   <span
                     className={
-                      index == 5 ? "bg-[#faaf40] p-2 text-white" : "bg-inherit"
+                      index == 5 ? "bg-[#262063] font-semibold rounded-md p-3 text-[#FCAE43] duration-700" : "bg-inherit"
                     }
                   >
                     {item.title}
@@ -117,7 +117,7 @@ const Navbar = ({}) => {
           {sidebar ? (
             <IoClose
              onClick={showSidebar }
-             className={sidebar ? 'text-white absolute right-1 bg-[#faaf rounded-[50%] p- text-2xl top-10 duration-700' : ''} 
+             className={sidebar ? 'text-white absolute right-1 bg-[#faaf] showdow rounded-[50%] p- text-2xl top-10 duration-700' : ''} 
              />         
           ) : (
             <IoMenu  className="duration-700" onClick={showSidebar} />

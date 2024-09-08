@@ -49,13 +49,13 @@ const Contact = () => {
                     <img src={icon} className="w-[%]" alt="" />
                   </div>
                   <div className="flex flex-col gap- items-center ">
-                    <h1 className=" text-[14px] font-bold uppercase">
+                    <h1 className=" text-[14px] font-semibold uppercase">
                       {title}
                     </h1>
-                    <p className="text-[14px] text-wrap text-[#faaf40]">
+                    <p className="text-[14px] text-wrap text-[#a1a1aa]">
                       {info}
                     </p>
-                    <p>{time}</p>
+                    <p className="text-[#a1a1aa] text-sm">{time}</p>
                   </div>
                 </div>
               );

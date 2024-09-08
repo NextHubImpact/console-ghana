@@ -107,7 +107,7 @@ const Blog = () => {
     <div className="mx-2 my-12 xl:mx-12">
     <div className="flex flex-col justify-center items-center ">
        <iv className=" pt-12 lg:">
-           <h2 className=" mb-14 text-center font-bold text-[24px] text-red-700 lg:text-[48px]">
+           <h2 className=" mb-14 text-center font-semibold text-[24px] lg:text-[48px]">
              Blog
            </h2>
        </iv>
