@@ -229,7 +229,7 @@ const Content = () => {
                   <hr className="hidden xl:block w-[20%] text-center rounded mt-6 h-1 bg-red-700" />
                 </div>
                 <article className=" xl:pr-4 text-[14px] xl:text-[16px] xl:text-start ">
-                  Rural Code Camp is a NON PROFIT ORGANISATION dedicated in
+                  Rural Code Camp is a NOT FOR PROFIT ORGANISATION dedicated in
                   bridging the digital divide by empowering students in remote
                   villages across Ghana with essential coding and computer
                   skills. We are on a mission to connect the unconnected.

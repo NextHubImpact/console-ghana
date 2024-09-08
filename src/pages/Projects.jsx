@@ -73,28 +73,6 @@ const Projects = () => {
       },
       img: progImg3,
     },
-    {
-      title: "WHERE GREAT IDEAS TAKE FLIGHT",
-      article:
-        "DTI offers a variety of programmes designed to meet the needs of various industries. Engineering, manufacturing, construction, and information technology are among the technical and vocational training we provide.",
-      link: "More details",
-      icons: {
-        arrowIcon: <IoArrowForward className="text-red-700" />,
-        whoweareIcon: whoweare,
-      },
-      img: progImg2,
-    },
-    {
-      title: "WHERE GREAT IDEAS TAKE FLIGHT",
-      article:
-        "DTI offers a variety of programmes designed to meet the needs of various industries. Engineering, manufacturing, construction, and information technology are among the technical and vocational training we provide.",
-      link: "More details",
-      icons: {
-        arrowIcon: <IoArrowForward className="text-red-700" />,
-        whoweareIcon: whoweare,
-      },
-      img: progImg3,
-    },
   ];
 
   return (

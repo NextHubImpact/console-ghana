@@ -16,37 +16,7 @@ const Team = () => {
       role: "Senior Full Stack Developer",
     },
     {
-      photo: t2,
-      name: "Rafik Gangsta",
-      role: "Senior Full Stack Developer",
-    },
-    {
-      photo: t3,
-      name: "Rafik Gangsta",
-      role: "Senior Full Stack Developer",
-    },
-    {
-      photo: t4,
-      name: "Rafik Gangsta",
-      role: "Senior Full Stack Developer",
-    },
-    {
-      photo: t5,
-      name: "Rafik Gangsta",
-      role: "Senior Full Stack Developer",
-    },
-    {
       photo: t6,
-      name: "Rafik Gangsta",
-      role: "Senior Full Stack Developer",
-    },
-    {
-      photo: t7,
-      name: "Rafik Gangsta",
-      role: "Senior Full Stack Developer",
-    },
-    {
-      photo: t8,
       name: "Rafik Gangsta",
       role: "Senior Full Stack Developer",
     },
