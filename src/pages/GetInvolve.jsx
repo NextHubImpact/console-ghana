@@ -1,7 +1,7 @@
 import React from 'react'
 import gi1 from '../assets/main/gi1.jpg'
-import gi2 from '../assets/main/gi2.jpg'
-import Contact from './Contact'
+import gi2 from '../assets/main/gi2.jpg' 
+// import Contact from './Contact'
 
 const GetInvolve = () => {
   return (
